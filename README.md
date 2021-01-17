@@ -1,2 +1,2 @@
 # kotlin-jupyter-docs
-Documentation for Kotlin Jupyter kernel API
+See modules documentation [here](docs/-modules.html)
