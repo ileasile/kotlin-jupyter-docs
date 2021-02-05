@@ -1,6 +1,0 @@
-$dokka.format:html-v1
-$dokka.linkExtension:html
-
-org.jetbrains.kotlinx.jupyter.api.plugin
-org.jetbrains.kotlinx.jupyter.api.plugin.tasks
-
