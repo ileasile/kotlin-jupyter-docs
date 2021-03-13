@@ -6,6 +6,7 @@ org.jetbrains.kotlinx.jupyter.compiler
 org.jetbrains.kotlinx.jupyter.compiler.util
 org.jetbrains.kotlinx.jupyter.config
 org.jetbrains.kotlinx.jupyter.dependencies
+org.jetbrains.kotlinx.jupyter.exceptions
 org.jetbrains.kotlinx.jupyter.libraries
 org.jetbrains.kotlinx.jupyter.magics
 
