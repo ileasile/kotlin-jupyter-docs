@@ -1,6 +1,35 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
-
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext.integration////PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext.integration/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext.integration/Integration///PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext.integration/-integration/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext.integration/Integration/Integration/#/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext.integration/-integration/-integration.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext.integration/Integration/onLoaded/org.jetbrains.kotlinx.jupyter.api.libraries.JupyterIntegration.Builder#/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext.integration/-integration/on-loaded.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext////PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext//HTML/#java.io.File#kotlin.Boolean/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-h-t-m-l.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/HTMLAttr///PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-h-t-m-l-attr/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/HTMLAttr/HTMLAttr/#kotlin.String#kotlin.String/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-h-t-m-l-attr/-h-t-m-l-attr.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/HTMLAttr/name/#/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-h-t-m-l-attr/name.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/HTMLAttr/value/#/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-h-t-m-l-attr/value.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image.Companion///PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/-companion/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image.Companion/convertFormat/#kotlin.String/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/-companion/convert-format.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image.Companion/detectMime/#java.net.URI/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/-companion/detect-mime.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image.Companion/downloadData/#kotlin.String/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/-companion/download-data.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image.Companion/embedSrc/#kotlin.ByteArray#kotlin.String/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/-companion/embed-src.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image.Companion/loadData/#java.io.File/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/-companion/load-data.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image.Companion/referSrc/#kotlin.String/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/-companion/refer-src.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image///PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image/Image/#java.io.File#kotlin.Boolean/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/-image.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image/Image/#kotlin.ByteArray#kotlin.String/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/-image.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image/Image/#kotlin.String#kotlin.Boolean/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/-image.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image/Image/#kotlin.collections.List[org.jetbrains.kotlinx.jupyter.ext.HTMLAttr]/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/-image.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image/render/#org.jetbrains.kotlinx.jupyter.api.Notebook/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/render.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image/toHTML/#/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/to-h-t-m-l.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image/withAttr/#kotlin.String#kotlin.String/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/with-attr.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image/withAttr/#org.jetbrains.kotlinx.jupyter.ext.HTMLAttr/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/with-attr.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image/withHeight/#kotlin.Int/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/with-height.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image/withHeight/#kotlin.String/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/with-height.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image/withWidth/#kotlin.Int/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/with-width.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image/withWidth/#kotlin.String/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/with-width.html
 org.jetbrains.kotlinx.jupyter.ext
 org.jetbrains.kotlinx.jupyter.ext.integration
 

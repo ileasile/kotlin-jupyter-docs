@@ -1,6 +1,75 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
-
+$dokka.location:jupyter.kotlin.receivers////PointingToDeclaration/lib/jupyter.kotlin.receivers/index.html
+$dokka.location:jupyter.kotlin.receivers/ConstReceiver///PointingToDeclaration/lib/jupyter.kotlin.receivers/-const-receiver/index.html
+$dokka.location:jupyter.kotlin.receivers/ConstReceiver/ConstReceiver/#kotlin.Int/PointingToDeclaration/lib/jupyter.kotlin.receivers/-const-receiver/-const-receiver.html
+$dokka.location:jupyter.kotlin.receivers/ConstReceiver/value/#/PointingToDeclaration/lib/jupyter.kotlin.receivers/-const-receiver/value.html
+$dokka.location:jupyter.kotlin.receivers/TempAnnotation///PointingToDeclaration/lib/jupyter.kotlin.receivers/-temp-annotation/index.html
+$dokka.location:jupyter.kotlin.receivers/TempAnnotation/TempAnnotation/#/PointingToDeclaration/lib/jupyter.kotlin.receivers/-temp-annotation/-temp-annotation.html
+$dokka.location:jupyter.kotlin////PointingToDeclaration/lib/jupyter.kotlin/index.html
+$dokka.location:jupyter.kotlin//addColumn/kotlin.collections.List[TypeParam(bounds=[kotlin.Any?])]#kotlin.String#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/lib/jupyter.kotlin/add-column.html
+$dokka.location:jupyter.kotlin//removeColumn/kotlin.collections.List[TypeParam(bounds=[kotlin.Any?])]#kotlin.String/PointingToDeclaration/lib/jupyter.kotlin/remove-column.html
+$dokka.location:jupyter.kotlin/CompilerArgs///PointingToDeclaration/lib/jupyter.kotlin/-compiler-args/index.html
+$dokka.location:jupyter.kotlin/CompilerArgs/CompilerArgs/#kotlin.Array[kotlin.String]/PointingToDeclaration/lib/jupyter.kotlin/-compiler-args/-compiler-args.html
+$dokka.location:jupyter.kotlin/CompilerArgs/values/#/PointingToDeclaration/lib/jupyter.kotlin/-compiler-args/values.html
+$dokka.location:jupyter.kotlin/DependsOn///PointingToDeclaration/lib/jupyter.kotlin/-depends-on/index.html
+$dokka.location:jupyter.kotlin/DependsOn/DependsOn/#kotlin.String/PointingToDeclaration/lib/jupyter.kotlin/-depends-on/-depends-on.html
+$dokka.location:jupyter.kotlin/DependsOn/value/#/PointingToDeclaration/lib/jupyter.kotlin/-depends-on/value.html
+$dokka.location:jupyter.kotlin/JavaRuntime///PointingToDeclaration/lib/jupyter.kotlin/-java-runtime/index.html
+$dokka.location:jupyter.kotlin/JavaRuntime/assertVersion/#kotlin.String#kotlin.Function1[kotlin.Int,kotlin.Boolean]/PointingToDeclaration/lib/jupyter.kotlin/-java-runtime/assert-version.html
+$dokka.location:jupyter.kotlin/JavaRuntime/assertVersionAtLeast/#kotlin.Int/PointingToDeclaration/lib/jupyter.kotlin/-java-runtime/assert-version-at-least.html
+$dokka.location:jupyter.kotlin/JavaRuntime/assertVersionInRange/#kotlin.Int#kotlin.Int/PointingToDeclaration/lib/jupyter.kotlin/-java-runtime/assert-version-in-range.html
+$dokka.location:jupyter.kotlin/JavaRuntime/version/#/PointingToDeclaration/lib/jupyter.kotlin/-java-runtime/version.html
+$dokka.location:jupyter.kotlin/JavaRuntime/versionAsInt/#/PointingToDeclaration/lib/jupyter.kotlin/-java-runtime/version-as-int.html
+$dokka.location:jupyter.kotlin/KotlinContext///PointingToDeclaration/lib/jupyter.kotlin/-kotlin-context/index.html
+$dokka.location:jupyter.kotlin/KotlinContext/KotlinContext/#java.util.HashMap[kotlin.String,jupyter.kotlin.KotlinVariableInfo]#java.util.HashMap[kotlin.String,jupyter.kotlin.KotlinFunctionInfo]/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-context/-kotlin-context.html
+$dokka.location:jupyter.kotlin/KotlinContext/functions/#/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-context/functions.html
+$dokka.location:jupyter.kotlin/KotlinContext/vars/#/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-context/vars.html
+$dokka.location:jupyter.kotlin/KotlinFunctionInfo///PointingToDeclaration/lib/jupyter.kotlin/-kotlin-function-info/index.html
+$dokka.location:jupyter.kotlin/KotlinFunctionInfo/KotlinFunctionInfo/#kotlin.reflect.KFunction[*]#kotlin.Any/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-function-info/-kotlin-function-info.html
+$dokka.location:jupyter.kotlin/KotlinFunctionInfo/compareTo/#jupyter.kotlin.KotlinFunctionInfo/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-function-info/compare-to.html
+$dokka.location:jupyter.kotlin/KotlinFunctionInfo/equals/#kotlin.Any?/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-function-info/equals.html
+$dokka.location:jupyter.kotlin/KotlinFunctionInfo/function/#/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-function-info/function.html
+$dokka.location:jupyter.kotlin/KotlinFunctionInfo/hashCode/#/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-function-info/hash-code.html
+$dokka.location:jupyter.kotlin/KotlinFunctionInfo/line/#/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-function-info/line.html
+$dokka.location:jupyter.kotlin/KotlinFunctionInfo/name/#/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-function-info/name.html
+$dokka.location:jupyter.kotlin/KotlinFunctionInfo/toString/#/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-function-info/to-string.html
+$dokka.location:jupyter.kotlin/KotlinFunctionInfo/toString/#kotlin.Boolean/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-function-info/to-string.html
+$dokka.location:jupyter.kotlin/KotlinKernelHostProvider///PointingToDeclaration/lib/jupyter.kotlin/-kotlin-kernel-host-provider/index.html
+$dokka.location:jupyter.kotlin/KotlinKernelHostProvider/host/#/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-kernel-host-provider/host.html
+$dokka.location:jupyter.kotlin/KotlinVariableInfo///PointingToDeclaration/lib/jupyter.kotlin/-kotlin-variable-info/index.html
+$dokka.location:jupyter.kotlin/KotlinVariableInfo/KotlinVariableInfo/#kotlin.Any?#kotlin.reflect.KProperty[*]#kotlin.Any/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-variable-info/-kotlin-variable-info.html
+$dokka.location:jupyter.kotlin/KotlinVariableInfo/descriptor/#/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-variable-info/descriptor.html
+$dokka.location:jupyter.kotlin/KotlinVariableInfo/line/#/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-variable-info/line.html
+$dokka.location:jupyter.kotlin/KotlinVariableInfo/name/#/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-variable-info/name.html
+$dokka.location:jupyter.kotlin/KotlinVariableInfo/toString/#/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-variable-info/to-string.html
+$dokka.location:jupyter.kotlin/KotlinVariableInfo/toString/#kotlin.Boolean/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-variable-info/to-string.html
+$dokka.location:jupyter.kotlin/KotlinVariableInfo/type/#/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-variable-info/type.html
+$dokka.location:jupyter.kotlin/KotlinVariableInfo/value/#/PointingToDeclaration/lib/jupyter.kotlin/-kotlin-variable-info/value.html
+$dokka.location:jupyter.kotlin/Modificator.AddColumn///PointingToDeclaration/lib/jupyter.kotlin/-modificator/-add-column/index.html
+$dokka.location:jupyter.kotlin/Modificator.AddColumn/AddColumn/#kotlin.String#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/lib/jupyter.kotlin/-modificator/-add-column/-add-column.html
+$dokka.location:jupyter.kotlin/Modificator.AddColumn/getValue/#/PointingToDeclaration/lib/jupyter.kotlin/-modificator/-add-column/get-value.html
+$dokka.location:jupyter.kotlin/Modificator.AddColumn/name/#/PointingToDeclaration/lib/jupyter.kotlin/-modificator/-add-column/name.html
+$dokka.location:jupyter.kotlin/Modificator.RemoveColumn///PointingToDeclaration/lib/jupyter.kotlin/-modificator/-remove-column/index.html
+$dokka.location:jupyter.kotlin/Modificator.RemoveColumn/RemoveColumn/#kotlin.String/PointingToDeclaration/lib/jupyter.kotlin/-modificator/-remove-column/-remove-column.html
+$dokka.location:jupyter.kotlin/Modificator.RemoveColumn/name/#/PointingToDeclaration/lib/jupyter.kotlin/-modificator/-remove-column/name.html
+$dokka.location:jupyter.kotlin/Modificator///PointingToDeclaration/lib/jupyter.kotlin/-modificator/index.html
+$dokka.location:jupyter.kotlin/ModifiedList///PointingToDeclaration/lib/jupyter.kotlin/-modified-list/index.html
+$dokka.location:jupyter.kotlin/ModifiedList/ModifiedList/#kotlin.collections.List[TypeParam(bounds=[kotlin.Any?])]#jupyter.kotlin.Modificator/PointingToDeclaration/lib/jupyter.kotlin/-modified-list/-modified-list.html
+$dokka.location:jupyter.kotlin/ModifiedList/modificator/#/PointingToDeclaration/lib/jupyter.kotlin/-modified-list/modificator.html
+$dokka.location:jupyter.kotlin/ModifiedList/source/#/PointingToDeclaration/lib/jupyter.kotlin/-modified-list/source.html
+$dokka.location:jupyter.kotlin/Repository///PointingToDeclaration/lib/jupyter.kotlin/-repository/index.html
+$dokka.location:jupyter.kotlin/Repository/Repository/#kotlin.String/PointingToDeclaration/lib/jupyter.kotlin/-repository/-repository.html
+$dokka.location:jupyter.kotlin/Repository/value/#/PointingToDeclaration/lib/jupyter.kotlin/-repository/value.html
+$dokka.location:jupyter.kotlin/ScriptTemplateWithDisplayHelpers///PointingToDeclaration/lib/jupyter.kotlin/-script-template-with-display-helpers/index.html
+$dokka.location:jupyter.kotlin/ScriptTemplateWithDisplayHelpers/DISPLAY/#kotlin.Any/PointingToDeclaration/lib/jupyter.kotlin/-script-template-with-display-helpers/-d-i-s-p-l-a-y.html
+$dokka.location:jupyter.kotlin/ScriptTemplateWithDisplayHelpers/EXECUTE/#kotlin.String/PointingToDeclaration/lib/jupyter.kotlin/-script-template-with-display-helpers/-e-x-e-c-u-t-e.html
+$dokka.location:jupyter.kotlin/ScriptTemplateWithDisplayHelpers/JavaRuntimeUtils/#/PointingToDeclaration/lib/jupyter.kotlin/-script-template-with-display-helpers/-java-runtime-utils.html
+$dokka.location:jupyter.kotlin/ScriptTemplateWithDisplayHelpers/Out/#/PointingToDeclaration/lib/jupyter.kotlin/-script-template-with-display-helpers/-out.html
+$dokka.location:jupyter.kotlin/ScriptTemplateWithDisplayHelpers/ScriptTemplateWithDisplayHelpers/#org.jetbrains.kotlinx.jupyter.api.Notebook#jupyter.kotlin.KotlinKernelHostProvider/PointingToDeclaration/lib/jupyter.kotlin/-script-template-with-display-helpers/-script-template-with-display-helpers.html
+$dokka.location:jupyter.kotlin/ScriptTemplateWithDisplayHelpers/USE/#kotlin.Function1[org.jetbrains.kotlinx.jupyter.api.libraries.JupyterIntegration.Builder,kotlin.Unit]/PointingToDeclaration/lib/jupyter.kotlin/-script-template-with-display-helpers/-u-s-e.html
+$dokka.location:jupyter.kotlin/ScriptTemplateWithDisplayHelpers/USE/#org.jetbrains.kotlinx.jupyter.api.libraries.LibraryDefinition/PointingToDeclaration/lib/jupyter.kotlin/-script-template-with-display-helpers/-u-s-e.html
+$dokka.location:jupyter.kotlin/ScriptTemplateWithDisplayHelpers/notebook/#/PointingToDeclaration/lib/jupyter.kotlin/-script-template-with-display-helpers/notebook.html
 jupyter.kotlin
 jupyter.kotlin.receivers
 
