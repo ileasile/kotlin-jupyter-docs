@@ -1,7 +1,17 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 $dokka.location:org.jetbrains.kotlinx.jupyter.common////PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.common//assertSuccessful/org.jetbrains.kotlinx.jupyter.common.ResponseWrapper#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/assert-successful.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.common//decodeJson/org.jetbrains.kotlinx.jupyter.common.ResponseWrapper#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/decode-json.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.common//getHttp/#kotlin.String/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/get-http.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.common//getNameForUser/#kotlin.String/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/get-name-for-user.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.common//httpRequest/#org.http4k.core.Request/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/http-request.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.common//json/org.jetbrains.kotlinx.jupyter.common.ResponseWrapper#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/json.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.common//jsonArray/org.jetbrains.kotlinx.jupyter.common.ResponseWrapper#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/json-array.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.common//jsonObject/org.jetbrains.kotlinx.jupyter.common.ResponseWrapper#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/json-object.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.common//text/org.http4k.core.Response#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/text.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.common//withBasicAuth/org.http4k.core.Request#kotlin.String#kotlin.String/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/with-basic-auth.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.common//withJson/org.http4k.core.Request#kotlinx.serialization.json.JsonElement/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/with-json.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.common/ReplCommand.CLASSPATH///PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/-repl-command/-c-l-a-s-s-p-a-t-h/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.common/ReplCommand.CLASSPATH/desc/#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/-repl-command/-c-l-a-s-s-p-a-t-h/desc.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.common/ReplCommand.CLASSPATH/name/#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/-repl-command/-c-l-a-s-s-p-a-t-h/name.html
@@ -66,5 +76,8 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.common/ReplLineMagic/argumentsUsag
 $dokka.location:org.jetbrains.kotlinx.jupyter.common/ReplLineMagic/desc/#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/-repl-line-magic/desc.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.common/ReplLineMagic/nameForUser/#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/-repl-line-magic/name-for-user.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.common/ReplLineMagic/visibleInHelp/#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/-repl-line-magic/visible-in-help.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.common/ResponseWrapper///PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/-response-wrapper/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.common/ResponseWrapper/ResponseWrapper/#org.http4k.core.Response#kotlin.String/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/-response-wrapper/-response-wrapper.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.common/ResponseWrapper/url/#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/-response-wrapper/url.html
 org.jetbrains.kotlinx.jupyter.common
 
