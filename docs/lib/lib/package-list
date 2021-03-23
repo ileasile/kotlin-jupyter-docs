@@ -8,6 +8,10 @@ $dokka.location:jupyter.kotlin.receivers/TempAnnotation///PointingToDeclaration/
 $dokka.location:jupyter.kotlin.receivers/TempAnnotation/TempAnnotation/#/PointingToDeclaration/lib/jupyter.kotlin.receivers/-temp-annotation/-temp-annotation.html
 $dokka.location:jupyter.kotlin////PointingToDeclaration/lib/jupyter.kotlin/index.html
 $dokka.location:jupyter.kotlin//addColumn/kotlin.collections.List[TypeParam(bounds=[kotlin.Any?])]#kotlin.String#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/lib/jupyter.kotlin/add-column.html
+$dokka.location:jupyter.kotlin//clearIvyCache/#/PointingToDeclaration/lib/jupyter.kotlin/clear-ivy-cache.html
+$dokka.location:jupyter.kotlin//clearIvyCache/#kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/lib/jupyter.kotlin/clear-ivy-cache.html
+$dokka.location:jupyter.kotlin//clearIvyCache/#kotlin.String#kotlin.String/PointingToDeclaration/lib/jupyter.kotlin/clear-ivy-cache.html
+$dokka.location:jupyter.kotlin//clearIvyCache/#kotlin.String/PointingToDeclaration/lib/jupyter.kotlin/clear-ivy-cache.html
 $dokka.location:jupyter.kotlin//removeColumn/kotlin.collections.List[TypeParam(bounds=[kotlin.Any?])]#kotlin.String/PointingToDeclaration/lib/jupyter.kotlin/remove-column.html
 $dokka.location:jupyter.kotlin/CompilerArgs///PointingToDeclaration/lib/jupyter.kotlin/-compiler-args/index.html
 $dokka.location:jupyter.kotlin/CompilerArgs/CompilerArgs/#kotlin.Array[kotlin.String]/PointingToDeclaration/lib/jupyter.kotlin/-compiler-args/-compiler-args.html
