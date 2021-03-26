@@ -11,6 +11,9 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.example/GettingStartedIntegration/
 $dokka.location:org.jetbrains.kotlinx.jupyter.example/GettingStartedIntegration/onLoaded/org.jetbrains.kotlinx.jupyter.api.libraries.JupyterIntegration.Builder#/PointingToDeclaration/getting-started/org.jetbrains.kotlinx.jupyter.example/-getting-started-integration/on-loaded.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.example/MarkerAnnotation///PointingToDeclaration/getting-started/org.jetbrains.kotlinx.jupyter.example/-marker-annotation/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.example/MarkerAnnotation/MarkerAnnotation/#/PointingToDeclaration/getting-started/org.jetbrains.kotlinx.jupyter.example/-marker-annotation/-marker-annotation.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.example/MyClass///PointingToDeclaration/getting-started/org.jetbrains.kotlinx.jupyter.example/-my-class/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.example/MyClass/MyClass/#/PointingToDeclaration/getting-started/org.jetbrains.kotlinx.jupyter.example/-my-class/-my-class.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.example/MyClass/render/#org.jetbrains.kotlinx.jupyter.api.Notebook/PointingToDeclaration/getting-started/org.jetbrains.kotlinx.jupyter.example/-my-class/render.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.example/Person///PointingToDeclaration/getting-started/org.jetbrains.kotlinx.jupyter.example/-person/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.example/Person/Person/#kotlin.String#kotlin.String#kotlin.Int#kotlin.collections.MutableList[org.jetbrains.kotlinx.jupyter.example.Car]/PointingToDeclaration/getting-started/org.jetbrains.kotlinx.jupyter.example/-person/-person.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.example/Person/age/#/PointingToDeclaration/getting-started/org.jetbrains.kotlinx.jupyter.example/-person/age.html
