@@ -6,7 +6,7 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.ext.integration/Integration/Integr
 $dokka.location:org.jetbrains.kotlinx.jupyter.ext.integration/Integration/onLoaded/org.jetbrains.kotlinx.jupyter.api.libraries.JupyterIntegration.Builder#/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext.integration/-integration/on-loaded.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.ext////PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.ext//HTML/#java.io.File#kotlin.Boolean/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-h-t-m-l.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.ext//renderLatex/#kotlin.String#kotlin.Boolean/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/render-latex.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext//LATEX/#kotlin.String#kotlin.Boolean/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-l-a-t-e-x.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.ext/HTMLAttr///PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-h-t-m-l-attr/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.ext/HTMLAttr/HTMLAttr/#kotlin.String#kotlin.String/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-h-t-m-l-attr/-h-t-m-l-attr.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.ext/HTMLAttr/name/#/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-h-t-m-l-attr/name.html
