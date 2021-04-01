@@ -202,6 +202,7 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelHost/scheduleExecu
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelHost/updateDisplay/#kotlin.Any#kotlin.String?/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-host/update-display.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelVersion.Companion///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-version/-companion/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelVersion.Companion/DEV_PREFIX/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-version/-companion/-d-e-v_-p-r-e-f-i-x.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelVersion.Companion/DEV_SEP/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-version/-companion/-d-e-v_-s-e-p.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelVersion.Companion/SEP/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-version/-companion/-s-e-p.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelVersion.Companion/from/#kotlin.Int#kotlin.Int#kotlin.Int#kotlin.Int?#kotlin.Int?/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-version/-companion/from.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelVersion.Companion/from/#kotlin.String/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-version/-companion/from.html
@@ -215,6 +216,7 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelVersion/hashCode/#
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelVersion/major/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-version/major.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelVersion/micro/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-version/micro.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelVersion/minor/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-version/minor.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelVersion/toMavenVersion/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-version/to-maven-version.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelVersion/toString/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-version/to-string.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypedResult///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-mime-typed-result/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypedResult/MimeTypedResult/#kotlin.collections.Map[kotlin.String,kotlin.String]#kotlin.Boolean#kotlin.String?/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-mime-typed-result/-mime-typed-result.html
