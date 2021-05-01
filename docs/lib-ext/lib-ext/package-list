@@ -19,6 +19,7 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image.Companion/embedSrc/#kotl
 $dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image.Companion/loadData/#java.io.File/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/-companion/load-data.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image.Companion/referSrc/#kotlin.String/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/-companion/refer-src.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image///PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image/Image/#java.awt.image.BufferedImage#kotlin.String/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/-image.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image/Image/#java.io.File#kotlin.Boolean/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/-image.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image/Image/#kotlin.ByteArray#kotlin.String/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/-image.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.ext/Image/Image/#kotlin.String#kotlin.Boolean/PointingToDeclaration/lib-ext/org.jetbrains.kotlinx.jupyter.ext/-image/-image.html
