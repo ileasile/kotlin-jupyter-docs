@@ -32,6 +32,9 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/GraphNode/biNodes/#/Poi
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/GraphNode/inNodes/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-graph-node/in-nodes.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/GraphNode/label/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-graph-node/label.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/GraphNode/outNodes/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-graph-node/out-nodes.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/GraphNodes///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-graph-nodes/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/GraphNodes/GraphNodes/#kotlin.collections.Iterable[org.jetbrains.kotlinx.jupyter.api.graphs.GraphNode[TypeParam(bounds=[kotlin.Any?])]]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-graph-nodes/-graph-nodes.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/GraphNodes/nodes/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-graph-nodes/nodes.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/Label///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-label/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/Label/shape/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-label/shape.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/Label/text/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-label/text.html
