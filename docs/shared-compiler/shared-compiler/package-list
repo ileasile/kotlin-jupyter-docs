@@ -68,6 +68,8 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.compiler/ScriptImportsCollector///
 $dokka.location:org.jetbrains.kotlinx.jupyter.compiler/ScriptImportsCollector/collect/#kotlin.script.experimental.api.SourceCode/PointingToDeclaration/shared-compiler/org.jetbrains.kotlinx.jupyter.compiler/-script-imports-collector/collect.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.compiler/ScriptImportsCollector/popAddedImports/#/PointingToDeclaration/shared-compiler/org.jetbrains.kotlinx.jupyter.compiler/-script-imports-collector/pop-added-imports.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.config////PointingToDeclaration/shared-compiler/org.jetbrains.kotlinx.jupyter.config/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.config//JITPACK/#/PointingToDeclaration/shared-compiler/org.jetbrains.kotlinx.jupyter.config/-j-i-t-p-a-c-k.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.config//MAVEN_CENTRAL/#/PointingToDeclaration/shared-compiler/org.jetbrains.kotlinx.jupyter.config/-m-a-v-e-n_-c-e-n-t-r-a-l.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.config//catchAll/org.slf4j.Logger#java.io.PrintStream#kotlin.String#kotlin.Function0[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/shared-compiler/org.jetbrains.kotlinx.jupyter.config/catch-all.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.config//currentKernelVersion/#/PointingToDeclaration/shared-compiler/org.jetbrains.kotlinx.jupyter.config/current-kernel-version.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.config//defaultGlobalImports/#/PointingToDeclaration/shared-compiler/org.jetbrains.kotlinx.jupyter.config/default-global-imports.html

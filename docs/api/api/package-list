@@ -1,5 +1,49 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels////PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/FilteringPropObjectLabel///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-filtering-prop-object-label/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/FilteringPropObjectLabel/FilteringPropObjectLabel/#TypeParam(bounds=[kotlin.Any])#kotlin.String#kotlin.collections.Collection[kotlin.String]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-filtering-prop-object-label/-filtering-prop-object-label.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/FilteringPropObjectLabel/mainText/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-filtering-prop-object-label/main-text.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/FilteringPropObjectLabel/shouldRenderProperty/#kotlin.reflect.KProperty1[TypeParam(bounds=[kotlin.Any]),*]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-filtering-prop-object-label/should-render-property.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/KClassLabel///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-k-class-label/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/KClassLabel/KClassLabel/#kotlin.reflect.KClass[*]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-k-class-label/-k-class-label.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/KClassLabel/mainText/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-k-class-label/main-text.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/KClassLabel/properties/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-k-class-label/properties.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/PropObjectLabel///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-prop-object-label/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/PropObjectLabel/PropObjectLabel/#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-prop-object-label/-prop-object-label.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/PropObjectLabel/mainText/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-prop-object-label/main-text.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/PropObjectLabel/properties/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-prop-object-label/properties.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/PropObjectLabel/shouldRenderProperty/#kotlin.reflect.KProperty1[TypeParam(bounds=[kotlin.Any]),*]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-prop-object-label/should-render-property.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/PropObjectLabel/value/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-prop-object-label/value.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/RecordTableLabel///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-record-table-label/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/RecordTableLabel/RecordTableLabel/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-record-table-label/-record-table-label.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/RecordTableLabel/mainText/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-record-table-label/main-text.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/RecordTableLabel/properties/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-record-table-label/properties.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/RecordTableLabel/shape/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-record-table-label/shape.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/RecordTableLabel/text/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-record-table-label/text.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/TextLabel///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-text-label/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/TextLabel/TextLabel/#kotlin.String#kotlin.String?/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-text-label/-text-label.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/TextLabel/shape/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-text-label/shape.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs.labels/TextLabel/text/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs.labels/-text-label/text.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs////PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/GraphNode.Companion///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-graph-node/-companion/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/GraphNode///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-graph-node/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/GraphNode/biNodes/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-graph-node/bi-nodes.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/GraphNode/inNodes/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-graph-node/in-nodes.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/GraphNode/label/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-graph-node/label.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/GraphNode/outNodes/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-graph-node/out-nodes.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/Label///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-label/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/Label/shape/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-label/shape.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/Label/text/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-label/text.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/NodeWrapper///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-node-wrapper/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/NodeWrapper/NodeWrapper/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-node-wrapper/-node-wrapper.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/NodeWrapper/biNodes/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-node-wrapper/bi-nodes.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/NodeWrapper/equals/#kotlin.Any?/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-node-wrapper/equals.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/NodeWrapper/hashCode/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-node-wrapper/hash-code.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/NodeWrapper/inNodes/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-node-wrapper/in-nodes.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/NodeWrapper/label/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-node-wrapper/label.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/NodeWrapper/outNodes/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-node-wrapper/out-nodes.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.graphs/NodeWrapper/value/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.graphs/-node-wrapper/value.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.libraries////PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.libraries/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.libraries//KOTLIN_JUPYTER_LIBRARIES_FILE_NAME/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.libraries/-k-o-t-l-i-n_-j-u-p-y-t-e-r_-l-i-b-r-a-r-i-e-s_-f-i-l-e_-n-a-m-e.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.libraries//KOTLIN_JUPYTER_RESOURCES_PATH/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.libraries/-k-o-t-l-i-n_-j-u-p-y-t-e-r_-r-e-s-o-u-r-c-e-s_-p-a-t-h.html
@@ -301,6 +345,8 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.util/ResourceBunchSerializer/deser
 $dokka.location:org.jetbrains.kotlinx.jupyter.util/ResourceBunchSerializer/serialize/#kotlinx.serialization.encoding.Encoder#org.jetbrains.kotlinx.jupyter.api.libraries.ResourceFallbacksBundle/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.util/-resource-bunch-serializer/serialize.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.util/TypeHandlerCodeExecutionSerializer///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.util/-type-handler-code-execution-serializer/index.html
 org.jetbrains.kotlinx.jupyter.api
+org.jetbrains.kotlinx.jupyter.api.graphs
+org.jetbrains.kotlinx.jupyter.api.graphs.labels
 org.jetbrains.kotlinx.jupyter.api.libraries
 org.jetbrains.kotlinx.jupyter.util
 
