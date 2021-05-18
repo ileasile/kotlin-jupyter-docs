@@ -84,6 +84,7 @@ $dokka.location:jupyter.kotlin/Repository/value/#/PointingToDeclaration/lib/jup
 $dokka.location:jupyter.kotlin/ScriptTemplateWithDisplayHelpers///PointingToDeclaration/lib/jupyter.kotlin/-script-template-with-display-helpers/index.html
 $dokka.location:jupyter.kotlin/ScriptTemplateWithDisplayHelpers/DISPLAY/#kotlin.Any/PointingToDeclaration/lib/jupyter.kotlin/-script-template-with-display-helpers/-d-i-s-p-l-a-y.html
 $dokka.location:jupyter.kotlin/ScriptTemplateWithDisplayHelpers/EXECUTE/#kotlin.String/PointingToDeclaration/lib/jupyter.kotlin/-script-template-with-display-helpers/-e-x-e-c-u-t-e.html
+$dokka.location:jupyter.kotlin/ScriptTemplateWithDisplayHelpers/HOST/#/PointingToDeclaration/lib/jupyter.kotlin/-script-template-with-display-helpers/-h-o-s-t.html
 $dokka.location:jupyter.kotlin/ScriptTemplateWithDisplayHelpers/JavaRuntimeUtils/#/PointingToDeclaration/lib/jupyter.kotlin/-script-template-with-display-helpers/-java-runtime-utils.html
 $dokka.location:jupyter.kotlin/ScriptTemplateWithDisplayHelpers/Out/#/PointingToDeclaration/lib/jupyter.kotlin/-script-template-with-display-helpers/-out.html
 $dokka.location:jupyter.kotlin/ScriptTemplateWithDisplayHelpers/ScriptTemplateWithDisplayHelpers/#org.jetbrains.kotlinx.jupyter.api.Notebook#jupyter.kotlin.KotlinKernelHostProvider/PointingToDeclaration/lib/jupyter.kotlin/-script-template-with-display-helpers/-script-template-with-display-helpers.html
