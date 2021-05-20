@@ -3,6 +3,7 @@ $dokka.linkExtension:html
 $dokka.location:org.jetbrains.kotlinx.jupyter.common////PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.common//assertLooksLikeReplCommand/#kotlin.String/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/assert-looks-like-repl-command.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.common//assertSuccessful/org.jetbrains.kotlinx.jupyter.common.ResponseWrapper#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/assert-successful.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.common//createHttpClient/#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/create-http-client.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.common//decodeJson/org.jetbrains.kotlinx.jupyter.common.ResponseWrapper#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/decode-json.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.common//getHttp/#kotlin.String/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/get-http.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.common//getNameForUser/#kotlin.String/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/get-name-for-user.html
