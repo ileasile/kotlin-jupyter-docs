@@ -79,9 +79,7 @@ $dokka.location:jupyter.kotlin/Native/loadLibrary/#kotlin.reflect.KClass[*]#kotl
 $dokka.location:jupyter.kotlin/Native/loadLibrary/#kotlin.reflect.KClass[*]#kotlin.String#kotlin.String/PointingToDeclaration/lib/jupyter.kotlin/-native/load-library.html
 $dokka.location:jupyter.kotlin/Native/loadLibrary/#kotlin.reflect.KClass[*]#kotlin.String/PointingToDeclaration/lib/jupyter.kotlin/-native/load-library.html
 $dokka.location:jupyter.kotlin/Repository///PointingToDeclaration/lib/jupyter.kotlin/-repository/index.html
-$dokka.location:jupyter.kotlin/Repository/Repository/#kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/lib/jupyter.kotlin/-repository/-repository.html
-$dokka.location:jupyter.kotlin/Repository/password/#/PointingToDeclaration/lib/jupyter.kotlin/-repository/password.html
-$dokka.location:jupyter.kotlin/Repository/username/#/PointingToDeclaration/lib/jupyter.kotlin/-repository/username.html
+$dokka.location:jupyter.kotlin/Repository/Repository/#kotlin.String/PointingToDeclaration/lib/jupyter.kotlin/-repository/-repository.html
 $dokka.location:jupyter.kotlin/Repository/value/#/PointingToDeclaration/lib/jupyter.kotlin/-repository/value.html
 $dokka.location:jupyter.kotlin/ScriptTemplateWithDisplayHelpers///PointingToDeclaration/lib/jupyter.kotlin/-script-template-with-display-helpers/index.html
 $dokka.location:jupyter.kotlin/ScriptTemplateWithDisplayHelpers/DISPLAY/#kotlin.Any/PointingToDeclaration/lib/jupyter.kotlin/-script-template-with-display-helpers/-d-i-s-p-l-a-y.html
