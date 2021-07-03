@@ -226,6 +226,8 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.api.libraries/VariablesSubstitutio
 $dokka.location:org.jetbrains.kotlinx.jupyter.api////PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api//HTML/#kotlin.String#kotlin.Boolean/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-h-t-m-l.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api//MIME/#kotlin.Array[kotlin.Pair[kotlin.String,kotlin.String]]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-m-i-m-e.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api//bufferedImageRenderer/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/buffered-image-renderer.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api//createRenderer/#kotlin.Function1[TypeParam(bounds=[kotlin.Any]),kotlin.Any?]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/create-renderer.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api//declare/org.jetbrains.kotlinx.jupyter.api.KotlinKernelHost#kotlin.Array[kotlin.Pair[kotlin.String,kotlin.Any?]]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/declare.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api//declare/org.jetbrains.kotlinx.jupyter.api.KotlinKernelHost#kotlin.Array[org.jetbrains.kotlinx.jupyter.api.VariableDeclaration]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/declare.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api//htmlResult/#kotlin.String#kotlin.Boolean/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/html-result.html
