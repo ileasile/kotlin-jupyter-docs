@@ -1,6 +1,7 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.plugin.tasks////PointingToDeclaration/kotlin-jupyter-api-gradle-plugin/org.jetbrains.kotlinx.jupyter.api.plugin.tasks/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.plugin.tasks//whenAdded/org.gradle.api.NamedDomainObjectCollection[TypeParam(bounds=[kotlin.Any?])]#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),kotlin.Boolean]#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]/PointingToDeclaration/kotlin-jupyter-api-gradle-plugin/org.jetbrains.kotlinx.jupyter.api.plugin.tasks/when-added.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.plugin.tasks/JupyterApiResourcesTask.Companion///PointingToDeclaration/kotlin-jupyter-api-gradle-plugin/org.jetbrains.kotlinx.jupyter.api.plugin.tasks/-jupyter-api-resources-task/-companion/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.plugin.tasks/JupyterApiResourcesTask.FQNAware///PointingToDeclaration/kotlin-jupyter-api-gradle-plugin/org.jetbrains.kotlinx.jupyter.api.plugin.tasks/-jupyter-api-resources-task/-f-q-n-aware/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.plugin.tasks/JupyterApiResourcesTask.FQNAware/FQNAware/#kotlin.String/PointingToDeclaration/kotlin-jupyter-api-gradle-plugin/org.jetbrains.kotlinx.jupyter.api.plugin.tasks/-jupyter-api-resources-task/-f-q-n-aware/-f-q-n-aware.html
