@@ -331,6 +331,7 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypedResult/id/#/PointingT
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypedResult/isolatedHtml/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-mime-typed-result/isolated-html.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypedResult/toJson/#kotlinx.serialization.json.JsonObject/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-mime-typed-result/to-json.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/Notebook///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-notebook/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/Notebook/cellVariables/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-notebook/cell-variables.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/Notebook/cellsList/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-notebook/cells-list.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/Notebook/currentCell/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-notebook/current-cell.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/Notebook/getAllDisplays/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-notebook/get-all-displays.html
@@ -342,6 +343,7 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.api/Notebook/jreInfo/#/PointingToD
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/Notebook/kernelVersion/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-notebook/kernel-version.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/Notebook/lastCell/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-notebook/last-cell.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/Notebook/renderersProcessor/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-notebook/renderers-processor.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/Notebook/variablesState/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-notebook/variables-state.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/PrecompiledRendererTypeHandler///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-precompiled-renderer-type-handler/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/PrecompiledRendererTypeHandler/mayBePrecompiled/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-precompiled-renderer-type-handler/may-be-precompiled.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/PrecompiledRendererTypeHandler/precompile/#kotlin.String#kotlin.String/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-precompiled-renderer-type-handler/precompile.html
@@ -380,6 +382,18 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableDeclaration/isMutable/
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableDeclaration/name/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-declaration/name.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableDeclaration/type/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-declaration/type.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableDeclaration/value/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-declaration/value.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableState///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-state/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableState/property/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-state/property.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableState/scriptInstance/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-state/script-instance.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableState/stringValue/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-state/string-value.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableState/value/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-state/value.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableStateImpl///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-state-impl/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableStateImpl/VariableStateImpl/#kotlin.reflect.KProperty1[kotlin.Any,*]#kotlin.Any/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-state-impl/-variable-state-impl.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableStateImpl/property/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-state-impl/property.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableStateImpl/scriptInstance/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-state-impl/script-instance.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableStateImpl/stringValue/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-state-impl/string-value.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableStateImpl/update/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-state-impl/update.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableStateImpl/value/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-state-impl/value.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.util////PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.util/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.util//replaceVariables/#kotlin.String#kotlin.collections.Map[kotlin.String,kotlin.String]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.util/replace-variables.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.util//replaceVariables/kotlin.collections.Iterable[TypeParam(bounds=[org.jetbrains.kotlinx.jupyter.api.libraries.VariablesSubstitutionAware[^]])]#kotlin.collections.Map[kotlin.String,kotlin.String]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.util/replace-variables.html

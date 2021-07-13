@@ -30,6 +30,11 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.common/ReplCommand.HELP/desc/#/Poi
 $dokka.location:org.jetbrains.kotlinx.jupyter.common/ReplCommand.HELP/name/#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/-repl-command/-h-e-l-p/name.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.common/ReplCommand.HELP/nameForUser/#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/-repl-command/-h-e-l-p/name-for-user.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.common/ReplCommand.HELP/ordinal/#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/-repl-command/-h-e-l-p/ordinal.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.common/ReplCommand.VARS///PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/-repl-command/-v-a-r-s/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.common/ReplCommand.VARS/desc/#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/-repl-command/-v-a-r-s/desc.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.common/ReplCommand.VARS/name/#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/-repl-command/-v-a-r-s/name.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.common/ReplCommand.VARS/nameForUser/#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/-repl-command/-v-a-r-s/name-for-user.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.common/ReplCommand.VARS/ordinal/#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/-repl-command/-v-a-r-s/ordinal.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.common/ReplCommand///PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/-repl-command/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.common/ReplCommand/desc/#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/-repl-command/desc.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.common/ReplCommand/nameForUser/#/PointingToDeclaration/common-dependencies/org.jetbrains.kotlinx.jupyter.common/-repl-command/name-for-user.html
