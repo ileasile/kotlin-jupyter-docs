@@ -33,3 +33,5 @@ org.jetbrains.kotlinx.jupyter.config
 org.jetbrains.kotlinx.jupyter.exceptions
 org.jetbrains.kotlinx.jupyter.libraries
 org.jetbrains.kotlinx.jupyter.magics
+module:test-kit
+org.jetbrains.kotlinx.jupyter.testkit
