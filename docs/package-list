@@ -35,4 +35,3 @@ org.jetbrains.kotlinx.jupyter.libraries
 org.jetbrains.kotlinx.jupyter.magics
 module:test-kit
 org.jetbrains.kotlinx.jupyter.testkit
-org.jetbrains.kotlinx.jupyter.testkit.notebook
