@@ -6,6 +6,7 @@ org.jetbrains.kotlinx.jupyter.api
 org.jetbrains.kotlinx.jupyter.api.graphs
 org.jetbrains.kotlinx.jupyter.api.graphs.labels
 org.jetbrains.kotlinx.jupyter.api.libraries
+org.jetbrains.kotlinx.jupyter.api.session
 org.jetbrains.kotlinx.jupyter.util
 module:api-annotations
 org.jetbrains.kotlinx.jupyter.api.annotations
