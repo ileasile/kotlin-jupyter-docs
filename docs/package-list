@@ -19,6 +19,7 @@ org.jetbrains.kotlinx.jupyter.api.plugin
 org.jetbrains.kotlinx.jupyter.api.plugin.tasks
 module:lib
 jupyter.kotlin
+jupyter.kotlin.providers
 jupyter.kotlin.receivers
 module:lib-ext
 org.jetbrains.kotlinx.jupyter.ext
