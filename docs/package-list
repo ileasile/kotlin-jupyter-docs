@@ -37,5 +37,6 @@ org.jetbrains.kotlinx.jupyter.execution
 org.jetbrains.kotlinx.jupyter.libraries
 org.jetbrains.kotlinx.jupyter.magics
 org.jetbrains.kotlinx.jupyter.messaging
+org.jetbrains.kotlinx.jupyter.startup
 module:test-kit
 org.jetbrains.kotlinx.jupyter.testkit
