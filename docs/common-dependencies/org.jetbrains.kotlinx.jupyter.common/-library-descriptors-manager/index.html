@@ -1,341 +1,359 @@
+<!doctype html>
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>LibraryDescriptorsManager</title>
-</head><body><link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script><script type="text/javascript" src="../../../scripts/main.js" async></script>
-  
-    <div id="container">
-      <div id="leftColumn"><a href="../../../index.html">
-            <div id="logo"></div>
-          </a>
-        <div id="paneSearch"></div>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>kotlin-jupyter-kernel</span>            </a>    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
         <div id="sideMenu"></div>
-      </div>
-      <div id="main">
-        <script type="text/javascript" src="../../../scripts/main.js"></script><div id="leftToggler"><span class="icon-toggler"></span></div>
-
-        <div class="main-content" id="content" pageids="common-dependencies::org.jetbrains.kotlinx.jupyter.common/LibraryDescriptorsManager///PointingToDeclaration//-1436319057">
-          <div class="navigation-wrapper" id="navigation-wrapper">
-            <div class="breadcrumbs"><a href="../../index.html">common-dependencies</a>/<a href="../index.html">org.jetbrains.kotlinx.jupyter.common</a>/<a href="index.html">LibraryDescriptorsManager</a></div>
-            <div class="pull-right d-flex">
-              <div id="searchBar"></div>
-            </div>
-          </div>
-          <div class="cover ">
-            <h1 class="cover"><span>Library</span><wbr><span>Descriptors</span><wbr><span><span>Manager</span></span></h1>
-            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace">class <a href="index.html">LibraryDescriptorsManager</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-          </div>
-          <div class="tabbedcontent">
-            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
-            <div class="tabs-section-body">
-              <h2 class="">Types</h2>
-              <div class="table" data-togglable="Types"><a data-name="1958510488%2FClasslikes%2F-1436319057" anchor-label="CommitInfo" id="1958510488%2FClasslikes%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-commit-info/index.html"><span>Commit</span><wbr><span><span>Info</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1958510488%2FClasslikes%2F-1436319057"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace">class <a href="-commit-info/index.html">CommitInfo</a>(sha: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, timestamp: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="common-dependencies::org.jetbrains.kotlinx.jupyter.common/LibraryDescriptorsManager///PointingToDeclaration//-1436319057">
+  <div class="breadcrumbs"><a href="../../index.html">common-dependencies</a><span class="delimiter">/</span><a href="../index.html">org.jetbrains.kotlinx.jupyter.common</a><span class="delimiter">/</span><span class="current">LibraryDescriptorsManager</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Library</span><wbr><span>Descriptors</span><wbr><span><span>Manager</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">LibraryDescriptorsManager</a></div></div></div>
   </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1707783897%2FClasslikes%2F-1436319057" anchor-label="Companion" id="1707783897%2FClasslikes%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-companion/index.html"><span><span>Companion</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1707783897%2FClasslikes%2F-1436319057"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace">object <a href="-companion/index.html">Companion</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h2 class="">Functions</h2>
-              <div class="table" data-togglable="Functions"><a data-name="1746140725%2FFunctions%2F-1436319057" anchor-label="checkIfRefUpToDate" id="1746140725%2FFunctions%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="check-if-ref-up-to-date.html"><span>check</span><wbr><span>If</span><wbr><span>Ref</span><wbr><span>Up</span><wbr><span>To</span><wbr><span><span>Date</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1746140725%2FFunctions%2F-1436319057"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="check-if-ref-up-to-date.html">checkIfRefUpToDate</a>(remoteRef: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1050609527%2FFunctions%2F-1436319057" anchor-label="checkRefExistence" id="-1050609527%2FFunctions%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="check-ref-existence.html"><span>check</span><wbr><span>Ref</span><wbr><span><span>Existence</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1050609527%2FFunctions%2F-1436319057"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="check-ref-existence.html">checkRefExistence</a>(ref: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="916361906%2FFunctions%2F-1436319057" anchor-label="descriptorFileName" id="916361906%2FFunctions%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="descriptor-file-name.html"><span>descriptor</span><wbr><span>File</span><wbr><span><span>Name</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="916361906%2FFunctions%2F-1436319057"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="descriptor-file-name.html">descriptorFileName</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1240394710%2FFunctions%2F-1436319057" anchor-label="downloadLatestPropertiesFile" id="-1240394710%2FFunctions%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="download-latest-properties-file.html"><span>download</span><wbr><span>Latest</span><wbr><span>Properties</span><wbr><span><span>File</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1240394710%2FFunctions%2F-1436319057"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="download-latest-properties-file.html">downloadLatestPropertiesFile</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1583428579%2FFunctions%2F-1436319057" anchor-label="downloadLibraries" id="1583428579%2FFunctions%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="download-libraries.html"><span>download</span><wbr><span><span>Libraries</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1583428579%2FFunctions%2F-1436319057"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="download-libraries.html">downloadLibraries</a>(ref: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-322320903%2FFunctions%2F-1436319057" anchor-label="downloadLibraryDescriptor" id="-322320903%2FFunctions%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="download-library-descriptor.html"><span>download</span><wbr><span>Library</span><wbr><span><span>Descriptor</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-322320903%2FFunctions%2F-1436319057"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="download-library-descriptor.html">downloadLibraryDescriptor</a>(ref: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="108043832%2FFunctions%2F-1436319057" anchor-label="getLatestCommitToLibraries" id="108043832%2FFunctions%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-latest-commit-to-libraries.html"><span>get</span><wbr><span>Latest</span><wbr><span>Commit</span><wbr><span>To</span><wbr><span><span>Libraries</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="108043832%2FFunctions%2F-1436319057"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="get-latest-commit-to-libraries.html">getLatestCommitToLibraries</a>(ref: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, sinceTimestamp: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null): <a href="-commit-info/index.html">LibraryDescriptorsManager.CommitInfo</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="661232422%2FFunctions%2F-1436319057" anchor-label="homeLibrariesDir" id="661232422%2FFunctions%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="home-libraries-dir.html"><span>home</span><wbr><span>Libraries</span><wbr><span><span>Dir</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="661232422%2FFunctions%2F-1436319057"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="home-libraries-dir.html">homeLibrariesDir</a>(homeDir: <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a>? = null): <span data-unresolved-link="/<ERROR CLASS>///PointingToDeclaration/">&lt;ERROR CLASS&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1851564730%2FFunctions%2F-1436319057" anchor-label="isLibraryDescriptor" id="1851564730%2FFunctions%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="is-library-descriptor.html"><span>is</span><wbr><span>Library</span><wbr><span><span>Descriptor</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1851564730%2FFunctions%2F-1436319057"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="is-library-descriptor.html">isLibraryDescriptor</a>(file: <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1319775339%2FFunctions%2F-1436319057" anchor-label="resourceFilePath" id="1319775339%2FFunctions%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="resource-file-path.html"><span>resource</span><wbr><span>File</span><wbr><span><span>Path</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1319775339%2FFunctions%2F-1436319057"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="resource-file-path.html">resourceFilePath</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h2 class="">Properties</h2>
-              <div class="table" data-togglable="Properties"><a data-name="1202288679%2FProperties%2F-1436319057" anchor-label="commitHashFile" id="1202288679%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="commit-hash-file.html">commitHashFile</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1202288679%2FProperties%2F-1436319057"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><a data-name="1202288679%2FProperties%2F-1436319057" anchor-label="commitHashFile" id="1202288679%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a><div class="symbol monospace">val <a href="commit-hash-file.html">commitHashFile</a>: <span data-unresolved-link="/<ERROR CLASS>///PointingToDeclaration/">&lt;ERROR CLASS&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1506976047%2FProperties%2F-1436319057" anchor-label="defaultBranch" id="1506976047%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="default-branch.html">defaultBranch</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1506976047%2FProperties%2F-1436319057"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><a data-name="1506976047%2FProperties%2F-1436319057" anchor-label="defaultBranch" id="1506976047%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a><div class="symbol monospace">val <a href="default-branch.html">defaultBranch</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1866148628%2FProperties%2F-1436319057" anchor-label="latestCommitOnDefaultBranch" id="-1866148628%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="latest-commit-on-default-branch.html">latestCommitOnDefaultBranch</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1866148628%2FProperties%2F-1436319057"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><a data-name="-1866148628%2FProperties%2F-1436319057" anchor-label="latestCommitOnDefaultBranch" id="-1866148628%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a><div class="symbol monospace">val <a href="latest-commit-on-default-branch.html">latestCommitOnDefaultBranch</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-410852557%2FProperties%2F-1436319057" anchor-label="localLibrariesDir" id="-410852557%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="local-libraries-dir.html">localLibrariesDir</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-410852557%2FProperties%2F-1436319057"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><a data-name="-410852557%2FProperties%2F-1436319057" anchor-label="localLibrariesDir" id="-410852557%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a><div class="symbol monospace">val <a href="local-libraries-dir.html">localLibrariesDir</a>: <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1146059016%2FProperties%2F-1436319057" anchor-label="localPropertiesFile" id="-1146059016%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="local-properties-file.html">localPropertiesFile</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1146059016%2FProperties%2F-1436319057"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><a data-name="-1146059016%2FProperties%2F-1436319057" anchor-label="localPropertiesFile" id="-1146059016%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a><div class="symbol monospace">val <a href="local-properties-file.html">localPropertiesFile</a>: <span data-unresolved-link="/<ERROR CLASS>///PointingToDeclaration/">&lt;ERROR CLASS&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1196236786%2FProperties%2F-1436319057" anchor-label="userCacheDir" id="1196236786%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="user-cache-dir.html">userCacheDir</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1196236786%2FProperties%2F-1436319057"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><a data-name="1196236786%2FProperties%2F-1436319057" anchor-label="userCacheDir" id="1196236786%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a><div class="symbol monospace">val <a href="user-cache-dir.html">userCacheDir</a>: <span data-unresolved-link="/<ERROR CLASS>///PointingToDeclaration/">&lt;ERROR CLASS&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-27825527%2FProperties%2F-1436319057" anchor-label="userLibrariesDir" id="-27825527%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="user-libraries-dir.html">userLibrariesDir</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-27825527%2FProperties%2F-1436319057"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><a data-name="-27825527%2FProperties%2F-1436319057" anchor-label="userLibrariesDir" id="-27825527%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a><div class="symbol monospace">val <a href="user-libraries-dir.html">userLibrariesDir</a>: <span data-unresolved-link="/<ERROR CLASS>///PointingToDeclaration/">&lt;ERROR CLASS&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="1958510488%2FClasslikes%2F-1436319057" anchor-label="CommitInfo" id="1958510488%2FClasslikes%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-commit-info/index.html"><span>Commit</span><wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1958510488%2FClasslikes%2F-1436319057"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-commit-info/index.html">CommitInfo</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>sha<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>timestamp<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+<a data-name="1707783897%2FClasslikes%2F-1436319057" anchor-label="Companion" id="1707783897%2FClasslikes%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1707783897%2FClasslikes%2F-1436319057"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="1746140725%2FFunctions%2F-1436319057" anchor-label="checkIfRefUpToDate" id="1746140725%2FFunctions%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="check-if-ref-up-to-date.html"><span>check</span><wbr><span>If</span><wbr><span>Ref</span><wbr><span>Up</span><wbr><span>To</span><wbr><span><span>Date</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1746140725%2FFunctions%2F-1436319057"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="check-if-ref-up-to-date.html"><span class="token function">checkIfRefUpToDate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">remoteRef<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1050609527%2FFunctions%2F-1436319057" anchor-label="checkRefExistence" id="-1050609527%2FFunctions%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="check-ref-existence.html"><span>check</span><wbr><span>Ref</span><wbr><span><span>Existence</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1050609527%2FFunctions%2F-1436319057"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="check-ref-existence.html"><span class="token function">checkRefExistence</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ref<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="916361906%2FFunctions%2F-1436319057" anchor-label="descriptorFileName" id="916361906%2FFunctions%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="descriptor-file-name.html"><span>descriptor</span><wbr><span>File</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="916361906%2FFunctions%2F-1436319057"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="descriptor-file-name.html"><span class="token function">descriptorFileName</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1240394710%2FFunctions%2F-1436319057" anchor-label="downloadLatestPropertiesFile" id="-1240394710%2FFunctions%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="download-latest-properties-file.html"><span>download</span><wbr><span>Latest</span><wbr><span>Properties</span><wbr><span><span>File</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1240394710%2FFunctions%2F-1436319057"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="download-latest-properties-file.html"><span class="token function">downloadLatestPropertiesFile</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1583428579%2FFunctions%2F-1436319057" anchor-label="downloadLibraries" id="1583428579%2FFunctions%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="download-libraries.html"><span>download</span><wbr><span><span>Libraries</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1583428579%2FFunctions%2F-1436319057"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="download-libraries.html"><span class="token function">downloadLibraries</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ref<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-322320903%2FFunctions%2F-1436319057" anchor-label="downloadLibraryDescriptor" id="-322320903%2FFunctions%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="download-library-descriptor.html"><span>download</span><wbr><span>Library</span><wbr><span><span>Descriptor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-322320903%2FFunctions%2F-1436319057"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="download-library-descriptor.html"><span class="token function">downloadLibraryDescriptor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ref<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="108043832%2FFunctions%2F-1436319057" anchor-label="getLatestCommitToLibraries" id="108043832%2FFunctions%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-latest-commit-to-libraries.html"><span>get</span><wbr><span>Latest</span><wbr><span>Commit</span><wbr><span>To</span><wbr><span><span>Libraries</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="108043832%2FFunctions%2F-1436319057"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-latest-commit-to-libraries.html"><span class="token function">getLatestCommitToLibraries</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ref<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">sinceTimestamp<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-commit-info/index.html">LibraryDescriptorsManager.CommitInfo</a><span class="token operator">?</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="661232422%2FFunctions%2F-1436319057" anchor-label="homeLibrariesDir" id="661232422%2FFunctions%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="home-libraries-dir.html"><span>home</span><wbr><span>Libraries</span><wbr><span><span>Dir</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="661232422%2FFunctions%2F-1436319057"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="home-libraries-dir.html"><span class="token function">homeLibrariesDir</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">homeDir<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1851564730%2FFunctions%2F-1436319057" anchor-label="isLibraryDescriptor" id="1851564730%2FFunctions%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-library-descriptor.html"><span>is</span><wbr><span>Library</span><wbr><span><span>Descriptor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1851564730%2FFunctions%2F-1436319057"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-library-descriptor.html"><span class="token function">isLibraryDescriptor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">file<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1319775339%2FFunctions%2F-1436319057" anchor-label="resourceFilePath" id="1319775339%2FFunctions%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="resource-file-path.html"><span>resource</span><wbr><span>File</span><wbr><span><span>Path</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1319775339%2FFunctions%2F-1436319057"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="resource-file-path.html"><span class="token function">resourceFilePath</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="1202288679%2FProperties%2F-1436319057" anchor-label="commitHashFile" id="1202288679%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="commit-hash-file.html"><span>commit</span><wbr><span>Hash</span><wbr><span><span>File</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1202288679%2FProperties%2F-1436319057"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><a data-name="1202288679%2FProperties%2F-1436319057" anchor-label="commitHashFile" id="1202288679%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="commit-hash-file.html">commitHashFile</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1506976047%2FProperties%2F-1436319057" anchor-label="defaultBranch" id="1506976047%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="default-branch.html"><span>default</span><wbr><span><span>Branch</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1506976047%2FProperties%2F-1436319057"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><a data-name="1506976047%2FProperties%2F-1436319057" anchor-label="defaultBranch" id="1506976047%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="default-branch.html">defaultBranch</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1866148628%2FProperties%2F-1436319057" anchor-label="latestCommitOnDefaultBranch" id="-1866148628%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="latest-commit-on-default-branch.html"><span>latest</span><wbr><span>Commit</span><wbr><span>On</span><wbr><span>Default</span><wbr><span><span>Branch</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1866148628%2FProperties%2F-1436319057"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><a data-name="-1866148628%2FProperties%2F-1436319057" anchor-label="latestCommitOnDefaultBranch" id="-1866148628%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="latest-commit-on-default-branch.html">latestCommitOnDefaultBranch</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-410852557%2FProperties%2F-1436319057" anchor-label="localLibrariesDir" id="-410852557%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="local-libraries-dir.html"><span>local</span><wbr><span>Libraries</span><wbr><span><span>Dir</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-410852557%2FProperties%2F-1436319057"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><a data-name="-410852557%2FProperties%2F-1436319057" anchor-label="localLibrariesDir" id="-410852557%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="local-libraries-dir.html">localLibrariesDir</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1146059016%2FProperties%2F-1436319057" anchor-label="localPropertiesFile" id="-1146059016%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="local-properties-file.html"><span>local</span><wbr><span>Properties</span><wbr><span><span>File</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1146059016%2FProperties%2F-1436319057"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><a data-name="-1146059016%2FProperties%2F-1436319057" anchor-label="localPropertiesFile" id="-1146059016%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="local-properties-file.html">localPropertiesFile</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1196236786%2FProperties%2F-1436319057" anchor-label="userCacheDir" id="1196236786%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="user-cache-dir.html"><span>user</span><wbr><span>Cache</span><wbr><span><span>Dir</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1196236786%2FProperties%2F-1436319057"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><a data-name="1196236786%2FProperties%2F-1436319057" anchor-label="userCacheDir" id="1196236786%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="user-cache-dir.html">userCacheDir</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-27825527%2FProperties%2F-1436319057" anchor-label="userLibrariesDir" id="-27825527%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="user-libraries-dir.html"><span>user</span><wbr><span>Libraries</span><wbr><span><span>Dir</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-27825527%2FProperties%2F-1436319057"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><a data-name="-27825527%2FProperties%2F-1436319057" anchor-label="userLibrariesDir" id="-27825527%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="user-libraries-dir.html">userLibrariesDir</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  
-</body></html>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
 
+</body></html>
 

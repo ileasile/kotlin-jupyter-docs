@@ -1,212 +1,237 @@
+<!doctype html>
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>UseMagicsHandler</title>
-</head><body><link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script><script type="text/javascript" src="../../../scripts/main.js" async></script>
-  
-    <div id="container">
-      <div id="leftColumn"><a href="../../../index.html">
-            <div id="logo"></div>
-          </a>
-        <div id="paneSearch"></div>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>kotlin-jupyter-kernel</span>            </a>    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
         <div id="sideMenu"></div>
-      </div>
-      <div id="main">
-        <script type="text/javascript" src="../../../scripts/main.js"></script><div id="leftToggler"><span class="icon-toggler"></span></div>
-
-        <div class="main-content" id="content" pageids="shared-compiler::org.jetbrains.kotlinx.jupyter.magics/UseMagicsHandler///PointingToDeclaration//345886579">
-          <div class="navigation-wrapper" id="navigation-wrapper">
-            <div class="breadcrumbs"><a href="../../index.html">shared-compiler</a>/<a href="../index.html">org.jetbrains.kotlinx.jupyter.magics</a>/<a href="index.html">UseMagicsHandler</a></div>
-            <div class="pull-right d-flex">
-              <div id="searchBar"></div>
-            </div>
-          </div>
-          <div class="cover ">
-            <h1 class="cover"><span>Use</span><wbr><span>Magics</span><wbr><span><span>Handler</span></span></h1>
-            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace">open class <a href="index.html">UseMagicsHandler</a>(librariesProcessor: <a href="../../org.jetbrains.kotlinx.jupyter.libraries/-libraries-processor/index.html">LibrariesProcessor</a>, libraryResolutionInfoSwitcher: <a href="../../org.jetbrains.kotlinx.jupyter.libraries/-resolution-info-switcher/index.html">ResolutionInfoSwitcher</a>&lt;<a href="../../org.jetbrains.kotlinx.jupyter.libraries/-default-info-switch/index.html">DefaultInfoSwitch</a>&gt;) : <a href="../-libraries-aware-abstract-magics-handler/index.html">LibrariesAwareAbstractMagicsHandler</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-          </div>
-          <div class="tabbedcontent">
-            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button></div>
-            <div class="tabs-section-body">
-              <h2 class="">Functions</h2>
-              <div class="table" data-togglable="Functions"><a data-name="45546041%2FFunctions%2F345886579" anchor-label="getLibraries" id="45546041%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-libraries-aware-abstract-magics-handler/get-libraries.html"><span>get</span><wbr><span><span>Libraries</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="45546041%2FFunctions%2F345886579"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace">open override fun <a href="../-libraries-aware-abstract-magics-handler/get-libraries.html">getLibraries</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../../../api/org.jetbrains.kotlinx.jupyter.api.libraries/-library-definition-producer/index.html">LibraryDefinitionProducer</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="shared-compiler::org.jetbrains.kotlinx.jupyter.magics/UseMagicsHandler///PointingToDeclaration//345886579">
+  <div class="breadcrumbs"><a href="../../index.html">shared-compiler</a><span class="delimiter">/</span><a href="../index.html">org.jetbrains.kotlinx.jupyter.magics</a><span class="delimiter">/</span><span class="current">UseMagicsHandler</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Use</span><wbr><span>Magics</span><wbr><span><span>Handler</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">UseMagicsHandler</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">librariesProcessor<span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.libraries/-libraries-processor/index.html">LibrariesProcessor</a><span class="token punctuation">, </span></span><span class="parameter ">libraryResolutionInfoSwitcher<span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.libraries/-resolution-info-switcher/index.html">ResolutionInfoSwitcher</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../org.jetbrains.kotlinx.jupyter.libraries/-default-info-switch/index.html">DefaultInfoSwitch</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="../-libraries-aware-abstract-magics-handler/index.html">LibrariesAwareAbstractMagicsHandler</a></div></div></div>
   </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1926522801%2FFunctions%2F345886579" anchor-label="handle" id="-1926522801%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-magics-handler/handle.html"><span><span>handle</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1926522801%2FFunctions%2F345886579"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace">abstract fun <a href="../-magics-handler/handle.html">handle</a>(magicText: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, tryIgnoreErrors: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, parseOnly: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace">fun <a href="../-abstract-magics-handler/handle.html">handle</a>(magic: <a href="../../../common-dependencies/org.jetbrains.kotlinx.jupyter.common/-repl-line-magic/index.html">ReplLineMagic</a>, arg: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?, tryIgnoreErrors: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, parseOnly: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="694381755%2FFunctions%2F345886579" anchor-label="handleDumpClassesForSpark" id="694381755%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-abstract-magics-handler/handle-dump-classes-for-spark.html"><span>handle</span><wbr><span>Dump</span><wbr><span>Classes</span><wbr><span>For</span><wbr><span><span>Spark</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="694381755%2FFunctions%2F345886579"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace">open fun <a href="../-abstract-magics-handler/handle-dump-classes-for-spark.html">handleDumpClassesForSpark</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-561668333%2FFunctions%2F345886579" anchor-label="handleLogHandler" id="-561668333%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-abstract-magics-handler/handle-log-handler.html"><span>handle</span><wbr><span>Log</span><wbr><span><span>Handler</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-561668333%2FFunctions%2F345886579"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace">open fun <a href="../-abstract-magics-handler/handle-log-handler.html">handleLogHandler</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1130629145%2FFunctions%2F345886579" anchor-label="handleLogLevel" id="1130629145%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-abstract-magics-handler/handle-log-level.html"><span>handle</span><wbr><span>Log</span><wbr><span><span>Level</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1130629145%2FFunctions%2F345886579"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace">open fun <a href="../-abstract-magics-handler/handle-log-level.html">handleLogLevel</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="59453400%2FFunctions%2F345886579" anchor-label="handleOutput" id="59453400%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-abstract-magics-handler/handle-output.html"><span>handle</span><wbr><span><span>Output</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="59453400%2FFunctions%2F345886579"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace">open fun <a href="../-abstract-magics-handler/handle-output.html">handleOutput</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-739705497%2FFunctions%2F345886579" anchor-label="handleTrackClasspath" id="-739705497%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-abstract-magics-handler/handle-track-classpath.html"><span>handle</span><wbr><span>Track</span><wbr><span><span>Classpath</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-739705497%2FFunctions%2F345886579"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace">open fun <a href="../-abstract-magics-handler/handle-track-classpath.html">handleTrackClasspath</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="538809420%2FFunctions%2F345886579" anchor-label="handleTrackExecution" id="538809420%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-abstract-magics-handler/handle-track-execution.html"><span>handle</span><wbr><span>Track</span><wbr><span><span>Execution</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="538809420%2FFunctions%2F345886579"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace">open fun <a href="../-abstract-magics-handler/handle-track-execution.html">handleTrackExecution</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1905758335%2FFunctions%2F345886579" anchor-label="handleUse" id="-1905758335%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="handle-use.html"><span>handle</span><wbr><span><span>Use</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1905758335%2FFunctions%2F345886579"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace">open override fun <a href="handle-use.html">handleUse</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1926173092%2FFunctions%2F345886579" anchor-label="handleUseLatestDescriptors" id="-1926173092%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="handle-use-latest-descriptors.html"><span>handle</span><wbr><span>Use</span><wbr><span>Latest</span><wbr><span><span>Descriptors</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1926173092%2FFunctions%2F345886579"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace">open override fun <a href="handle-use-latest-descriptors.html">handleUseLatestDescriptors</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="-1156877698%2FConstructors%2F345886579" anchor-label="UseMagicsHandler" id="-1156877698%2FConstructors%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-use-magics-handler.html"><span>Use</span><wbr><span>Magics</span><wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1156877698%2FConstructors%2F345886579"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-use-magics-handler.html"><span class="token function">UseMagicsHandler</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">librariesProcessor<span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.libraries/-libraries-processor/index.html">LibrariesProcessor</a><span class="token punctuation">, </span></span><span class="parameter ">libraryResolutionInfoSwitcher<span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.libraries/-resolution-info-switcher/index.html">ResolutionInfoSwitcher</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../org.jetbrains.kotlinx.jupyter.libraries/-default-info-switch/index.html">DefaultInfoSwitch</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="45546041%2FFunctions%2F345886579" anchor-label="getLibraries" id="45546041%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-libraries-aware-abstract-magics-handler/get-libraries.html"><span>get</span><wbr><span><span>Libraries</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="45546041%2FFunctions%2F345886579"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../-libraries-aware-abstract-magics-handler/get-libraries.html"><span class="token function">getLibraries</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api.libraries/-library-definition-producer/index.html">LibraryDefinitionProducer</a><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1926522801%2FFunctions%2F345886579" anchor-label="handle" id="-1926522801%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-magics-handler/handle.html"><span><span>handle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1926522801%2FFunctions%2F345886579"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-magics-handler/handle.html"><span class="token function">handle</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">magicText<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">tryIgnoreErrors<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">parseOnly<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-abstract-magics-handler/handle.html"><span class="token function">handle</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">magic<span class="token operator">: </span><a href="../../../common-dependencies/org.jetbrains.kotlinx.jupyter.common/-repl-line-magic/index.html">ReplLineMagic</a><span class="token punctuation">, </span></span><span class="parameter ">arg<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">tryIgnoreErrors<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">parseOnly<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="694381755%2FFunctions%2F345886579" anchor-label="handleDumpClassesForSpark" id="694381755%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-abstract-magics-handler/handle-dump-classes-for-spark.html"><span>handle</span><wbr><span>Dump</span><wbr><span>Classes</span><wbr><span>For</span><wbr><span><span>Spark</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="694381755%2FFunctions%2F345886579"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-abstract-magics-handler/handle-dump-classes-for-spark.html"><span class="token function">handleDumpClassesForSpark</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-561668333%2FFunctions%2F345886579" anchor-label="handleLogHandler" id="-561668333%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-abstract-magics-handler/handle-log-handler.html"><span>handle</span><wbr><span>Log</span><wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-561668333%2FFunctions%2F345886579"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-abstract-magics-handler/handle-log-handler.html"><span class="token function">handleLogHandler</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1130629145%2FFunctions%2F345886579" anchor-label="handleLogLevel" id="1130629145%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-abstract-magics-handler/handle-log-level.html"><span>handle</span><wbr><span>Log</span><wbr><span><span>Level</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1130629145%2FFunctions%2F345886579"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-abstract-magics-handler/handle-log-level.html"><span class="token function">handleLogLevel</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="59453400%2FFunctions%2F345886579" anchor-label="handleOutput" id="59453400%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-abstract-magics-handler/handle-output.html"><span>handle</span><wbr><span><span>Output</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="59453400%2FFunctions%2F345886579"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-abstract-magics-handler/handle-output.html"><span class="token function">handleOutput</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-739705497%2FFunctions%2F345886579" anchor-label="handleTrackClasspath" id="-739705497%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-abstract-magics-handler/handle-track-classpath.html"><span>handle</span><wbr><span>Track</span><wbr><span><span>Classpath</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-739705497%2FFunctions%2F345886579"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-abstract-magics-handler/handle-track-classpath.html"><span class="token function">handleTrackClasspath</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="538809420%2FFunctions%2F345886579" anchor-label="handleTrackExecution" id="538809420%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-abstract-magics-handler/handle-track-execution.html"><span>handle</span><wbr><span>Track</span><wbr><span><span>Execution</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="538809420%2FFunctions%2F345886579"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-abstract-magics-handler/handle-track-execution.html"><span class="token function">handleTrackExecution</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1905758335%2FFunctions%2F345886579" anchor-label="handleUse" id="-1905758335%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="handle-use.html"><span>handle</span><wbr><span><span>Use</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1905758335%2FFunctions%2F345886579"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="handle-use.html"><span class="token function">handleUse</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1926173092%2FFunctions%2F345886579" anchor-label="handleUseLatestDescriptors" id="-1926173092%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="handle-use-latest-descriptors.html"><span>handle</span><wbr><span>Use</span><wbr><span>Latest</span><wbr><span><span>Descriptors</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1926173092%2FFunctions%2F345886579"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="handle-use-latest-descriptors.html"><span class="token function">handleUseLatestDescriptors</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  
-</body></html>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
 
+</body></html>
 

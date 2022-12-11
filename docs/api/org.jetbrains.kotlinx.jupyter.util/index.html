@@ -1,336 +1,328 @@
+<!doctype html>
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>org.jetbrains.kotlinx.jupyter.util</title>
-</head><body><link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script><script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script><link href="../../styles/style.css" rel="Stylesheet"><link href="../../styles/logo-styles.css" rel="Stylesheet"><link href="../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../scripts/clipboard.js" async></script><script type="text/javascript" src="../../scripts/navigation-loader.js" async></script><script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script><script type="text/javascript" src="../../scripts/main.js" async></script>
-  
-    <div id="container">
-      <div id="leftColumn"><a href="../../index.html">
-            <div id="logo"></div>
-          </a>
-        <div id="paneSearch"></div>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../index.html">
+<span>kotlin-jupyter-kernel</span>            </a>    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
         <div id="sideMenu"></div>
-      </div>
-      <div id="main">
-        <script type="text/javascript" src="../../scripts/main.js"></script><div id="leftToggler"><span class="icon-toggler"></span></div>
-
-        <div class="main-content" id="content" pageids="api::org.jetbrains.kotlinx.jupyter.util////PointingToDeclaration//-1197683648">
-          <div class="navigation-wrapper" id="navigation-wrapper">
-            <div class="breadcrumbs"><a href="../index.html">api</a>/<a href="index.html">org.jetbrains.kotlinx.jupyter.util</a></div>
-            <div class="pull-right d-flex">
-              <div id="searchBar"></div>
-            </div>
-          </div>
-          <div class="cover ">
-            <h1 class="cover"><span><span>Package</span></span> <span>org.</span><wbr><span>jetbrains.</span><wbr><span>kotlinx.</span><wbr><span>jupyter.</span><wbr><span>util</span></h1>
-          </div>
-          <div class="tabbedcontent">
-            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
-            <div class="tabs-section-body">
-              <h2 class="">Types</h2>
-              <div class="table" data-togglable="Types"><a data-name="680939211%2FClasslikes%2F-1197683648" anchor-label="AcceptanceRule" id="680939211%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-acceptance-rule/index.html"><span>Acceptance</span><wbr><span><span>Rule</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="680939211%2FClasslikes%2F-1197683648"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace">fun interface <a href="-acceptance-rule/index.html">AcceptanceRule</a>&lt;<a href="-acceptance-rule/index.html">T</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="api::org.jetbrains.kotlinx.jupyter.util////PointingToDeclaration//-1197683648">
+  <div class="breadcrumbs"><a href="../index.html">api</a><span class="delimiter">/</span><span class="current">org.jetbrains.kotlinx.jupyter.util</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
   </div>
-<div class="brief "><p class="paragraph">Acceptance rule either says it accepts object or delegates it to some other rule returning null</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="2024405159%2FClasslikes%2F-1197683648" anchor-label="CodeExecutionSerializer" id="2024405159%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-code-execution-serializer/index.html"><span>Code</span><wbr><span>Execution</span><wbr><span><span>Serializer</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2024405159%2FClasslikes%2F-1197683648"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace">object <a href="-code-execution-serializer/index.html">CodeExecutionSerializer</a> : <a href="-primitive-string-property-serializer/index.html">PrimitiveStringPropertySerializer</a>&lt;<a href="../org.jetbrains.kotlinx.jupyter.api.libraries/-code-execution/index.html">CodeExecution</a>&gt; <span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="2074396479%2FClasslikes%2F-1197683648" anchor-label="FlagAcceptanceRule" id="2074396479%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-flag-acceptance-rule/index.html"><span>Flag</span><wbr><span>Acceptance</span><wbr><span><span>Rule</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2074396479%2FClasslikes%2F-1197683648"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace">interface <a href="-flag-acceptance-rule/index.html">FlagAcceptanceRule</a>&lt;<a href="-flag-acceptance-rule/index.html">T</a>&gt; : <a href="-acceptance-rule/index.html">AcceptanceRule</a>&lt;<a href="-flag-acceptance-rule/index.html">T</a>&gt; <span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<div class="brief "><p class="paragraph">Acceptance rule that has only two answers: yes/no (depending on the <a href="-flag-acceptance-rule/accepts-flag.html">acceptsFlag</a>) and "don't know"</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-895132328%2FClasslikes%2F-1197683648" anchor-label="KotlinKernelVersionSerializer" id="-895132328%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-kotlin-kernel-version-serializer/index.html"><span>Kotlin</span><wbr><span>Kernel</span><wbr><span>Version</span><wbr><span><span>Serializer</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-895132328%2FClasslikes%2F-1197683648"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace">object <a href="-kotlin-kernel-version-serializer/index.html">KotlinKernelVersionSerializer</a> : <span data-unresolved-link="kotlinx.serialization/KSerializer///PointingToDeclaration/">KSerializer</span>&lt;<a href="../org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-version/index.html">KotlinKernelVersion</a>&gt; <span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1988387857%2FClasslikes%2F-1197683648" anchor-label="ListToMapSerializer" id="-1988387857%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-list-to-map-serializer/index.html"><span>List</span><wbr><span>To</span><wbr><span>Map</span><wbr><span><span>Serializer</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1988387857%2FClasslikes%2F-1197683648"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace">abstract class <a href="-list-to-map-serializer/index.html">ListToMapSerializer</a>&lt;<a href="-list-to-map-serializer/index.html">T</a>, <a href="-list-to-map-serializer/index.html">K</a>, <a href="-list-to-map-serializer/index.html">V</a>&gt;(utilSerializer: <span data-unresolved-link="kotlinx.serialization/KSerializer///PointingToDeclaration/">KSerializer</span>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a>&lt;<a href="-list-to-map-serializer/index.html">K</a>, <a href="-list-to-map-serializer/index.html">V</a>&gt;&gt;, mapper: (<a href="-list-to-map-serializer/index.html">K</a>, <a href="-list-to-map-serializer/index.html">V</a>) -&gt; <a href="-list-to-map-serializer/index.html">T</a>, reverseMapper: (<a href="-list-to-map-serializer/index.html">T</a>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html">Pair</a>&lt;<a href="-list-to-map-serializer/index.html">K</a>, <a href="-list-to-map-serializer/index.html">V</a>&gt;) : <span data-unresolved-link="kotlinx.serialization/KSerializer///PointingToDeclaration/">KSerializer</span>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="-list-to-map-serializer/index.html">T</a>&gt;&gt; <span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1033705280%2FClasslikes%2F-1197683648" anchor-label="NameAcceptanceRule" id="1033705280%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-name-acceptance-rule/index.html"><span>Name</span><wbr><span>Acceptance</span><wbr><span><span>Rule</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1033705280%2FClasslikes%2F-1197683648"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace">class <a href="-name-acceptance-rule/index.html">NameAcceptanceRule</a>(acceptsFlag: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, appliesPredicate: (<a href="../org.jetbrains.kotlinx.jupyter.api/index.html#709956349%2FClasslikes%2F-1197683648">TypeName</a>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>) : <a href="-flag-acceptance-rule/index.html">FlagAcceptanceRule</a>&lt;<a href="../org.jetbrains.kotlinx.jupyter.api/index.html#709956349%2FClasslikes%2F-1197683648">TypeName</a>&gt; <span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<div class="brief "><p class="paragraph">Acceptance rule for type names</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1413084054%2FClasslikes%2F-1197683648" anchor-label="PatternNameAcceptanceRule" id="1413084054%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-pattern-name-acceptance-rule/index.html"><span>Pattern</span><wbr><span>Name</span><wbr><span>Acceptance</span><wbr><span><span>Rule</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1413084054%2FClasslikes%2F-1197683648"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace">class <a href="-pattern-name-acceptance-rule/index.html">PatternNameAcceptanceRule</a>(acceptsFlag: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, pattern: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>) : <a href="-flag-acceptance-rule/index.html">FlagAcceptanceRule</a>&lt;<a href="../org.jetbrains.kotlinx.jupyter.api/index.html#709956349%2FClasslikes%2F-1197683648">TypeName</a>&gt; , <a href="../org.jetbrains.kotlinx.jupyter.api.libraries/-variables-substitution-aware/index.html">VariablesSubstitutionAware</a>&lt;<a href="-pattern-name-acceptance-rule/index.html">PatternNameAcceptanceRule</a>&gt; <span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<div class="brief "><p class="paragraph">Acceptance rule for type names based on <a href="-pattern-name-acceptance-rule/pattern.html">pattern</a>. Pattern may consist of any characters and of 3 special combinations:</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1288711196%2FClasslikes%2F-1197683648" anchor-label="PatternNameAcceptanceRuleSerializer" id="-1288711196%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-pattern-name-acceptance-rule-serializer/index.html"><span>Pattern</span><wbr><span>Name</span><wbr><span>Acceptance</span><wbr><span>Rule</span><wbr><span><span>Serializer</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1288711196%2FClasslikes%2F-1197683648"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace">object <a href="-pattern-name-acceptance-rule-serializer/index.html">PatternNameAcceptanceRuleSerializer</a> : <span data-unresolved-link="kotlinx.serialization/KSerializer///PointingToDeclaration/">KSerializer</span>&lt;<a href="-pattern-name-acceptance-rule/index.html">PatternNameAcceptanceRule</a>&gt; <span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1967005819%2FClasslikes%2F-1197683648" anchor-label="PrimitiveStringPropertySerializer" id="-1967005819%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-primitive-string-property-serializer/index.html"><span>Primitive</span><wbr><span>String</span><wbr><span>Property</span><wbr><span><span>Serializer</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1967005819%2FClasslikes%2F-1197683648"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace">abstract class <a href="-primitive-string-property-serializer/index.html">PrimitiveStringPropertySerializer</a>&lt;<a href="-primitive-string-property-serializer/index.html">T</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt;(kClass: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html">KClass</a>&lt;<a href="-primitive-string-property-serializer/index.html">T</a>&gt;, prop: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-property1/index.html">KProperty1</a>&lt;<a href="-primitive-string-property-serializer/index.html">T</a>, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>&gt;, ctr: (<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>) -&gt; <a href="-primitive-string-property-serializer/index.html">T</a>) : <span data-unresolved-link="kotlinx.serialization/KSerializer///PointingToDeclaration/">KSerializer</span>&lt;<a href="-primitive-string-property-serializer/index.html">T</a>&gt; <span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-2052790366%2FClasslikes%2F-1197683648" anchor-label="RenderersSerializer" id="-2052790366%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-renderers-serializer/index.html"><span>Renderers</span><wbr><span><span>Serializer</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2052790366%2FClasslikes%2F-1197683648"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace">object <a href="-renderers-serializer/index.html">RenderersSerializer</a> : <a href="-list-to-map-serializer/index.html">ListToMapSerializer</a>&lt;<a href="../org.jetbrains.kotlinx.jupyter.api/-exact-renderer-type-handler/index.html">ExactRendererTypeHandler</a>, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, <a href="../org.jetbrains.kotlinx.jupyter.api/-result-handler-code-execution/index.html">ResultHandlerCodeExecution</a>&gt; <span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="328973888%2FClasslikes%2F-1197683648" anchor-label="ResourceBunchSerializer" id="328973888%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-resource-bunch-serializer/index.html"><span>Resource</span><wbr><span>Bunch</span><wbr><span><span>Serializer</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="328973888%2FClasslikes%2F-1197683648"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace">object <a href="-resource-bunch-serializer/index.html">ResourceBunchSerializer</a> : <span data-unresolved-link="kotlinx.serialization/KSerializer///PointingToDeclaration/">KSerializer</span>&lt;<a href="../org.jetbrains.kotlinx.jupyter.api.libraries/-resource-fallbacks-bundle/index.html">ResourceFallbacksBundle</a>&gt; <span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="563348145%2FClasslikes%2F-1197683648" anchor-label="TypeHandlerCodeExecutionSerializer" id="563348145%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-type-handler-code-execution-serializer/index.html"><span>Type</span><wbr><span>Handler</span><wbr><span>Code</span><wbr><span>Execution</span><wbr><span><span>Serializer</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="563348145%2FClasslikes%2F-1197683648"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace">object <a href="-type-handler-code-execution-serializer/index.html">TypeHandlerCodeExecutionSerializer</a> : <a href="-primitive-string-property-serializer/index.html">PrimitiveStringPropertySerializer</a>&lt;<a href="../org.jetbrains.kotlinx.jupyter.api/-result-handler-code-execution/index.html">ResultHandlerCodeExecution</a>&gt; <span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h2 class="">Functions</h2>
-              <div class="table" data-togglable="Functions"><a data-name="-1259068859%2FFunctions%2F-1197683648" anchor-label="accepts" id="-1259068859%2FFunctions%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="accepts.html"><span><span>accepts</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1259068859%2FFunctions%2F-1197683648"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace">fun &lt;<a href="accepts.html">T</a>&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a>&lt;<a href="-acceptance-rule/index.html">AcceptanceRule</a>&lt;<a href="accepts.html">T</a>&gt;&gt;.<a href="accepts.html">accepts</a>(obj: <a href="accepts.html">T</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<div class="brief "><p class="paragraph">List of acceptance rules:</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1730904255%2FFunctions%2F-1197683648" anchor-label="isSubclassOfCatching" id="-1730904255%2FFunctions%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="is-subclass-of-catching.html"><span>is</span><wbr><span>Subclass</span><wbr><span>Of</span><wbr><span><span>Catching</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1730904255%2FFunctions%2F-1197683648"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html">KClass</a>&lt;*&gt;.<a href="is-subclass-of-catching.html">isSubclassOfCatching</a>(superType: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html">KClass</a>&lt;*&gt;): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="2112336000%2FFunctions%2F-1197683648" anchor-label="replaceVariables" id="2112336000%2FFunctions%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="replace-variables.html"><span>replace</span><wbr><span><span>Variables</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2112336000%2FFunctions%2F-1197683648"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-name/index.html">JvmName</a>(<span>name = <span class="breakable-word">"replaceVariables"</span></span><wbr>)</div></div>fun &lt;<a href="replace-variables.html">T</a> : <a href="../org.jetbrains.kotlinx.jupyter.api.libraries/-variables-substitution-aware/index.html">VariablesSubstitutionAware</a>&lt;<a href="replace-variables.html">T</a>&gt;&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a>&lt;<a href="replace-variables.html">T</a>&gt;.<a href="replace-variables.html">replaceVariables</a>(mapping: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>&gt;): <span data-unresolved-link="/<ERROR CLASS>///PointingToDeclaration/">&lt;ERROR CLASS&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-name/index.html">JvmName</a>(<span>name = <span class="breakable-word">"replaceVariablesString"</span></span><wbr>)</div></div>fun <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>&gt;.<a href="replace-variables.html">replaceVariables</a>(mapping: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>&gt;): <span data-unresolved-link="/<ERROR CLASS>///PointingToDeclaration/">&lt;ERROR CLASS&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-name/index.html">JvmName</a>(<span>name = <span class="breakable-word">"replaceVariablesExecution"</span></span><wbr>)</div></div>fun <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a>&lt;<a href="../org.jetbrains.kotlinx.jupyter.api.libraries/-code-execution/index.html">CodeExecution</a>&gt;.<a href="replace-variables.html">replaceVariables</a>(mapping: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>&gt;): <span data-unresolved-link="/<ERROR CLASS>///PointingToDeclaration/">&lt;ERROR CLASS&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-<div class="divergent-group" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="replace-variables.html">replaceVariables</a>(str: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, mapping: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>&gt;): <span data-unresolved-link="/<ERROR CLASS>///PointingToDeclaration/">&lt;ERROR CLASS&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<div class="brief "><p class="paragraph">Replace all $<name> substrings in <a href="replace-variables.html">str</a> with corresponding <a href="replace-variables.html">mapping</a> values</name></p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="618522962%2FFunctions%2F-1197683648" anchor-label="unionAcceptance" id="618522962%2FFunctions%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="union-acceptance.html"><span>union</span><wbr><span><span>Acceptance</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="618522962%2FFunctions%2F-1197683648"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="union-acceptance.html">unionAcceptance</a>(vararg result: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace">fun <a href="union-acceptance.html">unionAcceptance</a>(results: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?&gt;): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h2 class="">Properties</h2>
-              <div class="table" data-togglable="Properties"><a data-name="-987925655%2FProperties%2F-1197683648" anchor-label="EMPTY" id="-987925655%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-e-m-p-t-y.html">EMPTY</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-987925655%2FProperties%2F-1197683648"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><a data-name="-987925655%2FProperties%2F-1197683648" anchor-label="EMPTY" id="-987925655%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a><div class="symbol monospace">val <span data-unresolved-link="kotlinx.serialization.json/Json///PointingToDeclaration/">Json</span>.<a href="-e-m-p-t-y.html">EMPTY</a>: <span data-unresolved-link="kotlinx.serialization.json/JsonObject///PointingToDeclaration/">JsonObject</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="680939211%2FClasslikes%2F-1197683648" anchor-label="AcceptanceRule" id="680939211%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-acceptance-rule/index.html"><span>Acceptance</span><wbr><span><span>Rule</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="680939211%2FClasslikes%2F-1197683648"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token keyword">interface </span><a href="-acceptance-rule/index.html">AcceptanceRule</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-acceptance-rule/index.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Acceptance rule either says it accepts object or delegates it to some other rule returning null</p></div></div></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+<a data-name="2024405159%2FClasslikes%2F-1197683648" anchor-label="CodeExecutionSerializer" id="2024405159%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-code-execution-serializer/index.html"><span>Code</span><wbr><span>Execution</span><wbr><span><span>Serializer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2024405159%2FClasslikes%2F-1197683648"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-code-execution-serializer/index.html">CodeExecutionSerializer</a> : <a href="-primitive-string-property-serializer/index.html">PrimitiveStringPropertySerializer</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../org.jetbrains.kotlinx.jupyter.api.libraries/-code-execution/index.html">CodeExecution</a><span class="token operator">&gt; </span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2074396479%2FClasslikes%2F-1197683648" anchor-label="FlagAcceptanceRule" id="2074396479%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-flag-acceptance-rule/index.html"><span>Flag</span><wbr><span>Acceptance</span><wbr><span><span>Rule</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2074396479%2FClasslikes%2F-1197683648"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-flag-acceptance-rule/index.html">FlagAcceptanceRule</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-flag-acceptance-rule/index.html">T</a><span class="token operator">&gt;</span> : <a href="-acceptance-rule/index.html">AcceptanceRule</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-flag-acceptance-rule/index.html">T</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Acceptance rule that has only two answers: yes/no (depending on the <a href="-flag-acceptance-rule/accepts-flag.html">acceptsFlag</a>) and "don't know"</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-895132328%2FClasslikes%2F-1197683648" anchor-label="KotlinKernelVersionSerializer" id="-895132328%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-kotlin-kernel-version-serializer/index.html"><span>Kotlin</span><wbr><span>Kernel</span><wbr><span>Version</span><wbr><span><span>Serializer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-895132328%2FClasslikes%2F-1197683648"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-kotlin-kernel-version-serializer/index.html">KotlinKernelVersionSerializer</a> : <span data-unresolved-link="kotlinx.serialization/KSerializer///PointingToDeclaration/">KSerializer</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-version/index.html">KotlinKernelVersion</a><span class="token operator">&gt; </span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1988387857%2FClasslikes%2F-1197683648" anchor-label="ListToMapSerializer" id="-1988387857%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-list-to-map-serializer/index.html"><span>List</span><wbr><span>To</span><wbr><span>Map</span><wbr><span><span>Serializer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1988387857%2FClasslikes%2F-1197683648"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-list-to-map-serializer/index.html">ListToMapSerializer</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-list-to-map-serializer/index.html">T</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-list-to-map-serializer/index.html">K</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-list-to-map-serializer/index.html">V</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">utilSerializer<span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization/KSerializer///PointingToDeclaration/">KSerializer</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-list-to-map-serializer/index.html">K</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-list-to-map-serializer/index.html">V</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">mapper<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="-list-to-map-serializer/index.html">K</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-list-to-map-serializer/index.html">V</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="-list-to-map-serializer/index.html">T</a><span class="token punctuation">, </span></span><span class="parameter ">reverseMapper<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="-list-to-map-serializer/index.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-list-to-map-serializer/index.html">K</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-list-to-map-serializer/index.html">V</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="kotlinx.serialization/KSerializer///PointingToDeclaration/">KSerializer</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-list-to-map-serializer/index.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1033705280%2FClasslikes%2F-1197683648" anchor-label="NameAcceptanceRule" id="1033705280%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-name-acceptance-rule/index.html"><span>Name</span><wbr><span>Acceptance</span><wbr><span><span>Rule</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1033705280%2FClasslikes%2F-1197683648"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-name-acceptance-rule/index.html">NameAcceptanceRule</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>acceptsFlag<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">appliesPredicate<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../org.jetbrains.kotlinx.jupyter.api/index.html#709956349%2FClasslikes%2F-1197683648">TypeName</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span> : <a href="-flag-acceptance-rule/index.html">FlagAcceptanceRule</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../org.jetbrains.kotlinx.jupyter.api/index.html#709956349%2FClasslikes%2F-1197683648">TypeName</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Acceptance rule for type names</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1413084054%2FClasslikes%2F-1197683648" anchor-label="PatternNameAcceptanceRule" id="1413084054%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-pattern-name-acceptance-rule/index.html"><span>Pattern</span><wbr><span>Name</span><wbr><span>Acceptance</span><wbr><span><span>Rule</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1413084054%2FClasslikes%2F-1197683648"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span><span class="token punctuation">(</span><span>with<span class="token operator"> = </span><a href="-pattern-name-acceptance-rule-serializer/index.html">PatternNameAcceptanceRuleSerializer::class</a></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">class </span><a href="-pattern-name-acceptance-rule/index.html">PatternNameAcceptanceRule</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>acceptsFlag<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pattern<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-flag-acceptance-rule/index.html">FlagAcceptanceRule</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../org.jetbrains.kotlinx.jupyter.api/index.html#709956349%2FClasslikes%2F-1197683648">TypeName</a><span class="token operator">&gt; </span>, <a href="../org.jetbrains.kotlinx.jupyter.api.libraries/-variables-substitution-aware/index.html">VariablesSubstitutionAware</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-pattern-name-acceptance-rule/index.html">PatternNameAcceptanceRule</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Acceptance rule for type names based on <a href="-pattern-name-acceptance-rule/pattern.html">pattern</a>. Pattern may consist of any characters and of 3 special combinations:</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1288711196%2FClasslikes%2F-1197683648" anchor-label="PatternNameAcceptanceRuleSerializer" id="-1288711196%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-pattern-name-acceptance-rule-serializer/index.html"><span>Pattern</span><wbr><span>Name</span><wbr><span>Acceptance</span><wbr><span>Rule</span><wbr><span><span>Serializer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1288711196%2FClasslikes%2F-1197683648"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-pattern-name-acceptance-rule-serializer/index.html">PatternNameAcceptanceRuleSerializer</a> : <span data-unresolved-link="kotlinx.serialization/KSerializer///PointingToDeclaration/">KSerializer</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-pattern-name-acceptance-rule/index.html">PatternNameAcceptanceRule</a><span class="token operator">&gt; </span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1967005819%2FClasslikes%2F-1197683648" anchor-label="PrimitiveStringPropertySerializer" id="-1967005819%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-primitive-string-property-serializer/index.html"><span>Primitive</span><wbr><span>String</span><wbr><span>Property</span><wbr><span><span>Serializer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1967005819%2FClasslikes%2F-1197683648"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-primitive-string-property-serializer/index.html">PrimitiveStringPropertySerializer</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-primitive-string-property-serializer/index.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">kClass<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-primitive-string-property-serializer/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">prop<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-property1/index.html">KProperty1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-primitive-string-property-serializer/index.html">T</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">ctr<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="-primitive-string-property-serializer/index.html">T</a></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="kotlinx.serialization/KSerializer///PointingToDeclaration/">KSerializer</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-primitive-string-property-serializer/index.html">T</a><span class="token operator">&gt; </span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2052790366%2FClasslikes%2F-1197683648" anchor-label="RenderersSerializer" id="-2052790366%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-renderers-serializer/index.html"><span>Renderers</span><wbr><span><span>Serializer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2052790366%2FClasslikes%2F-1197683648"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-renderers-serializer/index.html">RenderersSerializer</a> : <a href="-list-to-map-serializer/index.html">ListToMapSerializer</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../org.jetbrains.kotlinx.jupyter.api/-exact-renderer-type-handler/index.html">ExactRendererTypeHandler</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../org.jetbrains.kotlinx.jupyter.api/-result-handler-code-execution/index.html">ResultHandlerCodeExecution</a><span class="token operator">&gt; </span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="328973888%2FClasslikes%2F-1197683648" anchor-label="ResourceBunchSerializer" id="328973888%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-resource-bunch-serializer/index.html"><span>Resource</span><wbr><span>Bunch</span><wbr><span><span>Serializer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="328973888%2FClasslikes%2F-1197683648"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-resource-bunch-serializer/index.html">ResourceBunchSerializer</a> : <span data-unresolved-link="kotlinx.serialization/KSerializer///PointingToDeclaration/">KSerializer</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../org.jetbrains.kotlinx.jupyter.api.libraries/-resource-fallbacks-bundle/index.html">ResourceFallbacksBundle</a><span class="token operator">&gt; </span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="563348145%2FClasslikes%2F-1197683648" anchor-label="TypeHandlerCodeExecutionSerializer" id="563348145%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-type-handler-code-execution-serializer/index.html"><span>Type</span><wbr><span>Handler</span><wbr><span>Code</span><wbr><span>Execution</span><wbr><span><span>Serializer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="563348145%2FClasslikes%2F-1197683648"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-type-handler-code-execution-serializer/index.html">TypeHandlerCodeExecutionSerializer</a> : <a href="-primitive-string-property-serializer/index.html">PrimitiveStringPropertySerializer</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../org.jetbrains.kotlinx.jupyter.api/-result-handler-code-execution/index.html">ResultHandlerCodeExecution</a><span class="token operator">&gt; </span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-1259068859%2FFunctions%2F-1197683648" anchor-label="accepts" id="-1259068859%2FFunctions%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="accepts.html"><span><span>accepts</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1259068859%2FFunctions%2F-1197683648"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="accepts.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-acceptance-rule/index.html">AcceptanceRule</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="accepts.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="accepts.html"><span class="token function">accepts</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">obj<span class="token operator">: </span><a href="accepts.html">T</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">List of acceptance rules:</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1730904255%2FFunctions%2F-1197683648" anchor-label="isSubclassOfCatching" id="-1730904255%2FFunctions%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-subclass-of-catching.html"><span>is</span><wbr><span>Subclass</span><wbr><span>Of</span><wbr><span><span>Catching</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1730904255%2FFunctions%2F-1197683648"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="is-subclass-of-catching.html"><span class="token function">isSubclassOfCatching</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">superType<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2112336000%2FFunctions%2F-1197683648" anchor-label="replaceVariables" id="2112336000%2FFunctions%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="replace-variables.html"><span>replace</span><wbr><span><span>Variables</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2112336000%2FFunctions%2F-1197683648"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"replaceVariables"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="replace-variables.html">T</a><span class="token operator"> : </span><a href="../org.jetbrains.kotlinx.jupyter.api.libraries/-variables-substitution-aware/index.html">VariablesSubstitutionAware</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="replace-variables.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="replace-variables.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="replace-variables.html"><span class="token function">replaceVariables</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mapping<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="replace-variables.html">T</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"replaceVariablesString"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="replace-variables.html"><span class="token function">replaceVariables</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mapping<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"replaceVariablesExecution"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../org.jetbrains.kotlinx.jupyter.api.libraries/-code-execution/index.html">CodeExecution</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="replace-variables.html"><span class="token function">replaceVariables</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mapping<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../org.jetbrains.kotlinx.jupyter.api/index.html#-17635741%2FClasslikes%2F-1197683648">ExecutionCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><br><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="replace-variables.html"><span class="token function">replaceVariables</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">str<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">mapping<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Replace all $<name> substrings in <a href="replace-variables.html">str</a> with corresponding <a href="replace-variables.html">mapping</a> values</name></p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="618522962%2FFunctions%2F-1197683648" anchor-label="unionAcceptance" id="618522962%2FFunctions%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="union-acceptance.html"><span>union</span><wbr><span><span>Acceptance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="618522962%2FFunctions%2F-1197683648"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="union-acceptance.html"><span class="token function">unionAcceptance</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>result<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="union-acceptance.html"><span class="token function">unionAcceptance</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">results<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-987925655%2FProperties%2F-1197683648" anchor-label="EMPTY" id="-987925655%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-e-m-p-t-y.html"><span><span>EMPTY</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-987925655%2FProperties%2F-1197683648"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><a data-name="-987925655%2FProperties%2F-1197683648" anchor-label="EMPTY" id="-987925655%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><span data-unresolved-link="kotlinx.serialization.json/Json///PointingToDeclaration/">Json</span><span class="token punctuation">.</span><a href="-e-m-p-t-y.html">EMPTY</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonObject///PointingToDeclaration/">JsonObject</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  
-</body></html>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
 
+</body></html>
 
