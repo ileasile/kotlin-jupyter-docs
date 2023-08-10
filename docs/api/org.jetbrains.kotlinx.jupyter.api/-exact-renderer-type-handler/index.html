@@ -34,7 +34,7 @@
     <div class="library-name">
 <a href="../../../index.html">
 <span>kotlin-jupyter-kernel</span>            </a>    </div>
-    <div>0.12.0-38
+    <div>0.12.0-39
     </div>
     <div class="pull-right d-flex">
         <div class="filter-section" id="filter-section">
@@ -56,7 +56,7 @@
     <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span></div></div><span class="token keyword">class </span><a href="index.html">ExactRendererTypeHandler</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>className<span class="token operator">: </span><a href="../index.html#709956349%2FClasslikes%2F-1197683648">TypeName</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>execution<span class="token operator">: </span><a href="../-result-handler-code-execution/index.html">ResultHandlerCodeExecution</a></span></span><span class="token punctuation">)</span> : <a href="../-renderer-type-handler/index.html">RendererTypeHandler</a></div><p class="paragraph">Serializable version of type handler. Renders only classes which exactly match <a href="class-name.html">className</a> by FQN. Accepts only <a href="../-result-handler-code-execution/index.html">ResultHandlerCodeExecution</a> because it's the only one that may be correctly serialized.</p></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="CONSTRUCTOR">
         <h2 class="">Constructors</h2>
@@ -71,6 +71,40 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">className<span class="token operator">: </span><a href="../index.html#709956349%2FClasslikes%2F-1197683648">TypeName</a><span class="token punctuation">, </span></span><span class="parameter ">execution<span class="token operator">: </span><a href="../-result-handler-code-execution/index.html">ResultHandlerCodeExecution</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1592611084%2FProperties%2F-1197683648" anchor-label="className" id="1592611084%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="class-name.html"><span>class</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1592611084%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="class-name.html">className</a><span class="token operator">: </span><a href="../index.html#709956349%2FClasslikes%2F-1197683648">TypeName</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1098797129%2FProperties%2F-1197683648" anchor-label="execution" id="-1098797129%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="execution.html"><span><span>execution</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1098797129%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="execution.html">execution</a><span class="token operator">: </span><a href="../-result-handler-code-execution/index.html">ResultHandlerCodeExecution</a></div><div class="brief "><p class="paragraph">Execution to handle result. Should not throw if <a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-exact-renderer-type-handler/accepts-field.html">acceptsField</a> returns true</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -150,40 +184,6 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-togglable="PROPERTY">
-        <h2 class="">Properties</h2>
-        <div class="table"><a data-name="1592611084%2FProperties%2F-1197683648" anchor-label="className" id="1592611084%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="class-name.html"><span>class</span><wbr><span><span>Name</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1592611084%2FProperties%2F-1197683648"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="class-name.html">className</a><span class="token operator">: </span><a href="../index.html#709956349%2FClasslikes%2F-1197683648">TypeName</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1098797129%2FProperties%2F-1197683648" anchor-label="execution" id="-1098797129%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="execution.html"><span><span>execution</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1098797129%2FProperties%2F-1197683648"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="execution.html">execution</a><span class="token operator">: </span><a href="../-result-handler-code-execution/index.html">ResultHandlerCodeExecution</a></div><div class="brief "><p class="paragraph">Execution to handle result. Should not throw if <a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-exact-renderer-type-handler/accepts-field.html">acceptsField</a> returns true</p></div></div></div>
                 </div>
               </div>
             </div>
