@@ -17,6 +17,7 @@ org.jetbrains.kotlinx.jupyter.example
 module:kotlin-jupyter-api-gradle-plugin
 org.jetbrains.kotlinx.jupyter.api.plugin
 org.jetbrains.kotlinx.jupyter.api.plugin.tasks
+org.jetbrains.kotlinx.jupyter.api.plugin.util
 module:lib
 jupyter.kotlin
 jupyter.kotlin.providers
