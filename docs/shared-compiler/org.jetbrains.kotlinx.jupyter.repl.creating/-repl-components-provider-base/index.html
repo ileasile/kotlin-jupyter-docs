@@ -1,0 +1,334 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ReplComponentsProviderBase</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>kotlin-jupyter-kernel</span>            </a>    </div>
+    <div>0.12.0-117
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":shared-compiler:dokkaHtmlPartial/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="shared-compiler::org.jetbrains.kotlinx.jupyter.repl.creating/ReplComponentsProviderBase///PointingToDeclaration//345886579">
+  <div class="breadcrumbs"><a href="../../index.html">shared-compiler</a><span class="delimiter">/</span><a href="../index.html">org.jetbrains.kotlinx.jupyter.repl.creating</a><span class="delimiter">/</span><span class="current">ReplComponentsProviderBase</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Repl</span><wbr><span>Components</span><wbr><span>Provider</span><wbr><span><span>Base</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">ReplComponentsProviderBase</a> : <a href="../-lazily-constructible-repl-components-provider/index.html">LazilyConstructibleReplComponentsProvider</a></div><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-default-repl-components-provider/index.html">DefaultReplComponentsProvider</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-282701697%2FConstructors%2F345886579" anchor-label="ReplComponentsProviderBase" id="-282701697%2FConstructors%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-repl-components-provider-base.html"><span>Repl</span><wbr><span>Components</span><wbr><span>Provider</span><wbr><span><span>Base</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-282701697%2FConstructors%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1480632022%2FProperties%2F345886579" anchor-label="commHandlers" id="1480632022%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-lazily-constructible-repl-components-provider/comm-handlers.html"><span>comm</span><wbr><span><span>Handlers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1480632022%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-lazily-constructible-repl-components-provider/comm-handlers.html">commHandlers</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../org.jetbrains.kotlinx.jupyter.messaging.comms/-comm-handler/index.html">CommHandler</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-329306354%2FProperties%2F345886579" anchor-label="commManager" id="-329306354%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-lazily-constructible-repl-components-provider/comm-manager.html"><span>comm</span><wbr><span><span>Manager</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-329306354%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-lazily-constructible-repl-components-provider/comm-manager.html">commManager</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api.libraries/-comm-manager/index.html">CommManager</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="867736054%2FProperties%2F345886579" anchor-label="communicationFacility" id="867736054%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-lazily-constructible-repl-components-provider/communication-facility.html"><span>communication</span><wbr><span><span>Facility</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="867736054%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-lazily-constructible-repl-components-provider/communication-facility.html">communicationFacility</a><span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.messaging/-jupyter-communication-facility/index.html">JupyterCommunicationFacility</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-10920837%2FProperties%2F345886579" anchor-label="debugPort" id="-10920837%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-lazily-constructible-repl-components-provider/debug-port.html"><span>debug</span><wbr><span><span>Port</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-10920837%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-lazily-constructible-repl-components-provider/debug-port.html">debugPort</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1728157731%2FProperties%2F345886579" anchor-label="displayHandler" id="1728157731%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-lazily-constructible-repl-components-provider/display-handler.html"><span>display</span><wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1728157731%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-lazily-constructible-repl-components-provider/display-handler.html">displayHandler</a><span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.messaging/-display-handler/index.html">DisplayHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1184961678%2FProperties%2F345886579" anchor-label="explicitClientType" id="-1184961678%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-lazily-constructible-repl-components-provider/explicit-client-type.html"><span>explicit</span><wbr><span>Client</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1184961678%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-lazily-constructible-repl-components-provider/explicit-client-type.html">explicitClientType</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-jupyter-client-type/index.html">JupyterClientType</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="289271937%2FProperties%2F345886579" anchor-label="homeDir" id="289271937%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-lazily-constructible-repl-components-provider/home-dir.html"><span>home</span><wbr><span><span>Dir</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="289271937%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-lazily-constructible-repl-components-provider/home-dir.html">homeDir</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1551408887%2FProperties%2F345886579" anchor-label="isEmbedded" id="1551408887%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-lazily-constructible-repl-components-provider/is-embedded.html"><span>is</span><wbr><span><span>Embedded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1551408887%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-lazily-constructible-repl-components-provider/is-embedded.html">isEmbedded</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1912864326%2FProperties%2F345886579" anchor-label="librariesScanner" id="1912864326%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-lazily-constructible-repl-components-provider/libraries-scanner.html"><span>libraries</span><wbr><span><span>Scanner</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1912864326%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-lazily-constructible-repl-components-provider/libraries-scanner.html">librariesScanner</a><span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.libraries/-libraries-scanner/index.html">LibrariesScanner</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1542677714%2FProperties%2F345886579" anchor-label="libraryResolver" id="-1542677714%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-lazily-constructible-repl-components-provider/library-resolver.html"><span>library</span><wbr><span><span>Resolver</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1542677714%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-lazily-constructible-repl-components-provider/library-resolver.html">libraryResolver</a><span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.libraries/-library-resolver/index.html">LibraryResolver</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2096939460%2FProperties%2F345886579" anchor-label="mavenRepositories" id="-2096939460%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-lazily-constructible-repl-components-provider/maven-repositories.html"><span>maven</span><wbr><span><span>Repositories</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2096939460%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-lazily-constructible-repl-components-provider/maven-repositories.html">mavenRepositories</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../org.jetbrains.kotlinx.jupyter.repl/-maven-repository-coordinates/index.html">MavenRepositoryCoordinates</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1161015216%2FProperties%2F345886579" anchor-label="notebook" id="-1161015216%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-lazily-constructible-repl-components-provider/notebook.html"><span><span>notebook</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1161015216%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-lazily-constructible-repl-components-provider/notebook.html">notebook</a><span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.repl.notebook/-mutable-notebook/index.html">MutableNotebook</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1635378144%2FProperties%2F345886579" anchor-label="resolutionInfoProvider" id="-1635378144%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-lazily-constructible-repl-components-provider/resolution-info-provider.html"><span>resolution</span><wbr><span>Info</span><wbr><span><span>Provider</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1635378144%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-lazily-constructible-repl-components-provider/resolution-info-provider.html">resolutionInfoProvider</a><span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.libraries/-resolution-info-provider/index.html">ResolutionInfoProvider</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1745744732%2FProperties%2F345886579" anchor-label="runtimeProperties" id="-1745744732%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-lazily-constructible-repl-components-provider/runtime-properties.html"><span>runtime</span><wbr><span><span>Properties</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1745744732%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-lazily-constructible-repl-components-provider/runtime-properties.html">runtimeProperties</a><span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.repl/-repl-runtime-properties/index.html">ReplRuntimeProperties</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1141221661%2FProperties%2F345886579" anchor-label="scriptClasspath" id="1141221661%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-lazily-constructible-repl-components-provider/script-classpath.html"><span>script</span><wbr><span><span>Classpath</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1141221661%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-lazily-constructible-repl-components-provider/script-classpath.html">scriptClasspath</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1447377866%2FProperties%2F345886579" anchor-label="scriptReceivers" id="-1447377866%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-lazily-constructible-repl-components-provider/script-receivers.html"><span>script</span><wbr><span><span>Receivers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1447377866%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-lazily-constructible-repl-components-provider/script-receivers.html">scriptReceivers</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+
