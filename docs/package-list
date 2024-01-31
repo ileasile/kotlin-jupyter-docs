@@ -47,6 +47,7 @@ org.jetbrains.kotlinx.jupyter.repl.creating
 org.jetbrains.kotlinx.jupyter.repl.execution
 org.jetbrains.kotlinx.jupyter.repl.notebook
 org.jetbrains.kotlinx.jupyter.repl.notebook.impl
+org.jetbrains.kotlinx.jupyter.repl.result
 org.jetbrains.kotlinx.jupyter.startup
 org.jetbrains.kotlinx.jupyter.util
 module:test-kit

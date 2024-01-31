@@ -34,7 +34,7 @@
     <div class="library-name">
 <a href="../../../index.html">
 <span>kotlin-jupyter-kernel</span>            </a>    </div>
-    <div>0.12.0-117
+    <div>0.12.0-118
     </div>
     <div class="pull-right d-flex">
         <div class="filter-section" id="filter-section">
@@ -53,108 +53,14 @@
   <div class="breadcrumbs"><a href="../../index.html">shared-compiler</a><span class="delimiter">/</span><a href="../index.html">org.jetbrains.kotlinx.jupyter.messaging</a><span class="delimiter">/</span><span class="current">ExecuteReply</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Execute</span><wbr><span><span>Reply</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span></div></div><span class="token keyword">class </span><a href="index.html">ExecuteReply</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>status<span class="token operator">: </span><a href="../-message-status/index.html">MessageStatus</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>executionCount<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>payload<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-payload/index.html">Payload</a><span class="token operator">&gt;</span><span class="token operator"> = </span>listOf()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>userExpressions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span><span class="token operator"> = </span>mapOf()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>errorName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>errorValue<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>traceback<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>additionalInfo<span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonObject///PointingToDeclaration/">JsonObject</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../-message-content/index.html">MessageContent</a></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span><span class="token punctuation">(</span><span>with<span class="token operator"> = </span><a href="../-execute-reply-serializer/index.html">ExecuteReplySerializer::class</a></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">interface </span><a href="index.html">ExecuteReply</a> : <a href="../-message-content/index.html">MessageContent</a></div><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-execute-abort-reply/index.html">ExecuteAbortReply</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-execute-error-reply/index.html">ExecuteErrorReply</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-execute-success-reply/index.html">ExecuteSuccessReply</a></div></span></div><div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
-      <div data-togglable="CONSTRUCTOR">
-        <h2 class="">Constructors</h2>
-        <div class="table"><a data-name="470102471%2FConstructors%2F345886579" anchor-label="ExecuteReply" id="470102471%2FConstructors%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="-execute-reply.html"><span>Execute</span><wbr><span><span>Reply</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="470102471%2FConstructors%2F345886579"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">status<span class="token operator">: </span><a href="../-message-status/index.html">MessageStatus</a><span class="token punctuation">, </span></span><span class="parameter ">executionCount<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">payload<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-payload/index.html">Payload</a><span class="token operator">&gt;</span><span class="token operator"> = </span>listOf()<span class="token punctuation">, </span></span><span class="parameter ">userExpressions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span><span class="token operator"> = </span>mapOf()<span class="token punctuation">, </span></span><span class="parameter ">errorName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">errorValue<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">traceback<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">additionalInfo<span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonObject///PointingToDeclaration/">JsonObject</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div data-togglable="PROPERTY">
         <h2 class="">Properties</h2>
-        <div class="table"><a data-name="-1494538125%2FProperties%2F345886579" anchor-label="additionalInfo" id="-1494538125%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="additional-info.html"><span>additional</span><wbr><span><span>Info</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1494538125%2FProperties%2F345886579"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="additional-info.html">additionalInfo</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonObject///PointingToDeclaration/">JsonObject</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-2125754625%2FProperties%2F345886579" anchor-label="errorName" id="-2125754625%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="error-name.html"><span>error</span><wbr><span><span>Name</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2125754625%2FProperties%2F345886579"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="error-name.html">errorName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1790685793%2FProperties%2F345886579" anchor-label="errorValue" id="-1790685793%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="error-value.html"><span>error</span><wbr><span><span>Value</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1790685793%2FProperties%2F345886579"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="error-value.html">errorValue</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-613631151%2FProperties%2F345886579" anchor-label="executionCount" id="-613631151%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="execution-count.html"><span>execution</span><wbr><span><span>Count</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-613631151%2FProperties%2F345886579"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="execution-count.html">executionCount</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="2126964676%2FProperties%2F345886579" anchor-label="payload" id="2126964676%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="payload.html"><span><span>payload</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2126964676%2FProperties%2F345886579"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="payload.html">payload</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-payload/index.html">Payload</a><span class="token operator">&gt;</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="39997334%2FProperties%2F345886579" anchor-label="status" id="39997334%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+        <div class="table"><a data-name="39997334%2FProperties%2F345886579" anchor-label="status" id="39997334%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
           <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
@@ -164,37 +70,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="status.html">status</a><span class="token operator">: </span><a href="../-message-status/index.html">MessageStatus</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="259054118%2FProperties%2F345886579" anchor-label="traceback" id="259054118%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="traceback.html"><span><span>traceback</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="259054118%2FProperties%2F345886579"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="traceback.html">traceback</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="1576360578%2FProperties%2F345886579" anchor-label="userExpressions" id="1576360578%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="user-expressions.html"><span>user</span><wbr><span><span>Expressions</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1576360578%2FProperties%2F345886579"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="user-expressions.html">userExpressions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="status.html">status</a><span class="token operator">: </span><a href="../-message-status/index.html">MessageStatus</a></div></div></div>
                 </div>
               </div>
             </div>
