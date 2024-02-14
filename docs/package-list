@@ -35,6 +35,7 @@ org.jetbrains.kotlinx.jupyter.commands
 org.jetbrains.kotlinx.jupyter.compiler
 org.jetbrains.kotlinx.jupyter.compiler.util
 org.jetbrains.kotlinx.jupyter.config
+org.jetbrains.kotlinx.jupyter.debug
 org.jetbrains.kotlinx.jupyter.exceptions
 org.jetbrains.kotlinx.jupyter.execution
 org.jetbrains.kotlinx.jupyter.libraries
