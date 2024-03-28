@@ -1,9 +1,11 @@
 <!doctype html>
-<html>
+<html class="no-js">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>NotebookImpl</title>
-<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
     if (storage == null) {
         const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
         if (osDarkSchemePreferred === true) {
@@ -16,12 +18,13 @@
         }
     }
     </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
 <script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
 <link href="../../../styles/style.css" rel="Stylesheet">
-<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
 <link href="../../../styles/main.css" rel="Stylesheet">
 <link href="../../../styles/prism.css" rel="Stylesheet">
 <link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
 <script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
 <script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
 <script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
@@ -29,26 +32,32 @@
 <script type="text/javascript" src="../../../scripts/prism.js" async></script>
 <script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
 <body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-<a href="../../../index.html">
-<span>kotlin-jupyter-kernel</span>            </a>    </div>
-    <div>0.12.0-157
-    </div>
-    <div class="pull-right d-flex">
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            kotlin-jupyter-kernel
+                    </a>            </div>
+            <div class="library-version">0.12.0-159
+            </div>
+        </div>
         <div class="filter-section" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":shared-compiler:dokkaHtmlPartial/main">jvm</button>
         </div>
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
-        <div id="searchBar"></div>
     </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
-        <div id="sideMenu"></div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
     </div>
-    <div id="main">
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
 <div class="main-content" data-page-type="classlike" id="content" pageids="shared-compiler::org.jetbrains.kotlinx.jupyter.repl.notebook.impl/NotebookImpl///PointingToDeclaration//345886579">
   <div class="breadcrumbs"><a href="../../index.html">shared-compiler</a><span class="delimiter">/</span><a href="../index.html">org.jetbrains.kotlinx.jupyter.repl.notebook.impl</a><span class="delimiter">/</span><span class="current">NotebookImpl</span></div>
   <div class="cover ">
@@ -89,7 +98,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="after-cell-executions-processor.html">afterCellExecutionsProcessor</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-extensions-processor/index.html">ExtensionsProcessor</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-after-cell-execution-callback/index.html">AfterCellExecutionCallback</a><span class="token operator">&gt;</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="after-cell-executions-processor.html">afterCellExecutionsProcessor</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-extensions-processor/index.html">ExtensionsProcessor</a><span class="token operator">&lt;</span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-after-cell-execution-callback/index.html">AfterCellExecutionCallback</a><span class="token operator">&gt;</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -104,7 +113,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="before-cell-executions-processor.html">beforeCellExecutionsProcessor</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-extensions-processor/index.html">ExtensionsProcessor</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-execution-callback/index.html">ExecutionCallback</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="before-cell-executions-processor.html">beforeCellExecutionsProcessor</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-extensions-processor/index.html">ExtensionsProcessor</a><span class="token operator">&lt;</span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-execution-callback/index.html">ExecutionCallback</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -119,7 +128,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="cells-list.html">cellsList</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../org.jetbrains.kotlinx.jupyter.repl.notebook/-mutable-code-cell/index.html">MutableCodeCell</a><span class="token operator">&gt;</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="cells-list.html">cellsList</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><a href="../../org.jetbrains.kotlinx.jupyter.repl.notebook/-mutable-code-cell/index.html">MutableCodeCell</a><span class="token operator">&gt;</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -134,7 +143,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="cell-variables.html">cellVariables</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="cell-variables.html">cellVariables</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -149,7 +158,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="code-preprocessors-processor.html">codePreprocessorsProcessor</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-extensions-processor/index.html">ExtensionsProcessor</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-code-preprocessor/index.html">CodePreprocessor</a><span class="token operator">&gt;</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="code-preprocessors-processor.html">codePreprocessorsProcessor</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-extensions-processor/index.html">ExtensionsProcessor</a><span class="token operator">&lt;</span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-code-preprocessor/index.html">CodePreprocessor</a><span class="token operator">&gt;</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -164,7 +173,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="color-scheme-change-callbacks-processor.html">colorSchemeChangeCallbacksProcessor</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-extensions-processor/index.html">ExtensionsProcessor</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api.libraries/-color-scheme-changed-callback/index.html">ColorSchemeChangedCallback</a><span class="token operator">&gt;</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="color-scheme-change-callbacks-processor.html">colorSchemeChangeCallbacksProcessor</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-extensions-processor/index.html">ExtensionsProcessor</a><span class="token operator">&lt;</span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api.libraries/-color-scheme-changed-callback/index.html">ColorSchemeChangedCallback</a><span class="token operator">&gt;</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -254,7 +263,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="interruption-callbacks-processor.html">interruptionCallbacksProcessor</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-extensions-processor/index.html">ExtensionsProcessor</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-interruption-callback/index.html">InterruptionCallback</a><span class="token operator">&gt;</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="interruption-callbacks-processor.html">interruptionCallbacksProcessor</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-extensions-processor/index.html">ExtensionsProcessor</a><span class="token operator">&lt;</span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-interruption-callback/index.html">InterruptionCallback</a><span class="token operator">&gt;</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -344,7 +353,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="library-requests.html">libraryRequests</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api.libraries/-library-resolution-request/index.html">LibraryResolutionRequest</a><span class="token operator">&gt;</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="library-requests.html">libraryRequests</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api.libraries/-library-resolution-request/index.html">LibraryResolutionRequest</a><span class="token operator">&gt;</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -404,7 +413,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="shutdown-executions-processor.html">shutdownExecutionsProcessor</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-extensions-processor/index.html">ExtensionsProcessor</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-execution-callback/index.html">ExecutionCallback</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="shutdown-executions-processor.html">shutdownExecutionsProcessor</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-extensions-processor/index.html">ExtensionsProcessor</a><span class="token operator">&lt;</span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-execution-callback/index.html">ExecutionCallback</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -434,7 +443,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="variables-state.html">variablesState</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-variable-state/index.html">VariableState</a><span class="token operator">&gt;</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="variables-state.html">variablesState</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-variable-state/index.html">VariableState</a><span class="token operator">&gt;</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -513,7 +522,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-all-displays.html"><span class="token function">getAllDisplays</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-display-result-with-cell/index.html">DisplayResultWithCell</a><span class="token operator">&gt;</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-all-displays.html"><span class="token function">getAllDisplays</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-display-result-with-cell/index.html">DisplayResultWithCell</a><span class="token operator">&gt;</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -543,7 +552,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-displays-by-id.html"><span class="token function">getDisplaysById</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-display-result-with-cell/index.html">DisplayResultWithCell</a><span class="token operator">&gt;</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-displays-by-id.html"><span class="token function">getDisplaysById</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-display-result-with-cell/index.html">DisplayResultWithCell</a><span class="token operator">&gt;</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -558,7 +567,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-library-from-descriptor.html"><span class="token function">getLibraryFromDescriptor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">descriptorText<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api.libraries/-library-definition/index.html">LibraryDefinition</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-library-from-descriptor.html"><span class="token function">getLibraryFromDescriptor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">descriptorText<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api.libraries/-library-definition/index.html">LibraryDefinition</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -618,7 +627,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../org.jetbrains.kotlinx.jupyter.repl.notebook/-mutable-notebook/index.html">MutableNotebook</a><span class="token punctuation">.</span><a href="../../org.jetbrains.kotlinx.jupyter.repl/post-render.html"><span class="token function">postRender</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-display-result/index.html">DisplayResult</a><span class="token operator">?</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../org.jetbrains.kotlinx.jupyter.repl.notebook/-mutable-notebook/index.html">MutableNotebook</a><span class="token punctuation">.</span><a href="../../org.jetbrains.kotlinx.jupyter.repl/post-render.html"><span class="token function">postRender</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-display-result/index.html">DisplayResult</a><span class="token operator">?</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -646,8 +655,9 @@
       <div class="footer">
         <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
       </div>
+            </div>
+        </div>
     </div>
-</div>
 </body>
 </html>
 

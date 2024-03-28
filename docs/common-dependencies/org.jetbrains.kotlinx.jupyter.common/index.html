@@ -1,9 +1,11 @@
 <!doctype html>
-<html>
+<html class="no-js">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>org.jetbrains.kotlinx.jupyter.common</title>
-<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
     if (storage == null) {
         const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
         if (osDarkSchemePreferred === true) {
@@ -16,12 +18,13 @@
         }
     }
     </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
 <script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
 <link href="../../styles/style.css" rel="Stylesheet">
-<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
 <link href="../../styles/main.css" rel="Stylesheet">
 <link href="../../styles/prism.css" rel="Stylesheet">
 <link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
 <script type="text/javascript" src="../../scripts/clipboard.js" async></script>
 <script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
 <script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
@@ -29,26 +32,32 @@
 <script type="text/javascript" src="../../scripts/prism.js" async></script>
 <script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
 <body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-<a href="../../index.html">
-<span>kotlin-jupyter-kernel</span>            </a>    </div>
-    <div>0.12.0-157
-    </div>
-    <div class="pull-right d-flex">
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../index.html">
+                            kotlin-jupyter-kernel
+                    </a>            </div>
+            <div class="library-version">0.12.0-159
+            </div>
+        </div>
         <div class="filter-section" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":common-dependencies:dokkaHtmlPartial/main">jvm</button>
         </div>
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
-        <div id="searchBar"></div>
     </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
-        <div id="sideMenu"></div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
     </div>
-    <div id="main">
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
 <div class="main-content" data-page-type="package" id="content" pageids="common-dependencies::org.jetbrains.kotlinx.jupyter.common////PointingToDeclaration//-1436319057">
   <div class="breadcrumbs"><a href="../index.html">common-dependencies</a><span class="delimiter">/</span><span class="current">org.jetbrains.kotlinx.jupyter.common</span></div>
   <div class="cover ">
@@ -114,7 +123,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-repl-command/index.html">ReplCommand</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-repl-command/index.html">ReplCommand</a><span class="token operator">&gt; </span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-repl-command/index.html">ReplCommand</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-repl-command/index.html">ReplCommand</a><span class="token operator">&gt; </span></div></div></div>
                 </div>
               </div>
             </div>
@@ -129,7 +138,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-repl-enum/index.html">ReplEnum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-repl-enum/index.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-repl-enum/index.html">ReplEnum</a><span class="token operator">&lt;</span><a href="-repl-enum/index.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -144,7 +153,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-repl-line-magic/index.html">ReplLineMagic</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-repl-line-magic/index.html">ReplLineMagic</a><span class="token operator">&gt; </span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-repl-line-magic/index.html">ReplLineMagic</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-repl-line-magic/index.html">ReplLineMagic</a><span class="token operator">&gt; </span></div></div></div>
                 </div>
               </div>
             </div>
@@ -259,7 +268,7 @@
       <div data-togglable="EXTENSION_PROPERTY">
         <h2 class="">Properties</h2>
         <div class="table"><a data-name="1046710873%2FProperties%2F-1436319057" anchor-label="json" id="1046710873%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="json.html"><span><span>json</span></span></a></div>
@@ -268,13 +277,13 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-response-wrapper/index.html">ResponseWrapper</a><span class="token punctuation">.</span><a href="json.html">json</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-response-wrapper/index.html">ResponseWrapper</a><span class="token punctuation">.</span><a href="json.html">json</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span></div></div></div>
                 </div>
               </div>
             </div>
           </div>
 <a data-name="13275130%2FProperties%2F-1436319057" anchor-label="jsonArray" id="13275130%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="json-array.html"><span>json</span><wbr><span><span>Array</span></span></a></div>
@@ -283,13 +292,13 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-response-wrapper/index.html">ResponseWrapper</a><span class="token punctuation">.</span><a href="json-array.html">jsonArray</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonArray///PointingToDeclaration/">JsonArray</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-response-wrapper/index.html">ResponseWrapper</a><span class="token punctuation">.</span><a href="json-array.html">jsonArray</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonArray///PointingToDeclaration/">JsonArray</span></div></div></div>
                 </div>
               </div>
             </div>
           </div>
 <a data-name="1700029200%2FProperties%2F-1436319057" anchor-label="jsonArrayOrNull" id="1700029200%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="json-array-or-null.html"><span>json</span><wbr><span>Array</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
@@ -298,13 +307,13 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-response-wrapper/index.html">ResponseWrapper</a><span class="token punctuation">.</span><a href="json-array-or-null.html">jsonArrayOrNull</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonArray///PointingToDeclaration/">JsonArray</span><span class="token operator">?</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-response-wrapper/index.html">ResponseWrapper</a><span class="token punctuation">.</span><a href="json-array-or-null.html">jsonArrayOrNull</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonArray///PointingToDeclaration/">JsonArray</span><span class="token operator">?</span></div></div></div>
                 </div>
               </div>
             </div>
           </div>
 <a data-name="-758326502%2FProperties%2F-1436319057" anchor-label="jsonObject" id="-758326502%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="json-object.html"><span>json</span><wbr><span><span>Object</span></span></a></div>
@@ -313,13 +322,13 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-response-wrapper/index.html">ResponseWrapper</a><span class="token punctuation">.</span><a href="json-object.html">jsonObject</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonObject///PointingToDeclaration/">JsonObject</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-response-wrapper/index.html">ResponseWrapper</a><span class="token punctuation">.</span><a href="json-object.html">jsonObject</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonObject///PointingToDeclaration/">JsonObject</span></div></div></div>
                 </div>
               </div>
             </div>
           </div>
 <a data-name="1039783472%2FProperties%2F-1436319057" anchor-label="jsonObjectOrNull" id="1039783472%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="json-object-or-null.html"><span>json</span><wbr><span>Object</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
@@ -328,13 +337,13 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-response-wrapper/index.html">ResponseWrapper</a><span class="token punctuation">.</span><a href="json-object-or-null.html">jsonObjectOrNull</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonObject///PointingToDeclaration/">JsonObject</span><span class="token operator">?</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-response-wrapper/index.html">ResponseWrapper</a><span class="token punctuation">.</span><a href="json-object-or-null.html">jsonObjectOrNull</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonObject///PointingToDeclaration/">JsonObject</span><span class="token operator">?</span></div></div></div>
                 </div>
               </div>
             </div>
           </div>
 <a data-name="-2009474513%2FProperties%2F-1436319057" anchor-label="jsonOrNull" id="-2009474513%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="json-or-null.html"><span>json</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
@@ -343,13 +352,13 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-response-wrapper/index.html">ResponseWrapper</a><span class="token punctuation">.</span><a href="json-or-null.html">jsonOrNull</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">?</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-response-wrapper/index.html">ResponseWrapper</a><span class="token punctuation">.</span><a href="json-or-null.html">jsonOrNull</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">?</span></div></div></div>
                 </div>
               </div>
             </div>
           </div>
 <a data-name="-932353895%2FProperties%2F-1436319057" anchor-label="successful" id="-932353895%2FProperties%2F-1436319057" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
+          <div class="table-row" data-filterable-current=":common-dependencies:dokkaHtmlPartial/main" data-filterable-set=":common-dependencies:dokkaHtmlPartial/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="successful.html"><span><span>successful</span></span></a></div>
@@ -358,7 +367,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-status/index.html">Status</a><span class="token punctuation">.</span><a href="successful.html">successful</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-status/index.html">Status</a><span class="token punctuation">.</span><a href="successful.html">successful</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -377,7 +386,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="assert-looks-like-repl-command.html"><span class="token function">assertLooksLikeReplCommand</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">code<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Throws <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-illegal-argument-exception/index.html">IllegalArgumentException</a> in case <a href="looks-like-repl-command.html">looksLikeReplCommand</a> returns false for <a href="assert-looks-like-repl-command.html">code</a></p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="assert-looks-like-repl-command.html"><span class="token function">assertLooksLikeReplCommand</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">code<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Throws <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-illegal-argument-exception/index.html">IllegalArgumentException</a> in case <a href="looks-like-repl-command.html">looksLikeReplCommand</a> returns false for <a href="assert-looks-like-repl-command.html">code</a></p></div></div></div>
                 </div>
               </div>
             </div>
@@ -392,7 +401,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-response-wrapper/index.html">ResponseWrapper</a><span class="token punctuation">.</span><a href="assert-successful.html"><span class="token function">assertSuccessful</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-response-wrapper/index.html">ResponseWrapper</a><span class="token punctuation">.</span><a href="assert-successful.html"><span class="token function">assertSuccessful</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -407,7 +416,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="build-request.html"><span class="token function">buildRequest</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">buildAction<span class="token operator">: </span><span class="token keyword"></span><a href="-request-builder/index.html">RequestBuilder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-request/index.html">Request</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="build-request.html"><span class="token function">buildRequest</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">request<span class="token operator">: </span><a href="-request/index.html">Request</a><span class="token punctuation">, </span></span><span class="parameter ">buildAction<span class="token operator">: </span><span class="token keyword"></span><a href="-request-builder/index.html">RequestBuilder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-request/index.html">Request</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="build-request.html"><span class="token function">buildRequest</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">method<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">url<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">headers<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>mapOf()<span class="token punctuation">, </span></span><span class="parameter ">body<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">buildAction<span class="token operator">: </span><span class="token keyword"></span><a href="-request-builder/index.html">RequestBuilder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-request/index.html">Request</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="build-request.html"><span class="token function">buildRequest</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">buildAction<span class="token operator">: </span><a href="-request-builder/index.html">RequestBuilder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-request/index.html">Request</a></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="build-request.html"><span class="token function">buildRequest</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">request<span class="token operator">: </span><a href="-request/index.html">Request</a><span class="token punctuation">, </span></span><span class="parameter ">buildAction<span class="token operator">: </span><a href="-request-builder/index.html">RequestBuilder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-request/index.html">Request</a></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="build-request.html"><span class="token function">buildRequest</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">method<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">url<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">headers<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>mapOf()<span class="token punctuation">, </span></span><span class="parameter ">body<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">buildAction<span class="token operator">: </span><a href="-request-builder/index.html">RequestBuilder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-request/index.html">Request</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -422,7 +431,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="decode-json.html">T</a><span class="token operator">&gt; </span><a href="-response-wrapper/index.html">ResponseWrapper</a><span class="token punctuation">.</span><a href="decode-json.html"><span class="token function">decodeJson</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="decode-json.html">T</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="decode-json.html">T</a><span class="token operator">&gt; </span><a href="-response-wrapper/index.html">ResponseWrapper</a><span class="token punctuation">.</span><a href="decode-json.html"><span class="token function">decodeJson</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="decode-json.html">T</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -437,7 +446,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="decode-json-if-successful-or-null.html">T</a><span class="token operator">&gt; </span><a href="-response-wrapper/index.html">ResponseWrapper</a><span class="token punctuation">.</span><a href="decode-json-if-successful-or-null.html"><span class="token function">decodeJsonIfSuccessfulOrNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="decode-json-if-successful-or-null.html">T</a><span class="token operator">?</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="decode-json-if-successful-or-null.html">T</a><span class="token operator">&gt; </span><a href="-response-wrapper/index.html">ResponseWrapper</a><span class="token punctuation">.</span><a href="decode-json-if-successful-or-null.html"><span class="token function">decodeJsonIfSuccessfulOrNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="decode-json-if-successful-or-null.html">T</a><span class="token operator">?</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -452,7 +461,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-http-client/index.html">HttpClient</a><span class="token punctuation">.</span><a href="get-http.html"><span class="token function">getHttp</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-response-wrapper/index.html">ResponseWrapper</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-http-client/index.html">HttpClient</a><span class="token punctuation">.</span><a href="get-http.html"><span class="token function">getHttp</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-response-wrapper/index.html">ResponseWrapper</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -467,7 +476,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-http-client/index.html">HttpClient</a><span class="token punctuation">.</span><a href="get-http-with-auth.html"><span class="token function">getHttpWithAuth</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">username<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">token<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-response-wrapper/index.html">ResponseWrapper</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-http-client/index.html">HttpClient</a><span class="token punctuation">.</span><a href="get-http-with-auth.html"><span class="token function">getHttpWithAuth</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">username<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">token<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-response-wrapper/index.html">ResponseWrapper</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -482,7 +491,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-name-for-user.html"><span class="token function">getNameForUser</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-name-for-user.html"><span class="token function">getNameForUser</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -497,7 +506,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-http-client/index.html">HttpClient</a><span class="token punctuation">.</span><a href="http-request.html"><span class="token function">httpRequest</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">request<span class="token operator">: </span><a href="-request/index.html">Request</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-response-wrapper/index.html">ResponseWrapper</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-http-client/index.html">HttpClient</a><span class="token punctuation">.</span><a href="http-request.html"><span class="token function">httpRequest</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">request<span class="token operator">: </span><a href="-request/index.html">Request</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-response-wrapper/index.html">ResponseWrapper</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -512,7 +521,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="looks-like-repl-command.html"><span class="token function">looksLikeReplCommand</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">code<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If this function returns true for the <a href="looks-like-repl-command.html">code</a>, it will be interpreted as Jupyter REPL command</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="looks-like-repl-command.html"><span class="token function">looksLikeReplCommand</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">code<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If this function returns true for the <a href="looks-like-repl-command.html">code</a>, it will be interpreted as Jupyter REPL command</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -527,7 +536,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="repl-command-or-null.html"><span class="token function">replCommandOrNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">code<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-repl-command/index.html">ReplCommand</a><span class="token operator">?</span><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Preprocesses REPL command and returns its value, or null in case it's invalid, packed with string used for value extraction</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="repl-command-or-null.html"><span class="token function">replCommandOrNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">code<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><a href="-repl-command/index.html">ReplCommand</a><span class="token operator">?</span><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Preprocesses REPL command and returns its value, or null in case it's invalid, packed with string used for value extraction</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -542,7 +551,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-request-builder/index.html">RequestBuilder</a><span class="token punctuation">.</span><a href="with-basic-auth.html"><span class="token function">withBasicAuth</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">username<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">password<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-request-builder/index.html">RequestBuilder</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-request-builder/index.html">RequestBuilder</a><span class="token punctuation">.</span><a href="with-basic-auth.html"><span class="token function">withBasicAuth</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">username<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">password<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-request-builder/index.html">RequestBuilder</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -557,7 +566,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-request-builder/index.html">RequestBuilder</a><span class="token punctuation">.</span><a href="with-json.html"><span class="token function">withJson</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">json<span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-request-builder/index.html">RequestBuilder</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-dependencies:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-request-builder/index.html">RequestBuilder</a><span class="token punctuation">.</span><a href="with-json.html"><span class="token function">withJson</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">json<span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-request-builder/index.html">RequestBuilder</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -570,8 +579,9 @@
       <div class="footer">
         <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
       </div>
+            </div>
+        </div>
     </div>
-</div>
 </body>
 </html>
 
