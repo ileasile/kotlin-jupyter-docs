@@ -54,5 +54,7 @@ org.jetbrains.kotlinx.jupyter.repl.result
 org.jetbrains.kotlinx.jupyter.startup
 org.jetbrains.kotlinx.jupyter.streams
 org.jetbrains.kotlinx.jupyter.util
+module:spring-starter
+org.jetbrains.kotlinx.jupyter.spring.starter
 module:test-kit
 org.jetbrains.kotlinx.jupyter.testkit
