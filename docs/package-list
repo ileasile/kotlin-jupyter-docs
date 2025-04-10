@@ -13,8 +13,6 @@ module:api-annotations
 org.jetbrains.kotlinx.jupyter.api.annotations
 module:common-dependencies
 org.jetbrains.kotlinx.jupyter.common
-module:getting-started
-org.jetbrains.kotlinx.jupyter.example
 module:kotlin-jupyter-api-gradle-plugin
 org.jetbrains.kotlinx.jupyter.api.plugin
 org.jetbrains.kotlinx.jupyter.api.plugin.tasks
@@ -23,12 +21,6 @@ module:lib
 jupyter.kotlin
 jupyter.kotlin.providers
 jupyter.kotlin.receivers
-module:lib-ext
-org.jetbrains.kotlinx.jupyter.ext
-org.jetbrains.kotlinx.jupyter.ext.graph.structure
-org.jetbrains.kotlinx.jupyter.ext.graph.visualization
-org.jetbrains.kotlinx.jupyter.ext.graph.wrappers
-org.jetbrains.kotlinx.jupyter.ext.integration
 module:shared-compiler
 org.jetbrains.kotlinx.jupyter.codegen
 org.jetbrains.kotlinx.jupyter.commands
@@ -54,7 +46,5 @@ org.jetbrains.kotlinx.jupyter.repl.result
 org.jetbrains.kotlinx.jupyter.startup
 org.jetbrains.kotlinx.jupyter.streams
 org.jetbrains.kotlinx.jupyter.util
-module:spring-starter
-org.jetbrains.kotlinx.jupyter.spring.starter
 module:test-kit
 org.jetbrains.kotlinx.jupyter.testkit
