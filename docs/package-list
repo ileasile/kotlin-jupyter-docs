@@ -48,6 +48,7 @@ org.jetbrains.kotlinx.jupyter.repl.config
 org.jetbrains.kotlinx.jupyter.repl.creating
 org.jetbrains.kotlinx.jupyter.repl.embedded
 org.jetbrains.kotlinx.jupyter.repl.execution
+org.jetbrains.kotlinx.jupyter.repl.logging
 org.jetbrains.kotlinx.jupyter.repl.notebook
 org.jetbrains.kotlinx.jupyter.repl.notebook.impl
 org.jetbrains.kotlinx.jupyter.repl.result
