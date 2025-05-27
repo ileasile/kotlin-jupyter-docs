@@ -42,6 +42,7 @@ org.jetbrains.kotlinx.jupyter.libraries
 org.jetbrains.kotlinx.jupyter.magics
 org.jetbrains.kotlinx.jupyter.messaging
 org.jetbrains.kotlinx.jupyter.messaging.comms
+org.jetbrains.kotlinx.jupyter.messaging.serializers
 org.jetbrains.kotlinx.jupyter.protocol
 org.jetbrains.kotlinx.jupyter.repl
 org.jetbrains.kotlinx.jupyter.repl.config
