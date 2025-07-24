@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Builder</title>
+    <link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../../index.html">
+                    api
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+0.15.0-100500        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":api/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":api/main"
+                                       data-filter=":api/main"/>
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    api
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="api::org.jetbrains.kotlinx.jupyter.api.libraries/JupyterIntegration.Builder///PointingToDeclaration//1081350600">
+  <div class="breadcrumbs"><a href="../../../../index.html">api</a><span class="delimiter">/</span><a href="../../index.html">org.jetbrains.kotlinx.jupyter.api.libraries</a><span class="delimiter">/</span><a href="../index.html">JupyterIntegration</a><span class="delimiter">/</span><span class="current">Builder</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Builder</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">Builder</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>notebook<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-notebook/index.html">Notebook</a></span></span><span class="token punctuation">)</span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-856537872%2FConstructors%2F1081350600" anchor-label="Builder" id="-856537872%2FConstructors%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-builder.html"><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-856537872%2FConstructors%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">notebook<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-notebook/index.html">Notebook</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-736833269%2FProperties%2F1081350600" anchor-label="notebook" id="-736833269%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="notebook.html"><span><span>notebook</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-736833269%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="notebook.html">notebook</a><span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-notebook/index.html">Notebook</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1179585345%2FFunctions%2F1081350600" anchor-label="acceptIntegrationTypeNameIf" id="1179585345%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="accept-integration-type-name-if.html"><span>accept</span><wbr></wbr><span>Integration</span><wbr></wbr><span>Type</span><wbr></wbr><span>Name</span><wbr></wbr><span><span>If</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1179585345%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="accept-integration-type-name-if.html"><span class="token function">acceptIntegrationTypeNameIf</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">predicate<span class="token operator">: </span><span class="token punctuation">(</span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-type-name/index.html">TypeName</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">See <a href="add-integration-type-name-rule.html">addIntegrationTypeNameRule</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-891655137%2FFunctions%2F1081350600" anchor-label="addClassAnnotationHandler" id="-891655137%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-class-annotation-handler.html"><span>add</span><wbr></wbr><span>Class</span><wbr></wbr><span>Annotation</span><wbr></wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-891655137%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="add-class-annotation-handler.html"><span class="token function">addClassAnnotationHandler</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-class-annotation-handler/index.html">ClassAnnotationHandler</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1452782829%2FFunctions%2F1081350600" anchor-label="addCodePreprocessor" id="1452782829%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-code-preprocessor.html"><span>add</span><wbr></wbr><span>Code</span><wbr></wbr><span><span>Preprocessor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1452782829%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="add-code-preprocessor.html"><span class="token function">addCodePreprocessor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">preprocessor<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-code-preprocessor/index.html">CodePreprocessor</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1290343097%2FFunctions%2F1081350600" anchor-label="addFileAnnotationHanlder" id="1290343097%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-file-annotation-hanlder.html"><span>add</span><wbr></wbr><span>File</span><wbr></wbr><span>Annotation</span><wbr></wbr><span><span>Hanlder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1290343097%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="add-file-annotation-hanlder.html"><span class="token function">addFileAnnotationHanlder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-file-annotation-handler/index.html">FileAnnotationHandler</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1274948451%2FFunctions%2F1081350600" anchor-label="addIntegrationTypeNameRule" id="-1274948451%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-integration-type-name-rule.html"><span>add</span><wbr></wbr><span>Integration</span><wbr></wbr><span>Type</span><wbr></wbr><span>Name</span><wbr></wbr><span><span>Rule</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1274948451%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="add-integration-type-name-rule.html"><span class="token function">addIntegrationTypeNameRule</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">rule<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.util/-acceptance-rule/index.html">AcceptanceRule</a><span class="token operator">&lt;</span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-type-name/index.html">TypeName</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">All integrations transitively loaded by this integration will be tested against passed acceptance rule and won't be loaded if the rule returned <code class="lang-kotlin">false</code>. If there were no acceptance rules that returned not-null values, integration <strong>will be loaded</strong>. If there are several acceptance rules that returned not-null values, the latest one will be taken into account.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1785611723%2FFunctions%2F1081350600" anchor-label="addOption" id="1785611723%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-option.html"><span>add</span><wbr></wbr><span><span>Option</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1785611723%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="add-option.html"><span class="token function">addOption</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2045965703%2FFunctions%2F1081350600" anchor-label="addOptions" id="2045965703%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-options.html"><span>add</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2045965703%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="add-options.html"><span class="token function">addOptions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">options<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1397681533%2FFunctions%2F1081350600" anchor-label="addRenderer" id="-1397681533%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-renderer.html"><span>add</span><wbr></wbr><span><span>Renderer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1397681533%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="add-renderer.html"><span class="token function">addRenderer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-renderer-field-handler/index.html">RendererFieldHandler</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="add-renderer.html"><span class="token function">addRenderer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-renderer-handler/index.html">RendererHandler</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="add-renderer.html"><span class="token function">addRenderer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-renderer-type-handler/index.html">RendererTypeHandler</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1237734015%2FFunctions%2F1081350600" anchor-label="addRepository" id="1237734015%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-repository.html"><span>add</span><wbr></wbr><span><span>Repository</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1237734015%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="add-repository.html"><span class="token function">addRepository</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">repository<span class="token operator">: </span><a href="../../-kernel-repository/index.html">KernelRepository</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="816919685%2FFunctions%2F1081350600" anchor-label="addTextRenderer" id="816919685%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-text-renderer.html"><span>add</span><wbr></wbr><span>Text</span><wbr></wbr><span><span>Renderer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="816919685%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="add-text-renderer.html"><span class="token function">addTextRenderer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">renderer<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-text-renderer/index.html">TextRenderer</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1411366345%2FFunctions%2F1081350600" anchor-label="addThrowableRenderer" id="1411366345%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-throwable-renderer.html"><span>add</span><wbr></wbr><span>Throwable</span><wbr></wbr><span><span>Renderer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1411366345%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="add-throwable-renderer.html"><span class="token function">addThrowableRenderer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">renderer<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-throwable-renderer/index.html">ThrowableRenderer</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1106730819%2FFunctions%2F1081350600" anchor-label="addTypeConverter" id="1106730819%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-type-converter.html"><span>add</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Converter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1106730819%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="add-type-converter.html"><span class="token function">addTypeConverter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-field-handler/index.html">FieldHandler</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1104535131%2FFunctions%2F1081350600" anchor-label="afterCellExecution" id="1104535131%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="after-cell-execution.html"><span>after</span><wbr></wbr><span>Cell</span><wbr></wbr><span><span>Execution</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1104535131%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="after-cell-execution.html"><span class="token function">afterCellExecution</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-after-cell-execution-callback/index.html">AfterCellExecutionCallback</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1885699928%2FFunctions%2F1081350600" anchor-label="beforeCellExecution" id="-1885699928%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="before-cell-execution.html"><span>before</span><wbr></wbr><span>Cell</span><wbr></wbr><span><span>Execution</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1885699928%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="before-cell-execution.html"><span class="token function">beforeCellExecution</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-host/index.html">KotlinKernelHost</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1515022089%2FFunctions%2F1081350600" anchor-label="dependencies" id="-1515022089%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dependencies.html"><span><span>dependencies</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1515022089%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="dependencies.html"><span class="token function">dependencies</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>paths<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="824982159%2FFunctions%2F1081350600" anchor-label="dependencies" id="824982159%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../dependencies.html"><span><span>dependencies</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="824982159%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">JupyterIntegration.Builder</a><span class="token punctuation">.</span><a href="../../dependencies.html"><span class="token function">dependencies</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">action<span class="token operator">: </span><a href="../../-dependency-handler-scope/index.html">DependencyHandlerScope</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1915305975%2FFunctions%2F1081350600" anchor-label="discardIntegrationTypeNameIf" id="-1915305975%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="discard-integration-type-name-if.html"><span>discard</span><wbr></wbr><span>Integration</span><wbr></wbr><span>Type</span><wbr></wbr><span>Name</span><wbr></wbr><span><span>If</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1915305975%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="discard-integration-type-name-if.html"><span class="token function">discardIntegrationTypeNameIf</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">predicate<span class="token operator">: </span><span class="token punctuation">(</span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-type-name/index.html">TypeName</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">See <a href="add-integration-type-name-rule.html">addIntegrationTypeNameRule</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1812989790%2FFunctions%2F1081350600" anchor-label="import" id="1812989790%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="import.html"><span><span>import</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1812989790%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="import.html">T</a><span class="token operator">&gt; </span><a href="import.html"><span class="token function">import</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="import.html"><span class="token function">import</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>paths<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-881585965%2FFunctions%2F1081350600" anchor-label="importPackage" id="-881585965%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="import-package.html"><span>import</span><wbr></wbr><span><span>Package</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-881585965%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="import-package.html">T</a><span class="token operator">&gt; </span><a href="import-package.html"><span class="token function">importPackage</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-945305028%2FFunctions%2F1081350600" anchor-label="markVariableInternal" id="-945305028%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mark-variable-internal.html"><span>mark</span><wbr></wbr><span>Variable</span><wbr></wbr><span><span>Internal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-945305028%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="mark-variable-internal.html"><span class="token function">markVariableInternal</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">marker<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-internal-variables-marker/index.html">InternalVariablesMarker</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-745465651%2FFunctions%2F1081350600" anchor-label="onClassAnnotation" id="-745465651%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-class-annotation.html"><span>on</span><wbr></wbr><span>Class</span><wbr></wbr><span><span>Annotation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-745465651%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="on-class-annotation.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-annotation/index.html">Annotation</a><span class="token operator">&gt; </span><a href="on-class-annotation.html"><span class="token function">onClassAnnotation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>callback<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-class-declarations-callback/index.html">ClassDeclarationsCallback</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1046964089%2FFunctions%2F1081350600" anchor-label="onColorSchemeChange" id="-1046964089%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-color-scheme-change.html"><span>on</span><wbr></wbr><span>Color</span><wbr></wbr><span>Scheme</span><wbr></wbr><span><span>Change</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1046964089%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="on-color-scheme-change.html"><span class="token function">onColorSchemeChange</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">action<span class="token operator">: </span><a href="../../-color-scheme-changed-callback/index.html">ColorSchemeChangedCallback</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2099944336%2FFunctions%2F1081350600" anchor-label="onFileAnnotation" id="-2099944336%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-file-annotation.html"><span>on</span><wbr></wbr><span>File</span><wbr></wbr><span><span>Annotation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2099944336%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="on-file-annotation.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-annotation/index.html">Annotation</a><span class="token operator">&gt; </span><a href="on-file-annotation.html"><span class="token function">onFileAnnotation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>callback<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-file-annotation-callback/index.html">FileAnnotationCallback</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="557601179%2FFunctions%2F1081350600" anchor-label="onInterrupt" id="557601179%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-interrupt.html"><span>on</span><wbr></wbr><span><span>Interrupt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="557601179%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="on-interrupt.html"><span class="token function">onInterrupt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">action<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-interruption-callback/index.html">InterruptionCallback</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="165050445%2FFunctions%2F1081350600" anchor-label="onLoaded" id="165050445%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-loaded.html"><span>on</span><wbr></wbr><span><span>Loaded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="165050445%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="on-loaded.html"><span class="token function">onLoaded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-host/index.html">KotlinKernelHost</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-349133156%2FFunctions%2F1081350600" anchor-label="onShutdown" id="-349133156%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-shutdown.html"><span>on</span><wbr></wbr><span><span>Shutdown</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-349133156%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="on-shutdown.html"><span class="token function">onShutdown</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-host/index.html">KotlinKernelHost</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1485022211%2FFunctions%2F1081350600" anchor-label="onVariable" id="-1485022211%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-variable.html"><span>on</span><wbr></wbr><span><span>Variable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1485022211%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="on-variable.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="on-variable.html"><span class="token function">onVariable</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>callback<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-variable-declaration-callback/index.html">VariableDeclarationCallback</a><span class="token operator">&lt;</span><a href="on-variable.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Runs <a href="on-variable.html">callback</a> for every snippet property of compile-time subtype of type <a href="on-variable.html">T</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-60623276%2FFunctions%2F1081350600" anchor-label="onVariableByRuntimeType" id="-60623276%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-variable-by-runtime-type.html"><span>on</span><wbr></wbr><span>Variable</span><wbr></wbr><span>By</span><wbr></wbr><span>Runtime</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-60623276%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="on-variable-by-runtime-type.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="on-variable-by-runtime-type.html"><span class="token function">onVariableByRuntimeType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>callback<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-variable-declaration-callback/index.html">VariableDeclarationCallback</a><span class="token operator">&lt;</span><a href="on-variable-by-runtime-type.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Same as <a href="on-variable.html">onVariable</a>, but based on runtime type that is figured out by reflection</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-952221898%2FFunctions%2F1081350600" anchor-label="preprocessCode" id="-952221898%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="preprocess-code.html"><span>preprocess</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-952221898%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="preprocess-code.html"><span class="token function">preprocessCode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-host/index.html">KotlinKernelHost</a><span class="token punctuation">.</span><span class="token punctuation">(</span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-code/index.html">Code</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-code/index.html">Code</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1358104666%2FFunctions%2F1081350600" anchor-label="preprocessCodeWithLibraries" id="-1358104666%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="preprocess-code-with-libraries.html"><span>preprocess</span><wbr></wbr><span>Code</span><wbr></wbr><span>With</span><wbr></wbr><span><span>Libraries</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1358104666%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="preprocess-code-with-libraries.html"><span class="token function">preprocessCodeWithLibraries</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-host/index.html">KotlinKernelHost</a><span class="token punctuation">.</span><span class="token punctuation">(</span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-code/index.html">Code</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-code-preprocessor/-result/index.html">CodePreprocessor.Result</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="18584874%2FFunctions%2F1081350600" anchor-label="render" id="18584874%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="render.html"><span><span>render</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="18584874%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="render.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="render.html"><span class="token function">render</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>renderer<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-code-cell/index.html">CodeCell</a><span class="token punctuation">.</span><span class="token punctuation">(</span><a href="render.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1860747248%2FFunctions%2F1081350600" anchor-label="renderThrowable" id="1860747248%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="render-throwable.html"><span>render</span><wbr></wbr><span><span>Throwable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1860747248%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="render-throwable.html">E</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token operator">&gt; </span><a href="render-throwable.html"><span class="token function">renderThrowable</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>renderer<span class="token operator">: </span><span class="token punctuation">(</span><a href="render-throwable.html">E</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-201469332%2FFunctions%2F1081350600" anchor-label="renderWithHost" id="-201469332%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="render-with-host.html"><span>render</span><wbr></wbr><span>With</span><wbr></wbr><span><span>Host</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-201469332%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="render-with-host.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="render-with-host.html"><span class="token function">renderWithHost</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>renderer<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-code-cell/index.html">CodeCell</a><span class="token punctuation">.</span><span class="token punctuation">(</span><a href="../../-execution-host/index.html">ExecutionHost</a><span class="token punctuation">, </span><a href="render-with-host.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1025487946%2FFunctions%2F1081350600" anchor-label="repositories" id="-1025487946%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="repositories.html"><span><span>repositories</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1025487946%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="repositories.html"><span class="token function">repositories</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>paths<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1617234031%2FFunctions%2F1081350600" anchor-label="repositories" id="1617234031%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../repositories.html"><span><span>repositories</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1617234031%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">JupyterIntegration.Builder</a><span class="token punctuation">.</span><a href="../../repositories.html"><span class="token function">repositories</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">action<span class="token operator">: </span><a href="../../-repository-handler-scope/index.html">RepositoryHandlerScope</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1225662600%2FFunctions%2F1081350600" anchor-label="repository" id="1225662600%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="repository.html"><span><span>repository</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1225662600%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="repository.html"><span class="token function">repository</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">username<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">password<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1868987972%2FFunctions%2F1081350600" anchor-label="resource" id="1868987972%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="resource.html"><span><span>resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1868987972%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="resource.html"><span class="token function">resource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">resource<span class="token operator">: </span><a href="../../-library-resource/index.html">LibraryResource</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1341861098%2FFunctions%2F1081350600" anchor-label="resources" id="1341861098%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../resources.html"><span><span>resources</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1341861098%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">JupyterIntegration.Builder</a><span class="token punctuation">.</span><a href="../../resources.html"><span class="token function">resources</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><a href="../../-resources-builder/index.html">ResourcesBuilder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Build a resource tree using <a href="../../-resources-builder/index.html">ResourcesBuilder</a>. The builder allows to construct <code class="lang-kotlin">js</code> and <code class="lang-kotlin">css</code> bundles. Each bundle could contain multiple files or urls. Each of those could contain multiple fallback paths (for example if URL not found, local resource is used.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1410427320%2FFunctions%2F1081350600" anchor-label="setDescription" id="1410427320%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-description.html"><span>set</span><wbr></wbr><span><span>Description</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1410427320%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-description.html"><span class="token function">setDescription</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1396470654%2FFunctions%2F1081350600" anchor-label="setMinimalKernelVersion" id="1396470654%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-minimal-kernel-version.html"><span>set</span><wbr></wbr><span>Minimal</span><wbr></wbr><span>Kernel</span><wbr></wbr><span><span>Version</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1396470654%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-minimal-kernel-version.html"><span class="token function">setMinimalKernelVersion</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">version<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-minimal-kernel-version.html"><span class="token function">setMinimalKernelVersion</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">version<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-version/index.html">KotlinKernelVersion</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="846645655%2FFunctions%2F1081350600" anchor-label="setWebsite" id="846645655%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-website.html"><span>set</span><wbr></wbr><span><span>Website</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="846645655%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-website.html"><span class="token function">setWebsite</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">website<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="541471027%2FFunctions%2F1081350600" anchor-label="updateVariable" id="541471027%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-variable.html"><span>update</span><wbr></wbr><span><span>Variable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="541471027%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="update-variable.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="update-variable.html"><span class="token function">updateVariable</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>callback<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-variable-update-callback/index.html">VariableUpdateCallback</a><span class="token operator">&lt;</span><a href="update-variable.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Runs <a href="update-variable.html">callback</a> for every snippet property of compile-time subtype of type <a href="update-variable.html">T</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-231882608%2FFunctions%2F1081350600" anchor-label="updateVariableByRuntimeType" id="-231882608%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-variable-by-runtime-type.html"><span>update</span><wbr></wbr><span>Variable</span><wbr></wbr><span>By</span><wbr></wbr><span>Runtime</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-231882608%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="update-variable-by-runtime-type.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="update-variable-by-runtime-type.html"><span class="token function">updateVariableByRuntimeType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>callback<span class="token operator">: </span><a href="../../../org.jetbrains.kotlinx.jupyter.api/-variable-update-callback/index.html">VariableUpdateCallback</a><span class="token operator">&lt;</span><a href="update-variable-by-runtime-type.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Same as <a href="update-variable.html">updateVariable</a>, but based on runtime type that is figured out by reflection</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
