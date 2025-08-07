@@ -1,0 +1,851 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>NotebookImpl</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+<a class="library-name--link" href="../../../index.html">
+                    kotlin-jupyter-kernel
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">0.13.0-583-1
+        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":shared-compiler:dokkaHtmlPartial/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":shared-compiler:dokkaHtmlPartial/main" data-filter=":shared-compiler:dokkaHtmlPartial/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    kotlin-jupyter-kernel
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="shared-compiler::org.jetbrains.kotlinx.jupyter.repl.notebook.impl/NotebookImpl///PointingToDeclaration//345886579">
+  <div class="breadcrumbs"><a href="../../index.html">shared-compiler</a><span class="delimiter">/</span><a href="../index.html">org.jetbrains.kotlinx.jupyter.repl.notebook.impl</a><span class="delimiter">/</span><span class="current">NotebookImpl</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Notebook</span><wbr><span><span>Impl</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">NotebookImpl</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>loggerFactory<span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-kernel-logger-factory/index.html">KernelLoggerFactory</a><span class="token punctuation">, </span></span><span class="parameter ">runtimeProperties<span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.repl/-repl-runtime-properties/index.html">ReplRuntimeProperties</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>commManager<span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api.libraries/-comm-manager/index.html">CommManager</a><span class="token punctuation">, </span></span><span class="parameter ">communicationFacility<span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.messaging/-jupyter-communication-facility/index.html">JupyterCommunicationFacility</a><span class="token punctuation">, </span></span><span class="parameter ">explicitClientType<span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-jupyter-client-type/index.html">JupyterClientType</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>libraryLoader<span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-library-loader/index.html">LibraryLoader</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>kernelRunMode<span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-kernel-run-mode/index.html">KernelRunMode</a><span class="token punctuation">, </span></span><span class="parameter ">debugPortProvided<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span> : <a href="../../org.jetbrains.kotlinx.jupyter.repl.notebook/-mutable-notebook/index.html">MutableNotebook</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html">Closeable</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1538954205%2FConstructors%2F345886579" anchor-label="NotebookImpl" id="-1538954205%2FConstructors%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-notebook-impl.html"><span>Notebook</span><wbr><span><span>Impl</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1538954205%2FConstructors%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loggerFactory<span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-kernel-logger-factory/index.html">KernelLoggerFactory</a><span class="token punctuation">, </span></span><span class="parameter ">runtimeProperties<span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.repl/-repl-runtime-properties/index.html">ReplRuntimeProperties</a><span class="token punctuation">, </span></span><span class="parameter ">commManager<span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api.libraries/-comm-manager/index.html">CommManager</a><span class="token punctuation">, </span></span><span class="parameter ">communicationFacility<span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.messaging/-jupyter-communication-facility/index.html">JupyterCommunicationFacility</a><span class="token punctuation">, </span></span><span class="parameter ">explicitClientType<span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-jupyter-client-type/index.html">JupyterClientType</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">libraryLoader<span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-library-loader/index.html">LibraryLoader</a><span class="token punctuation">, </span></span><span class="parameter ">kernelRunMode<span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-kernel-run-mode/index.html">KernelRunMode</a><span class="token punctuation">, </span></span><span class="parameter ">debugPortProvided<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1106777105%2FProperties%2F345886579" anchor-label="afterCellExecutionsProcessor" id="1106777105%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="after-cell-executions-processor.html"><span>after</span><wbr><span>Cell</span><wbr><span>Executions</span><wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1106777105%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="after-cell-executions-processor.html">afterCellExecutionsProcessor</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-extensions-processor/index.html">ExtensionsProcessor</a><span class="token operator">&lt;</span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-after-cell-execution-callback/index.html">AfterCellExecutionCallback</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="783803514%2FProperties%2F345886579" anchor-label="beforeCellExecutionsProcessor" id="783803514%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="before-cell-executions-processor.html"><span>before</span><wbr><span>Cell</span><wbr><span>Executions</span><wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="783803514%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="before-cell-executions-processor.html">beforeCellExecutionsProcessor</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-extensions-processor/index.html">ExtensionsProcessor</a><span class="token operator">&lt;</span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-execution-callback/index.html">ExecutionCallback</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="23100865%2FProperties%2F345886579" anchor-label="cellsList" id="23100865%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="cells-list.html"><span>cells</span><wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="23100865%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="cells-list.html">cellsList</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><a href="../../org.jetbrains.kotlinx.jupyter.repl.notebook/-mutable-code-cell/index.html">MutableCodeCell</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="702498907%2FProperties%2F345886579" anchor-label="cellVariables" id="702498907%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="cell-variables.html"><span>cell</span><wbr><span><span>Variables</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="702498907%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="cell-variables.html">cellVariables</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1433314191%2FProperties%2F345886579" anchor-label="codePreprocessorsProcessor" id="1433314191%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="code-preprocessors-processor.html"><span>code</span><wbr><span>Preprocessors</span><wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1433314191%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="code-preprocessors-processor.html">codePreprocessorsProcessor</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-extensions-processor/index.html">ExtensionsProcessor</a><span class="token operator">&lt;</span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-code-preprocessor/index.html">CodePreprocessor</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1008295436%2FProperties%2F345886579" anchor-label="colorSchemeChangeCallbacksProcessor" id="-1008295436%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="color-scheme-change-callbacks-processor.html"><span>color</span><wbr><span>Scheme</span><wbr><span>Change</span><wbr><span>Callbacks</span><wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1008295436%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="color-scheme-change-callbacks-processor.html">colorSchemeChangeCallbacksProcessor</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-extensions-processor/index.html">ExtensionsProcessor</a><span class="token operator">&lt;</span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api.libraries/-color-scheme-changed-callback/index.html">ColorSchemeChangedCallback</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-757692977%2FProperties%2F345886579" anchor-label="commManager" id="-757692977%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="comm-manager.html"><span>comm</span><wbr><span><span>Manager</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-757692977%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="comm-manager.html">commManager</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api.libraries/-comm-manager/index.html">CommManager</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2008719467%2FProperties%2F345886579" anchor-label="currentCell" id="-2008719467%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="current-cell.html"><span>current</span><wbr><span><span>Cell</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2008719467%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="current-cell.html">currentCell</a><span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.repl.notebook/-mutable-code-cell/index.html">MutableCodeCell</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1145873926%2FProperties%2F345886579" anchor-label="currentClasspath" id="1145873926%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="current-classpath.html"><span>current</span><wbr><span><span>Classpath</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1145873926%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="current-classpath.html">currentClasspath</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-747078245%2FProperties%2F345886579" anchor-label="currentColorScheme" id="-747078245%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="current-color-scheme.html"><span>current</span><wbr><span>Color</span><wbr><span><span>Scheme</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-747078245%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="current-color-scheme.html">currentColorScheme</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api.libraries/-color-scheme/index.html">ColorScheme</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="458678233%2FProperties%2F345886579" anchor-label="displays" id="458678233%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="displays.html"><span><span>displays</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="458678233%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="displays.html">displays</a><span class="token operator">: </span><a href="../-display-container-impl/index.html">DisplayContainerImpl</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-710875120%2FProperties%2F345886579" anchor-label="executionHost" id="-710875120%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="execution-host.html"><span>execution</span><wbr><span><span>Host</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-710875120%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="execution-host.html">executionHost</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-host/index.html">KotlinKernelHost</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1004215104%2FProperties%2F345886579" anchor-label="fieldsHandlersProcessor" id="-1004215104%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fields-handlers-processor.html"><span>fields</span><wbr><span>Handlers</span><wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1004215104%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="fields-handlers-processor.html">fieldsHandlersProcessor</a><span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.codegen/-fields-processor-internal/index.html">FieldsProcessorInternal</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1925891970%2FProperties%2F345886579" anchor-label="intermediateClassLoader" id="-1925891970%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="intermediate-class-loader.html"><span>intermediate</span><wbr><span>Class</span><wbr><span><span>Loader</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1925891970%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="intermediate-class-loader.html">intermediateClassLoader</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassLoader.html">ClassLoader</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="587710465%2FProperties%2F345886579" anchor-label="interruptionCallbacksProcessor" id="587710465%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="interruption-callbacks-processor.html"><span>interruption</span><wbr><span>Callbacks</span><wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="587710465%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="interruption-callbacks-processor.html">interruptionCallbacksProcessor</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-extensions-processor/index.html">ExtensionsProcessor</a><span class="token operator">&lt;</span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-interruption-callback/index.html">InterruptionCallback</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="141383461%2FProperties%2F345886579" anchor-label="jreInfo" id="141383461%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="jre-info.html"><span>jre</span><wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="141383461%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="jre-info.html">jreInfo</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-j-r-e-info-provider/index.html">JREInfoProvider</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="596807454%2FProperties%2F345886579" anchor-label="jupyterClientType" id="596807454%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="jupyter-client-type.html"><span>jupyter</span><wbr><span>Client</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="596807454%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="jupyter-client-type.html">jupyterClientType</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-jupyter-client-type/index.html">JupyterClientType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-770020801%2FProperties%2F345886579" anchor-label="kernelRunMode" id="-770020801%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="kernel-run-mode.html"><span>kernel</span><wbr><span>Run</span><wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-770020801%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="kernel-run-mode.html">kernelRunMode</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-kernel-run-mode/index.html">KernelRunMode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1424558219%2FProperties%2F345886579" anchor-label="kernelVersion" id="-1424558219%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="kernel-version.html"><span>kernel</span><wbr><span><span>Version</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1424558219%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="kernel-version.html">kernelVersion</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-version/index.html">KotlinKernelVersion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-89205614%2FProperties%2F345886579" anchor-label="lastCell" id="-89205614%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="last-cell.html"><span>last</span><wbr><span><span>Cell</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-89205614%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="last-cell.html">lastCell</a><span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.repl.notebook/-mutable-code-cell/index.html">MutableCodeCell</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1902529538%2FProperties%2F345886579" anchor-label="libraryLoader" id="1902529538%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="library-loader.html"><span>library</span><wbr><span><span>Loader</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1902529538%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="library-loader.html">libraryLoader</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-library-loader/index.html">LibraryLoader</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2118510735%2FProperties%2F345886579" anchor-label="libraryRequests" id="-2118510735%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="library-requests.html"><span>library</span><wbr><span><span>Requests</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2118510735%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="library-requests.html">libraryRequests</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api.libraries/-library-resolution-request/index.html">LibraryResolutionRequest</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1558430506%2FProperties%2F345886579" anchor-label="loggerFactory" id="-1558430506%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="logger-factory.html"><span>logger</span><wbr><span><span>Factory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1558430506%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="logger-factory.html">loggerFactory</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-kernel-logger-factory/index.html">KernelLoggerFactory</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="624272968%2FProperties%2F345886579" anchor-label="renderersProcessor" id="624272968%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="renderers-processor.html"><span>renderers</span><wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="624272968%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="renderers-processor.html">renderersProcessor</a><span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.codegen/-results-renderers-processor/index.html">ResultsRenderersProcessor</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-29474189%2FProperties%2F345886579" anchor-label="resultsAccessor" id="-29474189%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="results-accessor.html"><span>results</span><wbr><span><span>Accessor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-29474189%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="results-accessor.html">resultsAccessor</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-results-accessor/index.html">ResultsAccessor</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-138391870%2FProperties%2F345886579" anchor-label="sessionOptions" id="-138391870%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="session-options.html"><span>session</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-138391870%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="session-options.html">sessionOptions</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-session-options/index.html">SessionOptions</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1442728395%2FProperties%2F345886579" anchor-label="sharedReplContext" id="-1442728395%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="shared-repl-context.html"><span>shared</span><wbr><span>Repl</span><wbr><span><span>Context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1442728395%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="shared-repl-context.html">sharedReplContext</a><span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.repl/-shared-repl-context/index.html">SharedReplContext</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-668431729%2FProperties%2F345886579" anchor-label="shutdownExecutionsProcessor" id="-668431729%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="shutdown-executions-processor.html"><span>shutdown</span><wbr><span>Executions</span><wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-668431729%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="shutdown-executions-processor.html">shutdownExecutionsProcessor</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-extensions-processor/index.html">ExtensionsProcessor</a><span class="token operator">&lt;</span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-execution-callback/index.html">ExecutionCallback</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-711864229%2FProperties%2F345886579" anchor-label="textRenderersProcessor" id="-711864229%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-renderers-processor.html"><span>text</span><wbr><span>Renderers</span><wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-711864229%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="text-renderers-processor.html">textRenderersProcessor</a><span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.codegen/-text-renderers-processor-with-preventing-recursion/index.html">TextRenderersProcessorWithPreventingRecursion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-308071890%2FProperties%2F345886579" anchor-label="throwableRenderersProcessor" id="-308071890%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="throwable-renderers-processor.html"><span>throwable</span><wbr><span>Renderers</span><wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-308071890%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="throwable-renderers-processor.html">throwableRenderersProcessor</a><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-throwable-renderers-processor/index.html">ThrowableRenderersProcessor</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1746384688%2FProperties%2F345886579" anchor-label="variablesState" id="-1746384688%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="variables-state.html"><span>variables</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1746384688%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="variables-state.html">variablesState</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-variable-state/index.html">VariableState</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1550387378%2FProperties%2F345886579" anchor-label="workingDir" id="-1550387378%2FProperties%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="working-dir.html"><span>working</span><wbr><span><span>Dir</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1550387378%2FProperties%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="working-dir.html">workingDir</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html">Path</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1630691766%2FFunctions%2F345886579" anchor-label="addCell" id="-1630691766%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-cell.html"><span>add</span><wbr><span><span>Cell</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1630691766%2FFunctions%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="add-cell.html"><span class="token function">addCell</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">data<span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.repl/-eval-data/index.html">EvalData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.repl.notebook/-mutable-code-cell/index.html">MutableCodeCell</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1733802791%2FFunctions%2F345886579" anchor-label="beginEvalSession" id="-1733802791%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="begin-eval-session.html"><span>begin</span><wbr><span>Eval</span><wbr><span><span>Session</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1733802791%2FFunctions%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="begin-eval-session.html"><span class="token function">beginEvalSession</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="805019973%2FFunctions%2F345886579" anchor-label="changeColorScheme" id="805019973%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="change-color-scheme.html"><span>change</span><wbr><span>Color</span><wbr><span><span>Scheme</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="805019973%2FFunctions%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="change-color-scheme.html"><span class="token function">changeColorScheme</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">newScheme<span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api.libraries/-color-scheme/index.html">ColorScheme</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-605912840%2FFunctions%2F345886579" anchor-label="close" id="-605912840%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="close.html"><span><span>close</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-605912840%2FFunctions%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="close.html"><span class="token function">close</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1699428114%2FFunctions%2F345886579" anchor-label="getAllDisplays" id="-1699428114%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-all-displays.html"><span>get</span><wbr><span>All</span><wbr><span><span>Displays</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1699428114%2FFunctions%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-all-displays.html"><span class="token function">getAllDisplays</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-display-result-with-cell/index.html">DisplayResultWithCell</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-120343562%2FFunctions%2F345886579" anchor-label="getCell" id="-120343562%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-cell.html"><span>get</span><wbr><span><span>Cell</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-120343562%2FFunctions%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-cell.html"><span class="token function">getCell</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.repl.notebook/-mutable-code-cell/index.html">MutableCodeCell</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="881390230%2FFunctions%2F345886579" anchor-label="getDisplaysById" id="881390230%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-displays-by-id.html"><span>get</span><wbr><span>Displays</span><wbr><span>By</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="881390230%2FFunctions%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-displays-by-id.html"><span class="token function">getDisplaysById</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-display-result-with-cell/index.html">DisplayResultWithCell</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="524450857%2FFunctions%2F345886579" anchor-label="getLibraryFromDescriptor" id="524450857%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-library-from-descriptor.html"><span>get</span><wbr><span>Library</span><wbr><span>From</span><wbr><span><span>Descriptor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="524450857%2FFunctions%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-library-from-descriptor.html"><span class="token function">getLibraryFromDescriptor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">descriptorText<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api.libraries/-library-definition/index.html">LibraryDefinition</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1419442203%2FFunctions%2F345886579" anchor-label="getResult" id="1419442203%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-result.html"><span>get</span><wbr><span><span>Result</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1419442203%2FFunctions%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-result.html"><span class="token function">getResult</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2133452730%2FFunctions%2F345886579" anchor-label="history" id="2133452730%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="history.html"><span><span>history</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2133452730%2FFunctions%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="history.html"><span class="token function">history</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">before<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.repl.notebook/-mutable-code-cell/index.html">MutableCodeCell</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-446584003%2FFunctions%2F345886579" anchor-label="popCell" id="-446584003%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pop-cell.html"><span>pop</span><wbr><span><span>Cell</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-446584003%2FFunctions%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="pop-cell.html"><span class="token function">popCell</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1375976463%2FFunctions%2F345886579" anchor-label="postRender" id="-1375976463%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../org.jetbrains.kotlinx.jupyter.repl/post-render.html"><span>post</span><wbr><span><span>Render</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1375976463%2FFunctions%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../org.jetbrains.kotlinx.jupyter.repl.notebook/-mutable-notebook/index.html">MutableNotebook</a><span class="token punctuation">.</span><a href="../../org.jetbrains.kotlinx.jupyter.repl/post-render.html"><span class="token function">postRender</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-display-result/index.html">DisplayResult</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2035780102%2FFunctions%2F345886579" anchor-label="prompt" id="2035780102%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="prompt.html"><span><span>prompt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2035780102%2FFunctions%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="prompt.html"><span class="token function">prompt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">prompt<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">isPassword<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1999233584%2FFunctions%2F345886579" anchor-label="renderHtmlAsIFrame" id="-1999233584%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="render-html-as-i-frame.html"><span>render</span><wbr><span>Html</span><wbr><span>As</span><wbr><span><span>IFrame</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1999233584%2FFunctions%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="render-html-as-i-frame.html"><span class="token function">renderHtmlAsIFrame</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">data<span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-html-data/index.html">HtmlData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../api/org.jetbrains.kotlinx.jupyter.api/-mime-typed-result/index.html">MimeTypedResult</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1047384143%2FFunctions%2F345886579" anchor-label="updateFilePath" id="1047384143%2FFunctions%2F345886579" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":shared-compiler:dokkaHtmlPartial/main" data-filterable-set=":shared-compiler:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-file-path.html"><span>update</span><wbr><span>File</span><wbr><span><span>Path</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1047384143%2FFunctions%2F345886579"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="update-file-path.html"><span class="token function">updateFilePath</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">absoluteNotebookFilePath<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html">Path</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
