@@ -46,7 +46,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-0.15.0-592        </div>
+0.15.0-593        </div>
         <div class="navigation-controls">
         <div class="filter-section filter-section_loading" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active=""
@@ -108,7 +108,7 @@
   <div class="breadcrumbs"><a href="../../../index.html">protocol</a><span class="delimiter">/</span><a href="../index.html">org.jetbrains.kotlinx.jupyter.protocol.startup</a><span class="delimiter">/</span><span class="current">AbstractKernelJupyterParamsSerializer</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Abstract</span><wbr></wbr><span>Kernel</span><wbr></wbr><span>Jupyter</span><wbr></wbr><span>Params</span><wbr></wbr><span><span>Serializer</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":protocol/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">AbstractKernelJupyterParamsSerializer</a> : <span data-unresolved-link="kotlinx.serialization/KSerializer///PointingToDeclaration/">KSerializer</span><span class="token operator">&lt;</span><a href="../-kernel-jupyter-params/index.html">KernelJupyterParams</a><span class="token operator">&gt; </span></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":protocol/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">AbstractKernelJupyterParamsSerializer</a> : <span data-unresolved-link="kotlinx.serialization/KSerializer///PointingToDeclaration/">KSerializer</span><span class="token operator">&lt;</span><a href="../-kernel-jupyter-params/index.html">KernelJupyterParams</a><span class="token operator">&gt; </span></div><p class="paragraph">This abstract class is fully functional serializer/deserializer for <a href="../-kernel-jupyter-params/index.html">KernelJupyterParams</a> from the connection JSON.</p><p class="paragraph">You only need to implement <span data-unresolved-link="org.jetbrains.kotlinx.jupyter.protocol.startup/AbstractKernelJupyterParamsSerializer/deserializePorts/#kotlinx.serialization.json.JsonObject/PointingToDeclaration/">deserializePorts</span> method that should create an instance of <a href="../-kernel-ports/index.html">KernelPorts</a> from the given JSON object.</p><p class="paragraph">We put this class separately to the protocol module to decouple it from the server-related classes and to provide access to it from intellij.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
