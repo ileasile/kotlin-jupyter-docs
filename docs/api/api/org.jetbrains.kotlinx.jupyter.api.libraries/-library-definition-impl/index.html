@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>LibraryDefinitionImpl</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    api
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+0.15.0-601        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":api/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":api/main"
+                                       data-filter=":api/main"/>
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    api
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="api::org.jetbrains.kotlinx.jupyter.api.libraries/LibraryDefinitionImpl///PointingToDeclaration//1081350600">
+  <div class="breadcrumbs"><a href="../../../index.html">api</a><span class="delimiter">/</span><a href="../index.html">org.jetbrains.kotlinx.jupyter.api.libraries</a><span class="delimiter">/</span><span class="current">LibraryDefinitionImpl</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Library</span><wbr></wbr><span>Definition</span><wbr></wbr><span><span>Impl</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">LibraryDefinitionImpl</a> : <a href="../-library-definition/index.html">LibraryDefinition</a></div><p class="paragraph">Trivial implementation of <a href="../-library-definition/index.html">LibraryDefinition</a> - simple container.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-1150113271%2FClasslikes%2F1081350600" anchor-label="Companion" id="-1150113271%2FClasslikes%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1150113271%2FClasslikes%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1202274754%2FProperties%2F1081350600" anchor-label="afterCellExecution" id="-1202274754%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="after-cell-execution.html"><span>after</span><wbr></wbr><span>Cell</span><wbr></wbr><span><span>Execution</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1202274754%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="after-cell-execution.html">afterCellExecution</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.jetbrains.kotlinx.jupyter.api/-after-cell-execution-callback/index.html">AfterCellExecutionCallback</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List of callbacks called after cell evaluation</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2091222540%2FProperties%2F1081350600" anchor-label="classAnnotations" id="2091222540%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="class-annotations.html"><span>class</span><wbr></wbr><span><span>Annotations</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2091222540%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="class-annotations.html">classAnnotations</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.jetbrains.kotlinx.jupyter.api/-class-annotation-handler/index.html">ClassAnnotationHandler</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List of type annotations used by the annotation processor</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-884775029%2FProperties%2F1081350600" anchor-label="codePreprocessors" id="-884775029%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="code-preprocessors.html"><span>code</span><wbr></wbr><span><span>Preprocessors</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-884775029%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="code-preprocessors.html">codePreprocessors</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.jetbrains.kotlinx.jupyter.api/-code-preprocessor/index.html">CodePreprocessor</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List of code preprocessors</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="707967040%2FProperties%2F1081350600" anchor-label="colorSchemeChangedCallbacks" id="707967040%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="color-scheme-changed-callbacks.html"><span>color</span><wbr></wbr><span>Scheme</span><wbr></wbr><span>Changed</span><wbr></wbr><span><span>Callbacks</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="707967040%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="color-scheme-changed-callbacks.html">colorSchemeChangedCallbacks</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-color-scheme-changed-callback/index.html">ColorSchemeChangedCallback</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Callbacks that might be called when client changes its color scheme, or on library initialization. New color scheme value is passed to the callback</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1982408677%2FProperties%2F1081350600" anchor-label="converters" id="1982408677%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="converters.html"><span><span>converters</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1982408677%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="converters.html">converters</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.jetbrains.kotlinx.jupyter.api/-field-handler/index.html">FieldHandler</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List of type converters used by type providers processors</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1405192079%2FProperties%2F1081350600" anchor-label="dependencies" id="1405192079%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dependencies.html"><span><span>dependencies</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1405192079%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="dependencies.html">dependencies</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List of artifact dependencies in gradle colon-separated format</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="673078022%2FProperties%2F1081350600" anchor-label="description" id="673078022%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="description.html"><span><span>description</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="673078022%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="description.html">description</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Optional textual description of this library</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1512616442%2FProperties%2F1081350600" anchor-label="fileAnnotations" id="1512616442%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="file-annotations.html"><span>file</span><wbr></wbr><span><span>Annotations</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1512616442%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="file-annotations.html">fileAnnotations</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.jetbrains.kotlinx.jupyter.api/-file-annotation-handler/index.html">FileAnnotationHandler</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List of file annotation handlers</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-551474092%2FProperties%2F1081350600" anchor-label="imports" id="-551474092%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="imports.html"><span><span>imports</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-551474092%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="imports.html">imports</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List of imports: simple and star imports are both allowed</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1945957240%2FProperties%2F1081350600" anchor-label="init" id="-1945957240%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="init.html"><span><span>init</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1945957240%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="init.html">init</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.jetbrains.kotlinx.jupyter.api/-execution-callback/index.html">ExecutionCallback</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List of code snippets evaluated on library initialization</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="192841670%2FProperties%2F1081350600" anchor-label="initCell" id="192841670%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="init-cell.html"><span>init</span><wbr></wbr><span><span>Cell</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="192841670%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="init-cell.html">initCell</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.jetbrains.kotlinx.jupyter.api/-execution-callback/index.html">ExecutionCallback</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List of code snippets evaluated before every cell evaluation</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2072113210%2FProperties%2F1081350600" anchor-label="integrationTypeNameRules" id="2072113210%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="integration-type-name-rules.html"><span>integration</span><wbr></wbr><span>Type</span><wbr></wbr><span>Name</span><wbr></wbr><span><span>Rules</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2072113210%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="integration-type-name-rules.html">integrationTypeNameRules</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.jetbrains.kotlinx.jupyter.util/-acceptance-rule/index.html">AcceptanceRule</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Integration type name rules for the library integration classes which are about to be loaded transitively</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="734499353%2FProperties%2F1081350600" anchor-label="internalVariablesMarkers" id="734499353%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="internal-variables-markers.html"><span>internal</span><wbr></wbr><span>Variables</span><wbr></wbr><span><span>Markers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="734499353%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="internal-variables-markers.html">internalVariablesMarkers</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.jetbrains.kotlinx.jupyter.api/-internal-variables-marker/index.html">InternalVariablesMarker</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Predicates to tell if the declaration is internal. Internal declarations tend to be not shown to a user in the variables view, but take place in resolution</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1114592807%2FProperties%2F1081350600" anchor-label="interruptionCallbacks" id="-1114592807%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="interruption-callbacks.html"><span>interruption</span><wbr></wbr><span><span>Callbacks</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1114592807%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="interruption-callbacks.html">interruptionCallbacks</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.jetbrains.kotlinx.jupyter.api/-interruption-callback/index.html">InterruptionCallback</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Callbacks that are run if <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadDeath.html">java.lang.ThreadDeath</a> was thrown during cell execution. In normal conditions, it happens if the user interrupted cell execution via UI</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="132519567%2FProperties%2F1081350600" anchor-label="minKernelVersion" id="132519567%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="min-kernel-version.html"><span>min</span><wbr></wbr><span>Kernel</span><wbr></wbr><span><span>Version</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="132519567%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="min-kernel-version.html">minKernelVersion</a><span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-version/index.html">KotlinKernelVersion</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Minimal kernel version that is supported by this library</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="796319012%2FProperties%2F1081350600" anchor-label="options" id="796319012%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="options.html"><span><span>options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="796319012%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="options.html">options</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Key-value options. Options are passed to the constructors of transitively loaded libraries and could be used in their construction</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1662291445%2FProperties%2F1081350600" anchor-label="originalDescriptorText" id="-1662291445%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="original-descriptor-text.html"><span>original</span><wbr></wbr><span>Descriptor</span><wbr></wbr><span><span>Text</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1662291445%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="original-descriptor-text.html">originalDescriptorText</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Original descriptor text, or <strong>null</strong> if it has non-textual nature</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-943246670%2FProperties%2F1081350600" anchor-label="renderers" id="-943246670%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="renderers.html"><span><span>renderers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-943246670%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="renderers.html">renderers</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.jetbrains.kotlinx.jupyter.api/-renderer-field-handler/index.html">RendererFieldHandler</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List of type renderers. Consider using <a href="../../org.jetbrains.kotlinx.jupyter.api/-renderable/index.html">org.jetbrains.kotlinx.jupyter.api.Renderable</a> as it's generally more convenient</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1907132368%2FProperties%2F1081350600" anchor-label="repositories" id="-1907132368%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="repositories.html"><span><span>repositories</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1907132368%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="repositories.html">repositories</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-kernel-repository/index.html">KernelRepository</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List of repositories to resolve dependencies in</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1765548483%2FProperties%2F1081350600" anchor-label="resources" id="-1765548483%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="resources.html"><span><span>resources</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1765548483%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="resources.html">resources</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-library-resource/index.html">LibraryResource</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List of library resources</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-178724734%2FProperties%2F1081350600" anchor-label="shutdown" id="-178724734%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="shutdown.html"><span><span>shutdown</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-178724734%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="shutdown.html">shutdown</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.jetbrains.kotlinx.jupyter.api/-execution-callback/index.html">ExecutionCallback</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List of code snippets evaluated on kernel shutdown</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1114725951%2FProperties%2F1081350600" anchor-label="textRenderers" id="1114725951%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-renderers.html"><span>text</span><wbr></wbr><span><span>Renderers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1114725951%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="text-renderers.html">textRenderers</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.jetbrains.kotlinx.jupyter.api/-text-renderer-with-priority/index.html">TextRendererWithPriority</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List of text renderers which are used as fallback rendering option. Check out README for more information</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1720835160%2FProperties%2F1081350600" anchor-label="throwableRenderers" id="-1720835160%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="throwable-renderers.html"><span>throwable</span><wbr></wbr><span><span>Renderers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1720835160%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="throwable-renderers.html">throwableRenderers</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.jetbrains.kotlinx.jupyter.api/-throwable-renderer/index.html">ThrowableRenderer</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Renderers of thrown exceptions</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1257190969%2FProperties%2F1081350600" anchor-label="website" id="-1257190969%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="website.html"><span><span>website</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1257190969%2FProperties%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="website.html">website</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Optional link to this library's website</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
