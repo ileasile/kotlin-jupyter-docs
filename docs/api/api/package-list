@@ -1,33 +1,5 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies////PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/index.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/DependencyDescription///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-dependency-description/index.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/DependencyDescription/DependencyDescription/#kotlin.String/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-dependency-description/-dependency-description.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/DependencyDescription/description/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-dependency-description/description.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/DependencyManager///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-dependency-manager/index.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/DependencyManager/addBinaryClasspath/#kotlin.collections.Collection[java.io.File]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-dependency-manager/add-binary-classpath.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/DependencyManager/addSourceClasspath/#kotlin.collections.Collection[java.io.File]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-dependency-manager/add-source-classpath.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/DependencyManager/currentBinaryClasspath/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-dependency-manager/current-binary-classpath.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/DependencyManager/currentSourcesClasspath/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-dependency-manager/current-sources-classpath.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/DependencyManager/resolver/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-dependency-manager/resolver.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/DependencyResolver///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-dependency-resolver/index.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/DependencyResolver/addRepositories/#kotlin.collections.List[org.jetbrains.kotlinx.jupyter.api.dependencies.RepositoryDescription]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-dependency-resolver/add-repositories.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/DependencyResolver/resolve/#kotlin.collections.Collection[org.jetbrains.kotlinx.jupyter.api.dependencies.DependencyDescription]#kotlin.Boolean/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-dependency-resolver/resolve.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/DependencyResolver/resolveMpp/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-dependency-resolver/resolve-mpp.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/DependencyResolver/resolveSources/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-dependency-resolver/resolve-sources.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/RepositoryDescription///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-repository-description/index.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/RepositoryDescription/RepositoryDescription/#kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-repository-description/-repository-description.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/RepositoryDescription/password/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-repository-description/password.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/RepositoryDescription/username/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-repository-description/username.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/RepositoryDescription/value/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-repository-description/value.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/ResolutionResult.Failure///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-resolution-result/-failure/index.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/ResolutionResult.Failure/Failure/#kotlin.String/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-resolution-result/-failure/-failure.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/ResolutionResult.Failure/message/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-resolution-result/-failure/message.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/ResolutionResult.Success///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-resolution-result/-success/index.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/ResolutionResult.Success/Success/#kotlin.collections.List[java.io.File]#kotlin.collections.List[java.io.File]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-resolution-result/-success/-success.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/ResolutionResult.Success/binaryClasspath/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-resolution-result/-success/binary-classpath.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/ResolutionResult.Success/sourceClasspath/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-resolution-result/-success/source-classpath.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api.dependencies/ResolutionResult///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.dependencies/-resolution-result/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.exceptions////PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.exceptions/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.exceptions//messageAndStackTrace/kotlin.Throwable#kotlin.Boolean/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.exceptions/message-and-stack-trace.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.exceptions//renderException/kotlin.Throwable#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.exceptions/render-exception.html
@@ -747,8 +719,8 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.api/Notebook/codePreprocessorsProc
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/Notebook/colorSchemeChangeCallbacksProcessor/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-notebook/color-scheme-change-callbacks-processor.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/Notebook/commManager/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-notebook/comm-manager.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/Notebook/currentCell/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-notebook/current-cell.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/Notebook/currentClasspath/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-notebook/current-classpath.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/Notebook/currentColorScheme/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-notebook/current-color-scheme.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api/Notebook/dependencyManager/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-notebook/dependency-manager.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/Notebook/displays/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-notebook/displays.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/Notebook/executionHost/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-notebook/execution-host.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/Notebook/fieldsHandlersProcessor/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-notebook/fields-handlers-processor.html
@@ -960,11 +932,6 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.util/ListToMapSerializer/serialize
 $dokka.location:org.jetbrains.kotlinx.jupyter.util/ModifiableParentsClassLoader///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.util/-modifiable-parents-class-loader/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.util/ModifiableParentsClassLoader/ModifiableParentsClassLoader/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.util/-modifiable-parents-class-loader/-modifiable-parents-class-loader.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.util/ModifiableParentsClassLoader/addParent/#java.lang.ClassLoader/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.util/-modifiable-parents-class-loader/add-parent.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.util/MultiDelegatingClassLoader///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.util/-multi-delegating-class-loader/index.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.util/MultiDelegatingClassLoader/MultiDelegatingClassLoader/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.util/-multi-delegating-class-loader/-multi-delegating-class-loader.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.util/MultiDelegatingClassLoader/addParent/#java.lang.ClassLoader/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.util/-multi-delegating-class-loader/add-parent.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.util/MultiDelegatingClassLoader/getResource/#kotlin.String/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.util/-multi-delegating-class-loader/get-resource.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.util/MultiDelegatingClassLoader/getResources/#kotlin.String/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.util/-multi-delegating-class-loader/get-resources.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.util/NameAcceptanceRule///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.util/-name-acceptance-rule/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.util/NameAcceptanceRule/NameAcceptanceRule/#kotlin.Boolean#kotlin.Function1[kotlin.String,kotlin.Boolean]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.util/-name-acceptance-rule/-name-acceptance-rule.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.util/NameAcceptanceRule/acceptsFlag/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.util/-name-acceptance-rule/accepts-flag.html
@@ -996,7 +963,6 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.util/StringValueSerializer/deseria
 $dokka.location:org.jetbrains.kotlinx.jupyter.util/StringValueSerializer/serialize/#kotlinx.serialization.encoding.Encoder#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.util/-string-value-serializer/serialize.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.util/TypeHandlerCodeExecutionSerializer///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.util/-type-handler-code-execution-serializer/index.html
 org.jetbrains.kotlinx.jupyter.api
-org.jetbrains.kotlinx.jupyter.api.dependencies
 org.jetbrains.kotlinx.jupyter.api.exceptions
 org.jetbrains.kotlinx.jupyter.api.graphs
 org.jetbrains.kotlinx.jupyter.api.graphs.labels
