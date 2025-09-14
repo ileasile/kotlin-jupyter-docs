@@ -1,5 +1,12 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.embedded////PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.embedded/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.embedded/InMemoryReplResultsHolder///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.embedded/-in-memory-repl-results-holder/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.embedded/InMemoryReplResultsHolder/addReplResult/#kotlin.Any?/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.embedded/-in-memory-repl-results-holder/add-repl-result.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.embedded/InMemoryReplResultsHolder/getReplResult/#kotlin.String/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.embedded/-in-memory-repl-results-holder/get-repl-result.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.embedded/InMemoryReplResultsHolder/removeReplResult/#kotlin.String/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.embedded/-in-memory-repl-results-holder/remove-repl-result.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.embedded/InMemoryReplResultsHolder/setReplResult/#kotlin.String#kotlin.Any?/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.embedded/-in-memory-repl-results-holder/set-repl-result.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.embedded/InMemoryReplResultsHolder/size/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.embedded/-in-memory-repl-results-holder/size.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.exceptions////PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.exceptions/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.exceptions//messageAndStackTrace/kotlin.Throwable#kotlin.Boolean/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.exceptions/message-and-stack-trace.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.exceptions//renderException/kotlin.Throwable#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.exceptions/render-exception.html
@@ -442,6 +449,8 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.api//createRenderer/#kotlin.Functi
 $dokka.location:org.jetbrains.kotlinx.jupyter.api//createRenderer/#kotlin.reflect.KClass[TypeParam(bounds=[kotlin.Any])]#kotlin.Function1[TypeParam(bounds=[kotlin.Any]),kotlin.Any?]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/create-renderer.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api//createRendererByCompileTimeType/#kotlin.Function1[org.jetbrains.kotlinx.jupyter.api.FieldValue,kotlin.Any?]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/create-renderer-by-compile-time-type.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api//createRendererByCompileTimeType/#kotlin.reflect.KType#kotlin.Function1[org.jetbrains.kotlinx.jupyter.api.FieldValue,kotlin.Any?]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/create-renderer-by-compile-time-type.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api//createRendererWithHost/#kotlin.Function2[org.jetbrains.kotlinx.jupyter.api.KotlinKernelHost,TypeParam(bounds=[kotlin.Any]),kotlin.Any?]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/create-renderer-with-host.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api//createRendererWithHost/#kotlin.reflect.KClass[TypeParam(bounds=[kotlin.Any])]#kotlin.Function2[org.jetbrains.kotlinx.jupyter.api.KotlinKernelHost,org.jetbrains.kotlinx.jupyter.api.FieldValue,kotlin.Any?]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/create-renderer-with-host.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api//declare/org.jetbrains.kotlinx.jupyter.api.KotlinKernelHost#kotlin.Array[kotlin.Pair[kotlin.String,kotlin.Any?]]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/declare.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api//declare/org.jetbrains.kotlinx.jupyter.api.KotlinKernelHost#kotlin.Array[org.jetbrains.kotlinx.jupyter.api.VariableDeclaration]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/declare.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api//encodeBufferedImage/#java.awt.image.BufferedImage/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/encode-buffered-image.html
@@ -463,7 +472,7 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.api//takeScreenshot/javax.swing.JD
 $dokka.location:org.jetbrains.kotlinx.jupyter.api//takeScreenshot/javax.swing.JFrame#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/take-screenshot.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api//textResult/#kotlin.String/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/text-result.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api//toJson/org.jetbrains.kotlinx.jupyter.api.DisplayResult?#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/to-json.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api//withId/org.jetbrains.kotlinx.jupyter.api.DisplayResult#kotlin.String/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/with-id.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api//withIdIfNotNull/org.jetbrains.kotlinx.jupyter.api.DisplayResult#kotlin.String?/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/with-id-if-not-null.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/AbstractKernelRunMode///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-abstract-kernel-run-mode/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/AbstractKernelRunMode/AbstractKernelRunMode/#kotlin.String/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-abstract-kernel-run-mode/-abstract-kernel-run-mode.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/AbstractKernelRunMode/name/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-abstract-kernel-run-mode/name.html
@@ -521,10 +530,12 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.api/DisplayContainer///PointingToD
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/DisplayContainer/getAll/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-display-container/get-all.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/DisplayContainer/getById/#kotlin.String?/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-display-container/get-by-id.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/DisplayResult///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-display-result/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/DisplayResult/dispose/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-display-result/dispose.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/DisplayResult/id/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-display-result/id.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/DisplayResult/render/#org.jetbrains.kotlinx.jupyter.api.Notebook/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-display-result/render.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/DisplayResult/toJson/#kotlinx.serialization.json.JsonObject#kotlin.String?/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-display-result/to-json.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/DisplayResult/toJson/#kotlinx.serialization.json.JsonObject/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-display-result/to-json.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/DisplayResult/withId/#kotlin.String/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-display-result/with-id.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/DisplayResultWithCell///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-display-result-with-cell/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/DisplayResultWithCell/cell/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-display-result-with-cell/cell.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/EmbeddedKernelRunMode///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-embedded-kernel-run-mode/index.html
@@ -606,10 +617,13 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.api/HtmlData/toSimpleHtml/#org.jet
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/HtmlData/toString/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-html-data/to-string.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/HtmlData/toString/#org.jetbrains.kotlinx.jupyter.api.libraries.ColorScheme?/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-html-data/to-string.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/InMemoryMimeTypedResult///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-in-memory-mime-typed-result/index.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api/InMemoryMimeTypedResult/InMemoryMimeTypedResult/#org.jetbrains.kotlinx.jupyter.api.InMemoryResult#kotlin.collections.Map[kotlin.String,kotlinx.serialization.json.JsonElement]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-in-memory-mime-typed-result/-in-memory-mime-typed-result.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/InMemoryMimeTypedResult/InMemoryMimeTypedResult/#org.jetbrains.kotlinx.jupyter.api.InMemoryResult#kotlin.collections.Map[kotlin.String,kotlinx.serialization.json.JsonElement]#org.jetbrains.kotlinx.jupyter.api.embedded.InMemoryReplResultsHolder#kotlin.String?/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-in-memory-mime-typed-result/-in-memory-mime-typed-result.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/InMemoryMimeTypedResult/dispose/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-in-memory-mime-typed-result/dispose.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/InMemoryMimeTypedResult/fallbackResult/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-in-memory-mime-typed-result/fallback-result.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/InMemoryMimeTypedResult/id/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-in-memory-mime-typed-result/id.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/InMemoryMimeTypedResult/inMemoryOutput/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-in-memory-mime-typed-result/in-memory-output.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/InMemoryMimeTypedResult/toJson/#kotlinx.serialization.json.JsonObject#kotlin.String?/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-in-memory-mime-typed-result/to-json.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/InMemoryMimeTypedResult/withId/#kotlin.String/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-in-memory-mime-typed-result/with-id.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/InMemoryMimeTypes///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-in-memory-mime-types/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/InMemoryMimeTypes/COMPOSE/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-in-memory-mime-types/-c-o-m-p-o-s-e.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/InMemoryMimeTypes/SWING/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-in-memory-mime-types/-s-w-i-n-g.html
@@ -657,6 +671,7 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelHost/declare/#kotl
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelHost/display/#kotlin.Any#kotlin.String?/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-host/display.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelHost/display/#kotlin.Any/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-host/display.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelHost/execute/#kotlin.String/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-host/execute.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelHost/inMemoryReplResultsHolder/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-host/in-memory-repl-results-holder.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelHost/lastClassLoader/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-host/last-class-loader.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelHost/loadKotlinArtifacts/#kotlin.collections.Collection[kotlin.String]#kotlin.String?/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-host/load-kotlin-artifacts.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/KotlinKernelHost/loadStdlibJdkExtensions/#kotlin.String?/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-kotlin-kernel-host/load-stdlib-jdk-extensions.html
@@ -690,7 +705,7 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypedResult///PointingToDe
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypedResult/MimeTypedResult/#kotlin.collections.Map[kotlin.String,kotlin.String]#kotlin.Boolean#kotlin.String?/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-mime-typed-result/-mime-typed-result.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypedResultEx///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-mime-typed-result-ex/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypedResultEx/MimeTypedResultEx/#kotlinx.serialization.json.JsonElement#kotlin.Boolean#kotlin.String?/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-mime-typed-result-ex/-mime-typed-result-ex.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypedResultEx/MimeTypedResultEx/#kotlinx.serialization.json.JsonElement#kotlin.String?#kotlin.collections.List[org.jetbrains.kotlinx.jupyter.api.outputs.MetadataModifier]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-mime-typed-result-ex/-mime-typed-result-ex.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypedResultEx/MimeTypedResultEx/#kotlinx.serialization.json.JsonElement#kotlin.String?#kotlin.collections.Collection[org.jetbrains.kotlinx.jupyter.api.outputs.MetadataModifier]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-mime-typed-result-ex/-mime-typed-result-ex.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypedResultEx/addMetadataModifier/#org.jetbrains.kotlinx.jupyter.api.outputs.MetadataModifier/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-mime-typed-result-ex/add-metadata-modifier.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypedResultEx/equals/#kotlin.Any?/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-mime-typed-result-ex/equals.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypedResultEx/hasMetadataModifiers/#kotlin.Function1[org.jetbrains.kotlinx.jupyter.api.outputs.MetadataModifier,kotlin.Boolean]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-mime-typed-result-ex/has-metadata-modifiers.html
@@ -700,6 +715,7 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypedResultEx/isolatedHtml
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypedResultEx/removeMetadataModifier/#org.jetbrains.kotlinx.jupyter.api.outputs.MetadataModifier/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-mime-typed-result-ex/remove-metadata-modifier.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypedResultEx/toJson/#kotlinx.serialization.json.JsonObject#kotlin.String?/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-mime-typed-result-ex/to-json.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypedResultEx/toString/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-mime-typed-result-ex/to-string.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypedResultEx/withId/#kotlin.String/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-mime-typed-result-ex/with-id.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypes///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-mime-types/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypes/HTML/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-mime-types/-h-t-m-l.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/MimeTypes/JPEG/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-mime-types/-j-p-e-g.html
@@ -963,6 +979,7 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.util/StringValueSerializer/deseria
 $dokka.location:org.jetbrains.kotlinx.jupyter.util/StringValueSerializer/serialize/#kotlinx.serialization.encoding.Encoder#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.util/-string-value-serializer/serialize.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.util/TypeHandlerCodeExecutionSerializer///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.util/-type-handler-code-execution-serializer/index.html
 org.jetbrains.kotlinx.jupyter.api
+org.jetbrains.kotlinx.jupyter.api.embedded
 org.jetbrains.kotlinx.jupyter.api.exceptions
 org.jetbrains.kotlinx.jupyter.api.graphs
 org.jetbrains.kotlinx.jupyter.api.graphs.labels

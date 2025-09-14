@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>setReplResult</title>
+    <title>getReplResult</title>
     <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "../../../";</script>
     <script>document.documentElement.classList.replace("no-js","js");</script>
@@ -39,18 +39,18 @@
     <div class="root">
     <nav class="navigation theme-dark" id="navigation-wrapper">
             <a class="library-name--link" href="../../../index.html">
-                    shared-compiler
+                    api
             </a>
         <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
                 type="button">Toggle table of contents
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-0.15.0-619        </div>
+0.15.0-621        </div>
         <div class="navigation-controls">
         <div class="filter-section filter-section_loading" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active=""
-                        data-filter=":shared-compiler/main">jvm</button>
+                        data-filter=":api/main">jvm</button>
             <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
                 <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
                         data-role="dropdown-toggle"
@@ -67,8 +67,8 @@
                     </div>
                         <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
                             <label class="checkbox">
-                                <input type="checkbox" class="checkbox--input" id=":shared-compiler/main"
-                                       data-filter=":shared-compiler/main"/>
+                                <input type="checkbox" class="checkbox--input" id=":api/main"
+                                       data-filter=":api/main"/>
                                 <span class="checkbox--icon"></span>
                                 jvm
                             </label>
@@ -92,7 +92,7 @@
                         data-role="dropdown-listbox">
                         <div class="dropdown--header">
                             <span>
-                                    shared-compiler
+                                    api
                             </span>
                             <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
                                 <i class="ui-kit-icon ui-kit-icon_cross"></i>
@@ -104,12 +104,12 @@
                 </div>
             </div>
             <div id="main">
-<div class="main-content" data-page-type="member" id="content" pageIds="shared-compiler::org.jetbrains.kotlinx.jupyter.repl.embedded/InMemoryReplResultsHolder/setReplResult/#kotlin.String#kotlin.Any?/PointingToDeclaration//389078581">
-  <div class="breadcrumbs"><a href="../../../index.html">shared-compiler</a><span class="delimiter">/</span><a href="../index.html">org.jetbrains.kotlinx.jupyter.repl.embedded</a><span class="delimiter">/</span><a href="index.html">InMemoryReplResultsHolder</a><span class="delimiter">/</span><span class="current">setReplResult</span></div>
+<div class="main-content" data-page-type="member" id="content" pageIds="api::org.jetbrains.kotlinx.jupyter.api.embedded/InMemoryReplResultsHolder/getReplResult/#kotlin.String/PointingToDeclaration//1081350600">
+  <div class="breadcrumbs"><a href="../../../index.html">api</a><span class="delimiter">/</span><a href="../index.html">org.jetbrains.kotlinx.jupyter.api.embedded</a><span class="delimiter">/</span><a href="index.html">InMemoryReplResultsHolder</a><span class="delimiter">/</span><span class="current">getReplResult</span></div>
   <div class="cover ">
-    <h1 class="cover"><span>set</span><wbr></wbr><span>Repl</span><wbr></wbr><span><span>Result</span></span></h1>
+    <h1 class="cover"><span>get</span><wbr></wbr><span>Repl</span><wbr></wbr><span><span>Result</span></span></h1>
   </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shared-compiler/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="set-repl-result.html"><span class="token function">setReplResult</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">Sets the REPL result for a given id.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":shared-compiler/main" data-filterable-set=":shared-compiler/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>id</span></span></u></div></span></div><div><div class="title"><p class="paragraph">unique id for the given REPL result. Normally this is <a href="../../org.jetbrains.kotlinx.jupyter.repl.notebook/-mutable-display-result-with-cell/index.html#-1255213693%2FProperties%2F389078581">DisplayResult.id</a>.</p></div></div></div></div><div class="table-row" data-filterable-current=":shared-compiler/main" data-filterable-set=":shared-compiler/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>result</span></span></u></div></span></div><div><div class="title"><p class="paragraph">the REPL result to store.</p></div></div></div></div></div></div></div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="get-repl-result.html"><span class="token function">getReplResult</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></div><p class="paragraph">Returns the REPL result for a given id or <code class="lang-kotlin">null</code> if no result exists or <code class="lang-kotlin">null</code> was the result.</p><span class="kdoc-tag"><h4 class="">Return</h4><p class="paragraph">the repl result associated with the given <a href="get-repl-result.html">id</a> or <code class="lang-kotlin">null</code> if no result was found.</p></span><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>id</span></span></u></div></span></div><div><div class="title"><p class="paragraph">unique id for the given REPL result. Normally this is <a href="../../org.jetbrains.kotlinx.jupyter.api/-display-result/id.html">org.jetbrains.kotlinx.jupyter.api.DisplayResult.id</a>.</p></div></div></div></div></div></div></div>
 </div>
     <div class="footer">
         <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>

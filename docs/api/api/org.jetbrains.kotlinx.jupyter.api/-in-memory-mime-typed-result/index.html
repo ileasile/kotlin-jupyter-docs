@@ -46,7 +46,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-0.15.0-619        </div>
+0.15.0-621        </div>
         <div class="navigation-controls">
         <div class="filter-section filter-section_loading" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active=""
@@ -108,24 +108,24 @@
   <div class="breadcrumbs"><a href="../../../index.html">api</a><span class="delimiter">/</span><a href="../index.html">org.jetbrains.kotlinx.jupyter.api</a><span class="delimiter">/</span><span class="current">InMemoryMimeTypedResult</span></div>
   <div class="cover ">
     <h1 class="cover"><span>In</span><wbr></wbr><span>Memory</span><wbr></wbr><span>Mime</span><wbr></wbr><span>Typed</span><wbr></wbr><span><span>Result</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">InMemoryMimeTypedResult</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>inMemoryOutput<span class="token operator">: </span><a href="../-in-memory-result/index.html">InMemoryResult</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fallbackResult<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="../-display-result/index.html">DisplayResult</a></div><p class="paragraph">Wrapper for <a href="../-display-result/index.html">DisplayResult</a>s that contain in memory results. This is only applicable to the embedded server.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>in</span><wbr></wbr><span>Memory</span><wbr></wbr><span><span>Output</span></span></u></div></span></div><div><div class="title"><p class="paragraph">the in-memory result + its mime-type that tells the client how to render it.</p></div></div></div></div><div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>fallback</span><wbr></wbr><span><span>Result</span></span></u></div></span></div><div><div class="title"><p class="paragraph">fallback output the client can use as a placeholder for the in-memory result, if it is no longer available. Like when saving the notebook to disk.</p></div></div></div></div></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">InMemoryMimeTypedResult</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>inMemoryOutput<span class="token operator">: </span><a href="../-in-memory-result/index.html">InMemoryResult</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fallbackResult<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">inMemoryReplResultsHolder<span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.api.embedded/-in-memory-repl-results-holder/index.html">InMemoryReplResultsHolder</a><span class="token punctuation">, </span></span><span class="parameter ">initialId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../-display-result/index.html">DisplayResult</a></div><p class="paragraph">Wrapper for <a href="../-display-result/index.html">DisplayResult</a>s that contain in memory results. This is only applicable to the embedded server.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>in</span><wbr></wbr><span>Memory</span><wbr></wbr><span><span>Output</span></span></u></div></span></div><div><div class="title"><p class="paragraph">the in-memory result + its mime-type that tells the client how to render it.</p></div></div></div></div><div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>fallback</span><wbr></wbr><span><span>Result</span></span></u></div></span></div><div><div class="title"><p class="paragraph">fallback output the client can use as a placeholder for the in-memory result, if it is no longer available. Like when saving the notebook to disk.</p></div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
     <div class="tabs-section-body">
       <div data-togglable="CONSTRUCTOR">
         <h2 class="">Constructors</h2>
-        <div class="table"><a data-name="1371166728%2FConstructors%2F1081350600" anchor-label="InMemoryMimeTypedResult" id="1371166728%2FConstructors%2F1081350600" data-filterable-set=":api/main"></a>
+        <div class="table"><a data-name="-1447136802%2FConstructors%2F1081350600" anchor-label="InMemoryMimeTypedResult" id="-1447136802%2FConstructors%2F1081350600" data-filterable-set=":api/main"></a>
           <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":api/main" data-filterable-set=":api/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-in-memory-mime-typed-result.html"><span>In</span><wbr></wbr><span>Memory</span><wbr></wbr><span>Mime</span><wbr></wbr><span>Typed</span><wbr></wbr><span><span>Result</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1371166728%2FConstructors%2F1081350600"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1447136802%2FConstructors%2F1081350600"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">inMemoryOutput<span class="token operator">: </span><a href="../-in-memory-result/index.html">InMemoryResult</a><span class="token punctuation">, </span></span><span class="parameter ">fallbackResult<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">inMemoryOutput<span class="token operator">: </span><a href="../-in-memory-result/index.html">InMemoryResult</a><span class="token punctuation">, </span></span><span class="parameter ">fallbackResult<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">inMemoryReplResultsHolder<span class="token operator">: </span><a href="../../org.jetbrains.kotlinx.jupyter.api.embedded/-in-memory-repl-results-holder/index.html">InMemoryReplResultsHolder</a><span class="token punctuation">, </span></span><span class="parameter ">initialId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -149,17 +149,17 @@
               </div>
             </div>
           </div>
-<a data-name="-1255213693%2FProperties%2F1081350600" anchor-label="id" id="-1255213693%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
+<a data-name="-240298831%2FProperties%2F1081350600" anchor-label="id" id="-240298831%2FProperties%2F1081350600" data-filterable-set=":api/main"></a>
           <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="../-display-result/id.html"><span><span>id</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1255213693%2FProperties%2F1081350600"></span>
+                  <div><a href="id.html"><span><span>id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-240298831%2FProperties%2F1081350600"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">val </span><a href="../-display-result/id.html">id</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Unique id that may be used for updating display data</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="id.html">id</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Unique id that may be used for updating display data</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -183,7 +183,22 @@
       </div>
       <div data-togglable="FUNCTION">
         <h2 class="">Functions</h2>
-        <div class="table"><a data-name="1501775455%2FFunctions%2F1081350600" anchor-label="render" id="1501775455%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+        <div class="table"><a data-name="1767418415%2FFunctions%2F1081350600" anchor-label="dispose" id="1767418415%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dispose.html"><span><span>dispose</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1767418415%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="dispose.html"><span class="token function">dispose</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called when this display result is no longer needed, i.e., when it is removed from the notebook display map on display update.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1501775455%2FFunctions%2F1081350600" anchor-label="render" id="1501775455%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
           <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
@@ -228,17 +243,32 @@
               </div>
             </div>
           </div>
-<a data-name="-268266029%2FFunctions%2F1081350600" anchor-label="withId" id="-268266029%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
-          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":api/main" data-filterable-set=":api/main">
+<a data-name="941341273%2FFunctions%2F1081350600" anchor-label="withId" id="941341273%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-filterable-current=":api/main" data-filterable-set=":api/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="../with-id.html"><span>with</span><wbr></wbr><span><span>Id</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-268266029%2FFunctions%2F1081350600"></span>
+                  <div><a href="with-id.html"><span>with</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="941341273%2FFunctions%2F1081350600"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../-display-result/index.html">DisplayResult</a><span class="token punctuation">.</span><a href="../with-id.html"><span class="token function">withId</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-display-result/index.html">DisplayResult</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="with-id.html"><span class="token function">withId</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">InMemoryMimeTypedResult</a></div><div class="brief "><p class="paragraph">Returns the new instance of <a href="../-display-result/index.html">DisplayResult</a> with the given <a href="with-id.html">id</a> set.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1324134517%2FFunctions%2F1081350600" anchor-label="withIdIfNotNull" id="-1324134517%2FFunctions%2F1081350600" data-filterable-set=":api/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":api/main" data-filterable-set=":api/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../with-id-if-not-null.html"><span>with</span><wbr></wbr><span>Id</span><wbr></wbr><span>If</span><wbr></wbr><span>Not</span><wbr></wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1324134517%2FFunctions%2F1081350600"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../-display-result/index.html">DisplayResult</a><span class="token punctuation">.</span><a href="../with-id-if-not-null.html"><span class="token function">withIdIfNotNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-display-result/index.html">DisplayResult</a></div></div></div>
                 </div>
               </div>
             </div>
