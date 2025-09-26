@@ -455,6 +455,11 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.api.outputs/MetadataModifierIsSet/
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.outputs/MetadataModifierIsSet/MetadataModifierIsSet/#org.jetbrains.kotlinx.jupyter.api.outputs.MetadataModifier/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.outputs/-metadata-modifier-is-set/-metadata-modifier-is-set.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.outputs/MetadataModifierIsSet/getValue/#org.jetbrains.kotlinx.jupyter.api.MimeTypedResultEx#kotlin.reflect.KProperty[*]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.outputs/-metadata-modifier-is-set/get-value.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.outputs/MetadataModifierIsSet/setValue/#org.jetbrains.kotlinx.jupyter.api.MimeTypedResultEx#kotlin.reflect.KProperty[*]#kotlin.Boolean/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.outputs/-metadata-modifier-is-set/set-value.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.properties////PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.properties/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.properties//asAccessible/TypeParam(bounds=[kotlin.reflect.KProperty[*]])#kotlin.Function1[TypeParam(bounds=[kotlin.reflect.KProperty[*]]),TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.properties/as-accessible.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.properties//asAccessible/java.lang.reflect.Field#kotlin.Any#kotlin.Function1[java.lang.reflect.Field,TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.properties/as-accessible.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.properties//asAccessibleIfNotNull/TypeParam(bounds=[kotlin.reflect.KProperty[*]])?#kotlin.Function1[TypeParam(bounds=[kotlin.reflect.KProperty[*]])?,TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.properties/as-accessible-if-not-null.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.api.properties//isLazy/kotlin.reflect.KProperty1[TypeParam(bounds=[kotlin.Any?]),*]#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.properties/is-lazy.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.session////PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.session/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.session/JupyterSession///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.session/-jupyter-session/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api.session/JupyterSessionInfo///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api.session/-jupyter-session-info/index.html
@@ -924,7 +929,6 @@ $dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableState/property/#/Point
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableState/scriptInstance/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-state/script-instance.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableState/stringValue/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-state/string-value.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableState/value/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-state/value.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableStateImpl.Companion///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-state-impl/-companion/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableStateImpl///PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-state-impl/index.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableStateImpl/VariableStateImpl/#kotlin.reflect.KProperty1[kotlin.Any,*]#kotlin.Any#org.jetbrains.kotlinx.jupyter.api.ReplCompilerMode/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-state-impl/-variable-state-impl.html
 $dokka.location:org.jetbrains.kotlinx.jupyter.api/VariableStateImpl/compilerMode/#/PointingToDeclaration/api/org.jetbrains.kotlinx.jupyter.api/-variable-state-impl/compiler-mode.html
@@ -1020,5 +1024,6 @@ org.jetbrains.kotlinx.jupyter.api.graphs.labels
 org.jetbrains.kotlinx.jupyter.api.jvm
 org.jetbrains.kotlinx.jupyter.api.libraries
 org.jetbrains.kotlinx.jupyter.api.outputs
+org.jetbrains.kotlinx.jupyter.api.properties
 org.jetbrains.kotlinx.jupyter.api.session
 org.jetbrains.kotlinx.jupyter.util
