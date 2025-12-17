@@ -1,0 +1,33 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api////PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api//EMPTY/kotlinx.serialization.json.Json#/PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-e-m-p-t-y.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api//getLogger/org.jetbrains.kotlinx.jupyter.protocol.api.KernelLoggerFactory#kotlin.reflect.KClass[*]#kotlin.String/PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/get-logger.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api//getLogger/org.jetbrains.kotlinx.jupyter.protocol.api.KernelLoggerFactory#kotlin.reflect.KClass[*]/PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/get-logger.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api//jupyterName/org.jetbrains.kotlinx.jupyter.protocol.api.JupyterSocketType#/PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/jupyter-name.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api//logger/org.jetbrains.kotlinx.jupyter.protocol.api.KernelLoggerFactory#/PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/logger.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api//sessionId/org.jetbrains.kotlinx.jupyter.protocol.api.RawMessage#/PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/session-id.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api//type/org.jetbrains.kotlinx.jupyter.protocol.api.RawMessage#/PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/type.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api//username/org.jetbrains.kotlinx.jupyter.protocol.api.RawMessage#/PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/username.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/JupyterSocketType.CONTROL///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-jupyter-socket-type/-c-o-n-t-r-o-l/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/JupyterSocketType.HB///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-jupyter-socket-type/-h-b/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/JupyterSocketType.IOPUB///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-jupyter-socket-type/-i-o-p-u-b/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/JupyterSocketType.SHELL///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-jupyter-socket-type/-s-h-e-l-l/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/JupyterSocketType.STDIN///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-jupyter-socket-type/-s-t-d-i-n/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/JupyterSocketType///PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-jupyter-socket-type/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/JupyterSocketType/entries/#/PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-jupyter-socket-type/entries.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/JupyterSocketType/valueOf/#kotlin.String/PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-jupyter-socket-type/value-of.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/JupyterSocketType/values/#/PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-jupyter-socket-type/values.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/KernelLoggerFactory///PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-kernel-logger-factory/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/KernelLoggerFactory/getLogger/#java.lang.Class[*]/PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-kernel-logger-factory/get-logger.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/KernelLoggerFactory/getLogger/#kotlin.String/PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-kernel-logger-factory/get-logger.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/RawMessage///PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-raw-message/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/RawMessage/buffers/#/PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-raw-message/buffers.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/RawMessage/content/#/PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-raw-message/content.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/RawMessage/header/#/PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-raw-message/header.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/RawMessage/metadata/#/PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-raw-message/metadata.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/RawMessage/parentHeader/#/PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-raw-message/parent-header.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/RawMessage/zmqIdentities/#/PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-raw-message/zmq-identities.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/RawMessageAction///PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-raw-message-action/index.html
+$dokka.location:org.jetbrains.kotlinx.jupyter.protocol.api/ZmqIdentities///PointingToDeclaration/protocol-api/org.jetbrains.kotlinx.jupyter.protocol.api/-zmq-identities/index.html
+org.jetbrains.kotlinx.jupyter.protocol.api
