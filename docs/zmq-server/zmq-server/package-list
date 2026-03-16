@@ -1,9 +1,0 @@
-$dokka.format:html-v1
-$dokka.linkExtension:html
-$dokka.location:org.jetbrains.kotlinx.jupyter.zmq.server////PointingToDeclaration/zmq-server/org.jetbrains.kotlinx.jupyter.zmq.server/index.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.zmq.server/JupyterZmqServerRunner///PointingToDeclaration/zmq-server/org.jetbrains.kotlinx.jupyter.zmq.server/-jupyter-zmq-server-runner/index.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.zmq.server/JupyterZmqServerRunner/JupyterZmqServerRunner/#/PointingToDeclaration/zmq-server/org.jetbrains.kotlinx.jupyter.zmq.server/-jupyter-zmq-server-runner/-jupyter-zmq-server-runner.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.zmq.server/JupyterZmqServerRunner/canRun/#org.jetbrains.kotlinx.jupyter.protocol.startup.KernelPorts/PointingToDeclaration/zmq-server/org.jetbrains.kotlinx.jupyter.zmq.server/-jupyter-zmq-server-runner/can-run.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.zmq.server/JupyterZmqServerRunner/start/#org.jetbrains.kotlinx.jupyter.protocol.startup.KernelJupyterParams#org.jetbrains.kotlinx.jupyter.protocol.api.KernelLoggerFactory#kotlin.Function1[org.jetbrains.kotlinx.jupyter.protocol.JupyterServerImplSockets,kotlin.Unit]#kotlin.Function1[java.io.Closeable,kotlin.Unit]/PointingToDeclaration/zmq-server/org.jetbrains.kotlinx.jupyter.zmq.server/-jupyter-zmq-server-runner/start.html
-$dokka.location:org.jetbrains.kotlinx.jupyter.zmq.server/JupyterZmqServerRunner/tryDeserializePorts/#kotlinx.serialization.json.JsonObject/PointingToDeclaration/zmq-server/org.jetbrains.kotlinx.jupyter.zmq.server/-jupyter-zmq-server-runner/try-deserialize-ports.html
-org.jetbrains.kotlinx.jupyter.zmq.server
