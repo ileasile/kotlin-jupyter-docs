@@ -1,0 +1,1 @@
+sourceset_dependencies='{":shared-compiler/main":[]}'
